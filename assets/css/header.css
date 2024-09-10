@@ -32,6 +32,7 @@
         padding: 0px;
         text-decoration: none;
     }
+   
 
     /* Hover effect for large screens */
     @media (min-width: 1025px) {
