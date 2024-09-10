@@ -1,0 +1,131 @@
+:root {
+    --background_color: #0c2640;
+    --color: #09aab0;
+    --color_white: white;
+    --hover_bg_color: #09aab0;
+
+    --font_family: {
+        font-family: "Libre Franklin", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 400;
+        font-style: normal;
+    }
+}
+
+.detail_page {
+    .nav-item {
+        font-size: 0.9rem;
+    }
+
+    .nav-item a {
+        text-decoration: none;
+        color: black;
+    }
+
+
+
+    .icon-btn {
+        display: inline-block;
+        margin-right: 10px;
+    }
+
+
+
+    .favorite,
+    .hide,
+    .share {
+        font-size: 1rem;
+        margin-left: 20px;
+        cursor: pointer;
+    }
+
+    .logo {
+        /* background-color: #f3f3f3; */
+        padding: 8px;
+        border-radius: 8px;
+    }
+
+    .custom-button {
+        background-color: yellow;
+        padding: 8px;
+        border-radius: 8px;
+    }
+}
+
+.firs_top_portion {
+
+    .custom-card img {
+        width: 100%;
+        aspect-ratio: 3/2;
+        object-fit: cover;
+        border-radius: 10px;
+        transition: transform 1s ease;
+        opacity: .7;
+    }
+
+    .custom-card img:hover {
+        transform: scale(1.05);
+        opacity: 1;
+
+    }
+
+
+    .card {
+        border: none;
+    }
+
+    .custom-btn-group {
+        button {
+            position: relative;
+            bottom: 80px;
+            background-color: var(--background_color);
+            color: var(--color_white);
+            transition: 1s all ease;
+
+            &:hover {
+                background-color: var(--hover_bg_color);
+            }
+        }
+    }
+
+    .tag-label {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        background-color: var(--background_color);
+        color: var(--color_white);
+        padding: 5px;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+
+    .photo-btn {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        background-color: var(--background_color);
+        color: var(--color_white);
+        padding: 5px 10px;
+        display: flex;
+        align-items: center;
+    }
+
+
+}
+
+.Listing_Details {
+    .card {
+        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    }
+
+    button {
+        background-color: var(--background_color);
+        color: var(--color_white);
+        transition: 1s all ease;
+
+        &:hover {
+            background-color: var(--hover_bg_color);
+            color: var(--color_white);
+        }
+    }
+}
