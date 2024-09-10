@@ -1,0 +1,15 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.home_cards {
+    .card {
+        transition: 1s all ease;
+
+        &:hover {
+            box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+        }
+    }
+}   
