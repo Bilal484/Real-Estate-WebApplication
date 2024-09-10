@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+:root {
+    --background_color: #0c2640;
+    --color: #09e1e8;
+}
+
 .home_cards {
     .card {
         transition: 1s all ease;
@@ -12,4 +17,4 @@
             box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
         }
     }
-}   
+}
