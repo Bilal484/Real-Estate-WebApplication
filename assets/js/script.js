@@ -25,7 +25,7 @@ document.getElementById('show-more-apartments').addEventListener('click', functi
     hiddenContent.forEach(function (element) {
         element.style.display = 'block';
     });
-    this.style.display = 'none'; 
+    this.style.display = 'none';
 });
 
 
@@ -34,5 +34,22 @@ document.getElementById('show-more-houses').addEventListener('click', function (
     hiddenContent.forEach(function (element) {
         element.style.display = 'block';
     });
-    this.style.display = 'none'; 
+    this.style.display = 'none';
 });
+
+
+
+
+function showSection(sectionId) {
+    // Hide all sections
+    const sections = document.querySelectorAll('.collapse');
+    sections.forEach(section => {
+        if (section.id !== sectionId) {
+            section.classList.remove('show');
+        }
+    });
+
+    // Show the selected section
+    const selectedSection = document.getElementById(sectionId);
+    selectedSection.classList.toggle('show');
+}

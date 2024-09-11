@@ -18,7 +18,7 @@
 </head>
 
 <body>
-    <header>
+    <header class="position-sticky top-0 z-1 bg-light">
         <div class="container-fluid px-3 detail_page ">
             <div class="d-flex align-items-center justify-content-between">
                 <!-- Back button and Feed -->
@@ -36,13 +36,13 @@
                             <a class="nav-link active" href="#">Overview</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Property details</a>
+                            <a class="nav-link" href="#Property_section">Property details</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Sale & tax history</a>
+                            <a class="nav-link" href="#Sale_section">Sale & tax history</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Schools</a>
+                            <a class="nav-link" href="#school_section">Schools</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Climate</a>
@@ -106,7 +106,7 @@
             <div class="container my-4">
                 <div class="row Listing_Details">
                     <!-- Left Column: Listing Details -->
-                    <div class="col-lg-8">
+                    <div class="col-lg-8 set_scroll_point">
                         <div class="card mb-4">
                             <div class="card-body">
                                 <h5 class="card-title">36 Beach Side Dr Unit 36AP, Ocean City, MD 21842</h5>
@@ -129,44 +129,646 @@
                             <div class="">Rates have dropped <br> Lower rates mean lower monthly
                                 payments</div>
                         </div>
-                        <div class=" card mt-4 px-2 py-4">
+                        <div class=" card mt-4 px-3 py-4">
                             <div>
                                 <h5>About this home</h5>
                                 <p>Introducing 36 Beach Side Dr., an exquisite coastal retreat nestled within the
                                     prestigious, amenity-rich, gated community of Sunset Island, just minutes from
                                     the vibrant Ocean City resort.</p>
                             </div>
-                            <div class="d-flex justify-content-around">
-                                <p><i class="far fa-clock"></i> 18 days on Redfin</p>
-                                <p><i class="fa-solid fa-warehouse"></i> 2 garage spaces (4 total)</p>
+                            <div class=" row d-flex justify-content-start">
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p><i class="far fa-clock"></i> 18 days on Redfin</p>
+                                </div>
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p><i class="fa-solid fa-warehouse"></i> 2 garage spaces (4 total)</p>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-around">
-                                <p> <i class="fas fa-home"></i> Townhome</p>
-                                <p><i class="fas fa-wrench"></i> Built in 2005</p>
+                            <div class=" row d-flex justify-content-start">
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p> <i class="fas fa-home"></i> Townhome</p>
+                                </div>
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p><i class="fas fa-wrench"></i> Built in 2005</p>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-around">
-                                <p><i class="fas fa-dollar-sign"></i> $357 per sq ft</p>
-                                <p> <i class="fas fa-dollar-sign"></i> $357 per sq ft</p>
+                            <div class="row d-flex justify-content-start">
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p><i class="fas fa-dollar-sign"></i> $357 per sq ft</p>
+                                </div>
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p> <i class="fas fa-dollar-sign"></i> $357 per sq ft</p>
+
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-around">
-                                <p> <i class="fas fa-dollar-sign"></i> $1,132 monthly HOA fee</p>
-                                <p> <i class="fas fa-car"></i> 2 garage spaces (4 total)</p>
+                            <div class="d-flex justify-content-start">
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p> <i class="fas fa-dollar-sign"></i> $1,132 monthly HOA fee</p>
+
+                                </div>
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p> <i class="fas fa-car"></i> 2 garage spaces (4 total)</p>
+                                </div>
                             </div>
-                            <div class="d-flex justify-content-around">
-                                <p> <i class="fas fa-thermometer-half"></i> Has A/C</p>
-                                <p> <i class="fas fa-tshirt"></i> In-unit laundry (washer and dryer)</p>
+                            <div class="d-flex justify-content-start">
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p> <i class="fas fa-thermometer-half"></i> Has A/C</p>
+                                </div>
+                                <div class="col-sm-6 d-flex justify-content-start px-5">
+                                    <p> <i class="fas fa-tshirt"></i> In-unit laundry (washer and dryer)</p>
+                                </div>
                             </div>
 
-                            <div class="mt-4 text-center">
-                                <p class="mb-1">Listed by <strong>Kristen Gebhart</strong> • Northrop Realty • 
-                                    <a  href="tel:3025392900" class="text-primary">302-539-2900</a> (broker)</p>
+                            <div class="mt-4 text-start px-3">
+                                <p class="mb-1">Listed by <strong>Kristen Gebhart</strong> • Northrop Realty •
+                                    <a href="tel:3025392900" class="text-primary">302-539-2900</a> (broker)</p>
                                 <p>Redfin checked: <span class="text-primary">2 minutes ago</span> (Sept 10, 2024 at
                                     3:59pm)</p>
                                 <p>Source: BRIGHT MLS #MDWO2022874</p>
                             </div>
 
                         </div>
+                        <!-- Commute -->
+                        <div class="card px-3 mt-4">
+                            <h3 class="mt-3">Commute</h3>
+                            <div class="mx-auto py-3">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d22379.51025630765!2d70.41938789999999!3d28.3736176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e1!3m2!1sen!2s!4v1726037909132!5m2!1sen!2s"
+                                    width="700" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                        <!-- Ask Redfin agent Kim a question  -->
+                        <div class="card mt-4  px-3 py-4">
+                            <h3>Ask Redfin agent Kim a question </h3>
 
+                            <div class="container mx-auto p-4 bg-light rounded-lg ">
+                                <div class="d-flex align-items-center mb-4">
+                                    <img src="assets/images/real estate _10.jpg" alt="Agent Profile"
+                                        class="rounded-circle me-4" style="width: 64px; height: 64px;" />
+                                    <div>
+                                        <h2 class="h5 font-weight-bold text-dark">Kim Dixson</h2>
+                                        <p class="text-muted mb-1">Ocean City Redfin Agent</p>
+                                        <p class="text-muted">Kim Dixson typically replies in about <span
+                                                class="fw-bold">13 minutes</span></p>
+                                    </div>
+                                </div>
+
+                                <textarea class="form-control mb-4" placeholder="Write a message..."></textarea>
+
+                                <div class="d-flex mb-4">
+                                    <button class="btn  me-2">I'd like more home details.</button>
+                                    <button class="btn  me-2">I'm interested in buying.</button>
+                                    <button class="btn ">Is this home still available?</button>
+                                </div>
+
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-danger w-50 mt-2">Ask a question</button>
+                                    <p class="text-center text-muted mt-2">Text or call <span class="fw-bold">(410)
+                                            695-3196</span></p>
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="card mt-4">
+                            <div class="p-4 bg-light rounded-lg  shadow">
+                                <h2 class="h3 font-weight-bold mb-4">Payment calculator</h2>
+                                <p class="h5 fw-semibold">$3,251 per month <span class="text-muted">i</span> <a href="#"
+                                        class="text-dark  me-4  text-decoration-none">Reset</a></p>
+                                <div class=" row mt-4">
+                                    <div class="progress mb-2" style="height: 8px;">
+                                        <div class="progress-bar bg-primary" role="progressbar" style="width: 70%;">
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 px-1 py-3">
+                                        <div class="d-flex justify-content-around small">
+                                            <span class="text-primary">Principal and interest</span>
+                                            <span class="text-primary">$1,936</span>
+                                        </div>
+                                        <div class="d-flex justify-content-around py-3 small">
+                                            <span class="text-danger">HOA dues</span>
+                                            <span class="text-danger">$320</span>
+                                        </div>
+                                    </div>
+                                    <div class="col-sm-6 px-1 py-3">
+                                        <div class="d-flex justify-content-around small">
+                                            <span class="text-warning">Property taxes</span>
+                                            <span class="text-warning">$833</span>
+                                        </div>
+                                        <div class="d-flex justify-content-around py-3 small">
+                                            <span class="text-muted">Homeowners insurance</span>
+                                            <span class="text-muted">$161</span>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="mt-4 row text-center row-cols-1 row-cols-md-3 g-4">
+                                    <div class="col  text-center">
+                                        <button class=" text-white text-center  rounded">
+                                            <h6 class="">Down payment</h6>
+                                            <p class="">50% ($302,495)</p>
+                                        </button>
+                                    </div>
+                                    <div class="col  text-center">
+                                        <button class=" text-white text-center  rounded">
+                                            <h6 class="">Home price</h6>
+                                            <p class="">$604,990</p>
+                                        </button>
+                                    </div>
+                                    <div class="col  text-center">
+                                        <button class=" text-white text-center  rounded">
+                                            <h6 class="">Loan details</h6>
+                                            <p class="">30-yr fixed, 6.62%</p>
+                                        </button>
+                                    </div>
+                                    <button class="mt-4 btn  mx-auto w-50">Get pre-approved</button>
+                                </div>
+
+                            </div>
+                            <div class="card max-w-sm w-50 mx-auto my-5 bg-white shadow p-4">
+                                <h2 class="h5 fw-semibold mb-4">Down payment</h2>
+
+                                <div class="d-flex align-items-center mb-4">
+                                    <label class="me-2">Cash</label>
+                                </div>
+
+                                <div class="d-flex justify-content-around  mb-4">
+                                    <span class="fw-bold">$302,495</span>
+                                    <span class="fw-bold">50%</span>
+                                </div>
+
+                                <input type="range" min="0" max="100" value="50" class="form-range mb-4" />
+
+                                <p class="mb-2">Have a home to sell?</p>
+                                <button class="btn btn-secondary w-100">Add my home equity</button>
+
+                                <div class="mt-4 border-top pt-2">
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <span>Cash</span>
+                                        <span>$302,495</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-2">
+                                        <span>Home Equity</span>
+                                        <span>$0</span>
+                                    </div>
+                                    <div class="d-flex justify-content-between mt-4 fw-bold">
+                                        <span>Total Down:</span>
+                                        <span>$302,495 (50%)</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-4 rounded-lg mt-4">
+                            <h2 class="h5 fw-bold mb-4">Additional resources</h2>
+
+                            <div class="accordion" id="resourcesAccordion">
+
+                                <!-- Down payment assistance -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            <i class="fas fa-hand-holding-usd me-2"></i> Down payment assistance
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            Programs may be available. <a href="#"
+                                                class="text-decoration-none text-info small">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Mortgage rates -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fas fa-percentage me-2"></i> Mortgage rates
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            View current mortgage rates for this home.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Electricity and solar -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fas fa-solar-panel me-2"></i> Electricity and solar
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            Est. $273/month, save $111 with rooftop solar.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Internet -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <i class="fas fa-wifi me-2"></i> Internet
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            You may need to disable ad blockers to view Internet info.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <p class="small text-muted mt-4">Provided by Down Payment Resource, RateUpdate.com, Wattbuy,
+                                and AllConnect</p>
+                        </div>
+                        <div class="card p-4 rounded-lg mt-4 ">
+                            <h2 class="h5 fw-bold mb-4">Additional services</h2>
+
+                            <!-- Internet Deals Section -->
+                            <div class="d-flex justify-content-between mb-2">
+                                <div>
+                                    <h3 class="h6 fw-semibold">Find internet deals in your area</h3>
+                                    <p class="text-muted">Get a great deal on fast wifi</p>
+                                </div>
+                                <div class="text-muted text-end">
+                                    <span>Advertisement</span>
+                                    <span class="fw-semibold">xfinity</span>
+                                </div>
+                            </div>
+
+                            <!-- Free Credit Report Section -->
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <h3 class="h6 fw-semibold">Free Credit Report</h3>
+                                    <p class="text-muted">Get your credit report for free</p>
+                                </div>
+                                <div class="text-muted text-end">
+                                    <span>Advertisement</span>
+                                    <span class="fw-semibold">credit sesame</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card p-4 rounded mt-4">
+                            <div class="card-body">
+                                <h2 class="card-title h4 mb-2">Open houses</h2>
+                                <p class="text-muted mb-4">No upcoming open houses</p>
+                                <h3 class="h5 mb-1">Schedule a tour today</h3>
+                                <p class="text-muted mb-4">Tour with Redfin and one of our agents will be there to
+                                    answer all your questions.</p>
+
+                                <p class="font-weight-bold">Wednesday, Sep 11</p>
+                                <div class="mt-2 d-flex justify-content-around">
+                                    <span class="text-dark"><b>10:00 am</b></span> &bull; <span
+                                        class="text-dark"><b>11:00
+                                            am</b></span> &bull; <span class="text-dark"><b>12:00 pm</b></span> &bull;
+                                    <span class="text-dark"><b>1:00 pm</b></span> &bull;
+                                    <span class="text-dark"><b>2:00 pm</b></span>
+                                    <a href="#" class="text-dark  ">Check for more</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Property_section" class="card p-4 rounded-lg mt-4">
+                            <h2 class="h5 fw-bold mb-4">Property details for 104-C 142nd St</h2>
+                            <div class="accordion" id="resourcesAccordion">
+                                <!-- Parking -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingOne">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                                            aria-expanded="false" aria-controls="collapseOne">
+                                            <i class="fas fa-parking me-2"></i> Parking
+                                        </button>
+                                    </h2>
+                                    <div id="collapseOne" class="accordion-collapse collapse"
+                                        aria-labelledby="headingOne" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            Programs may be available. <a href="#"
+                                                class="text-decoration-none text-info small">Learn more</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Interior -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingTwo">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="false" aria-controls="collapseTwo">
+                                            <i class="fas fa-home me-2"></i> Interior
+                                        </button>
+                                    </h2>
+                                    <div id="collapseTwo" class="accordion-collapse collapse"
+                                        aria-labelledby="headingTwo" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            View current mortgage rates for this home.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Exterior -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingThree">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseThree"
+                                            aria-expanded="false" aria-controls="collapseThree">
+                                            <i class="fas fa-building me-2"></i> Exterior
+                                        </button>
+                                    </h2>
+                                    <div id="collapseThree" class="accordion-collapse collapse"
+                                        aria-labelledby="headingThree" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            Est. $273/month, save $111 with rooftop solar.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Financial -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingFour">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFour"
+                                            aria-expanded="false" aria-controls="collapseFour">
+                                            <i class="fas fa-dollar-sign me-2"></i> Financial
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFour" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFour" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            You may need to disable ad blockers to view Internet info.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Location -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingFive">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseFive"
+                                            aria-expanded="false" aria-controls="collapseFive">
+                                            <i class="fas fa-map-marker-alt me-2"></i> Location
+                                        </button>
+                                    </h2>
+                                    <div id="collapseFive" class="accordion-collapse collapse"
+                                        aria-labelledby="headingFive" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            You may need to disable ad blockers to view Internet info.
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Public Facts -->
+                                <div class="accordion-item border-0">
+                                    <h2 class="accordion-header" id="headingSix">
+                                        <button class="accordion-button collapsed" type="button"
+                                            data-bs-toggle="collapse" data-bs-target="#collapseSix"
+                                            aria-expanded="false" aria-controls="collapseSix">
+                                            <i class="fas fa-info-circle me-2"></i> Public Facts
+                                        </button>
+                                    </h2>
+                                    <div id="collapseSix" class="accordion-collapse collapse"
+                                        aria-labelledby="headingSix" data-bs-parent="#resourcesAccordion">
+                                        <div class="accordion-body">
+                                            You may need to disable ad blockers to view Internet info.
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="Sale_section" class="card p-4 bg-light mt-4 rounded-lg shadow-sm">
+                            <h2 class="h5 fw-bold mb-4">Sale and tax history for 104-C 142nd St</h2>
+
+                            <div class="d-flex justify-content-between mb-2">
+                                <span class="fw-semibold">Today</span>
+                                <a href="#" class="text-primary text-decoration-none">Sale History</a>
+                                <a href="#" class="text-primary text-decoration-none">Tax History</a>
+                            </div>
+
+                            <hr class="border-secondary mb-4">
+
+                            <div class="mb-4">
+                                <span class="text-muted">Sep 6, 2024</span>
+                                <div class="fw-semibold">Listed (Active)</div>
+                                <div class="fs-5 fw-bold">$604,990</div>
+                                <span class="text-muted">Price</span>
+                            </div>
+
+                            <h3 class="h6 fw-semibold mb-2">Aug, 2024</h3>
+
+                            <ul class="list-unstyled">
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Aug 27, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Sold (MLS) (Closed)</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$549,990</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Aug 3, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Pending</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$549,990</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Aug 2, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Price Changed</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$599,990</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Jul 30, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Price Changed</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$549,990</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Jul 21, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Price Changed</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$569,990</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Jun 21, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Listed (Active)</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$609,990</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">May 24, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Price Changed</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$619,980</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                                <li class="mb-3 d-flex justify-content-between">
+                                    <div>
+                                        <div class="text-muted">Apr 21, 2024</div>
+                                        <span>Date</span>
+                                    </div>
+                                    <div class="fw-semibold">Listed (Active)</div>
+                                    <div>
+                                        <div class="fs-5 fw-bold">$648,190</div>
+                                        <span class="text-muted">Price</span>
+                                    </div>
+                                </li>
+                            </ul>
+
+                            <hr class="border-secondary my-4">
+
+                            <p class="text-muted">Listing provided courtesy of Bright MLS</p>
+                            <p class="mt-2">
+                                Welcome to Lennar's Tyndale model located at Low Tide at Lighthouse Bay. This
+                                three-story townhome features a generous floorplan with entertaining in mind. Enter this
+                                brand new home from the
+                                two-car garage or front entrance with
+                                <a href="#" class="text-primary text-decoration-none">show more</a>
+                            </p>
+                        </div>
+
+                        <div id="school_section" class="card max-w-lg mx-auto p-4 mt-4 bg-light rounded-lg shadow-sm">
+                            <h2 class="h4 fw-bold mb-4">Schools</h2>
+
+                            <div class="border-bottom mb-4 pb-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="text-success fw-semibold">10/10</span>
+                                        <span class="h6 mb-0">Ocean City Elementary School</span>
+                                        <p class="text-muted">Public, PreK-4 • Assigned • 7.6mi</p>
+                                    </div>
+                                    <!-- Icon that triggers the modal -->
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#schoolDetailsModal">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="border-bottom mb-4 pb-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="text-success fw-semibold">5/10</span>
+                                        <span class="h6 mb-0">Berlin Intermediate School</span>
+                                        <p class="text-muted">Public, 5-6 • Assigned • 11.8mi</p>
+                                    </div>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#schoolDetailsModal">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="border-bottom mb-4 pb-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="text-success fw-semibold">10/10</span>
+                                        <span class="h6 mb-0">Stephen Decatur Middle School</span>
+                                        <p class="text-muted">Public, 7-8 • Assigned • 10.6mi</p>
+                                    </div>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#schoolDetailsModal">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <div class="border-bottom mb-4 pb-2">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div>
+                                        <span class="text-success fw-semibold">7/10</span>
+                                        <span class="h6 mb-0">Stephen Decatur High School</span>
+                                        <p class="text-muted">Public, 9-12 • Assigned • 10.4mi</p>
+                                    </div>
+                                    <a href="#" data-bs-toggle="modal" data-bs-target="#schoolDetailsModal">
+                                        <i class="fas fa-chevron-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+
+                            <p class="small text-muted">Provided by GreatSchools</p>
+                        </div>
+
+                        <div class="card bg-light p-4 mt-4 rounded-lg shadow-sm">
+                            <h2 class="h6 fw-semibold">Around this home</h2>
+                            <div class="text-muted">
+                                <span>Redfin</span> &gt; <span>Maryland</span> &gt; <span>Worcester County</span> &gt;
+                                <span>21842</span>
+                            </div>
+
+                            <h3 class="h6 fw-medium mt-4">Transportation near 104-C 142nd St</h3>
+                            <div class="d-flex align-items-center mt-2">
+                                <span class="h4 fw-bold ms-1">63</span>
+                                <span class="text-muted">/100</span>
+                            </div>
+                            <p class="mt-1 text-dark">Somewhat walkable</p>
+                            <p class="small text-muted">Walk Score®</p>
+
+                            <!-- Section with ">" Icon -->
+                            <div class="mt-4 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="fw-semibold">Places</h4>
+                                    <p class="text-dark">1 grocery, 36 restaurants, 1 park</p>
+                                </div>
+                                <button type="button" class="btn btn-link text-light" data-bs-toggle="modal"
+                                    data-bs-target="#placesModal">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+
+                            <div class="mt-2 d-flex justify-content-between align-items-center">
+                                <div>
+                                    <h4 class="fw-semibold">Transit</h4>
+                                    <p class="text-dark">1 stop nearby</p>
+                                </div>
+                                <button type="button" class="btn btn-link text-light" data-bs-toggle="modal"
+                                    data-bs-target="#placesModal">
+                                    <i class="fas fa-chevron-right"></i>
+                                </button>
+                            </div>
+                        </div>
 
                     </div>
 
@@ -192,17 +794,197 @@
                             <hr>
                             <p class="text-center">Ask a question: <strong>(410) 695-3196</strong></p>
 
-
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
+
+        <!-- School Modal -->
+        <div class="modal fade" id="schoolDetailsModal" tabindex="-1" aria-labelledby="schoolDetailsModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="schoolDetailsModalLabel">School Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="card bg-light text-dark p-4 my-3 rounded-lg shadow-lg max-w-md mx-auto">
+                        <h2 class="h5 fw-bold mb-4">Ocean City Elementary School</h2>
+
+                        <div class="d-flex justify-content-between align-items-center mb-2">
+                            <span class="h4 fw-semibold">10/10</span>
+                            <span class="text-warning">4.0 ★★★★☆ (7 reviews)</span>
+                        </div>
+
+                        <h3 class="h6 fw-semibold mt-4">GreatSchools Subrating</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>10/10 Equity</li>
+                            <li>10/10 Student Growth</li>
+                            <li>10/10 Test Scores</li>
+                        </ul>
+
+                        <h3 class="h6 fw-semibold">Details</h3>
+                        <ul class="list-unstyled mb-4">
+                            <li>Assigned</li>
+                            <li>Public, PreK-4</li>
+                            <li>529 students (11 per teacher)</li>
+                            <li>7.6mi away</li>
+                            <li>12828 Center Dr, Ocean City, MD 21842</li>
+                        </ul>
+
+                        <h3 class="h6 fw-semibold">Community Reviews</h3>
+                        <div class="mb-4">
+                            <span class="text-warning">4.0 ★★★★☆ (7)</span>
+                            <p class="text-muted">Parent</p>
+                            <p class="text-muted">2.0 ★★☆☆☆ June 2023</p>
+                            <p>The only good things I can say about this school - are...</p>
+                        </div>
+
+                        <a href="#" class="text-dark text-decoration-none">Worcester County Public Schools</a>
+                    </div>
+
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal for Places -->
+        <div class="modal fade" id="placesModal" tabindex="-1" aria-labelledby="placesModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-fullscreen  Listing_Details">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="placesModalLabel">Places</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="card modal-body">
+                        <div class="p-4 bg-light text-dark rounded-lg shadow-lg">
+                            <h2 class="h4 font-bold mb-4">Around this home</h2>
+                            <div class="d-flex flex-wrap mb-4">
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('highlightsSection')">Highlights</button>
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('grocerySection')">Grocery</button>
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('foodDrinkSection')">Food & Drink</button>
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('parksSection')">Parks</button>
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('shoppingSection')">Shopping</button>
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('sportsSection')">Sports and Recreation</button>
+                                <button class="p-2 border-0 rounded me-2 mb-2 btn btn-primary" type="button"
+                                    onclick="showSection('entertainmentSection')">Entertainment</button>
+                            </div>
+
+                            <div class="row g-4  collapse  active" id="highlightsSection">
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-beer-mug-empty me-2"></i>Beach
+                                            Barrels</h5>
+                                        <p class="text-muted">Sports Bar, Italian Restaurant • 0.7 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-golf-ball-tee me-2"></i>Lost
+                                            Treasure Golf</h5>
+                                        <p class="text-muted">Mini Golf Course • 0.2 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-anchor me-2"></i>Discoversea
+                                            Shipwreck Museum</h5>
+                                        <p class="text-muted">History Museum • 0.7 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-golf-club me-2"></i>Old Pro Golf
+                                            Indoor/Outdoor Pirate/Safari</h5>
+                                        <p class="text-muted">Mini Golf Course • 0.4 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-film me-2"></i>Sun & Surf Cinema
+                                        </h5>
+                                        <p class="text-muted">Movie Theater • 0.1 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-car me-2"></i>Viking Golf & Go
+                                            Carts</h5>
+                                        <p class="text-muted">Mini Golf Course • 0.3 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-water me-2"></i>Viking Amusements
+                                            and Thunder Lagoon Waterpark</h5>
+                                        <p class="text-muted">Amusement Park • 0.3 miles</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-5 col-sm-12 mx-auto multiple_cards_boxs">
+                                    <div class="p-3 border mx-2 rounded">
+                                        <h5 class="fw-semibold"><i class="fa-solid fa-pizza-slice me-2"></i>Game World
+                                        </h5>
+                                        <p class="text-muted">Pizzeria • 0.2 miles</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="grocerySection" class="collapse">
+                            <div class="card card-body">
+                                This is the content for the Grocery section.
+                            </div>
+                        </div>
+                        <div id="foodDrinkSection" class="collapse">
+                            <div class="card card-body">
+                                This is the content for the Food & Drink section.
+                            </div>
+                        </div>
+                        <div id="parksSection" class="collapse">
+                            <div class="card card-body">
+                                This is the content for the Parks section.
+                            </div>
+                        </div>
+                        <div id="shoppingSection" class="collapse">
+                            <div class="card card-body">
+                                This is the content for the Shopping section.
+                            </div>
+                        </div>
+                        <div id="sportsSection" class="collapse">
+                            <div class="card card-body">
+                                This is the content for the Sports and Recreation section.
+                            </div>
+                        </div>
+                        <div id="entertainmentSection" class="collapse">
+                            <div class="card card-body">
+                                This is the content for the Entertainment section.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+        </div>
+
     </main>
     <footer>
         <!-- place footer here -->
     </footer>
+
+    <script src="assets/js/script.js"></script>
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
         integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous">
