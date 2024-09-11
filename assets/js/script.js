@@ -36,3 +36,9 @@ document.getElementById('show-more-houses').addEventListener('click', function (
     });
     this.style.display = 'none'; 
 });
+// change heading display on hero section
+// Function to update the heading text based on the clicked tab
+function updateHeading(headingText) {
+    document.getElementById('heading-display').textContent = headingText;
+}
+

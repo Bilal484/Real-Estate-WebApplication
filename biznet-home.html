@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biznat</title>
+        <!-- Bootstrap 5.3.2 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap 5.3.2 JavaScript Bundle -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="/assets/js/header.js"></script>
+    </head>
+<body>
+    <!--=============================header=========================== -->
+    <div class="header-parent">
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger fw-bold h1" href="#"><img src="/assets/images/PNG Logo Files/Original Logo.png" width="50" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Dropdown Menu 1 -->
+        <!-- Dropdown Menu 1 -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button">
+              Buy
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <!-- Column 1: Popular Searches -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Popular Searches</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Homes for sale</a></li>
+                  <li><a class="dropdown-item" href="#">Condos for sale</a></li>
+                  <li><a class="dropdown-item" href="#">Land for sale</a></li>
+                  <li><a class="dropdown-item" href="#">Open houses</a></li>
+                </div>
+              </div>
+              <!-- Column 2: Buying Options -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Buying Options</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Buy with Redfin</a></li>
+                  <li><a class="dropdown-item" href="#">Redfin Premier</a></li>
+                </div>
+              </div>
+              
+              <!-- Column 3: Buying Resources -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Buying Resources</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Affordability Calculator</a></li>
+                  <li><a class="dropdown-item" href="#">Home Buying Guide</a></li>
+                  <li><a class="dropdown-item" href="#">Find Lenders & Inspectors</a></li>
+                  <li><a class="dropdown-item" href="#">Free Home Buying Classes</a></li>
+                  <li><a class="dropdown-item" href="#">US Housing Market</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRent" role="button">
+              Rent
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownRent">
+              <!-- Column 1: Popular Searches -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Popular Searches</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Apartments for rent</a></li>
+                  <li><a class="dropdown-item" href="#">Houses for rent</a></li>
+                  <li><a class="dropdown-item" href="#">Condos for rent</a></li>
+                  <li><a class="dropdown-item" href="#">Townhomes for rent</a></li>
+                </div>
+              </div>
+               <!-- Column 2: Rental Options -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Rental Options</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Find a Rental</a></li>
+                  <li><a class="dropdown-item" href="#">Rent with Redfin</a></li>
+                </div>
+              </div>
+               <!-- Column 3: Rental Resources -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Rental Resources</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Renting Guide</a></li>
+                  <li><a class="dropdown-item" href="#">Rental Market Trends</a></li>
+                  <li><a class="dropdown-item" href="#">Rent Affordability Calculator</a></li>
+                  <li><a class="dropdown-item" href="#">Tenant Rights & Responsibilities</a></li>
+                  <li><a class="dropdown-item" href="#">Find Local Property Managers</a></li>
+                </div>
+              </div>
+            </ul>
+        </li>
+        <!-- Dropdown3 -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSell" role="button">
+      Sell
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSell">
+      <!-- Column 1: Popular Searches -->
+      <div class="dropdown-column">
+        <li><span class="dropdown-header">Popular Searches</span></li>
+        <div class="dropdown-grid">
+          <li><a class="dropdown-item" href="#">Sell My Home</a></li>
+          <li><a class="dropdown-item" href="#">Home Valuation</a></li>
+          <li><a class="dropdown-item" href="#">List with Redfin</a></li>
+          <li><a class="dropdown-item" href="#">Selling Tips</a></li>
+        </div>
+      </div>
+      <!-- Column 2: Selling Options -->
+      <div class="dropdown-column">
+        <li><span class="dropdown-header">Selling Options</span></li>
+        <div class="dropdown-grid">
+          <li><a class="dropdown-item" href="#">Sell with Redfin</a></li>
+          <li><a class="dropdown-item" href="#">Instant Offers</a></li>
+          <li><a class="dropdown-item" href="#">Sell for Top Dollar</a></li>
+        </div>
+      </div>
+    <!-- Column 3: Selling Resources -->
+      <div class="dropdown-column">
+        <li><span class="dropdown-header">Selling Resources</span></li>
+        <div class="dropdown-grid">
+          <li><a class="dropdown-item" href="#">Home Selling Guide</a></li>
+          <li><a class="dropdown-item" href="#">Market Analysis</a></li>
+          <li><a class="dropdown-item" href="#">Find a Local Agent</a></li>
+          <li><a class="dropdown-item" href="#">Staging Tips</a></li>
+          <li><a class="dropdown-item" href="#">Closing Costs Calculator</a></li>
+        </div>
+      </div>
+    </ul>
+</li>
+<li class="nav-item">
+ <a class="nav-link text-muted" href="#">Biznet Premier</a>
+                        </li> <!-- Dropdown4 -->
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMortgage" role="button">
+                          Mortgage
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMortgage">
+                          <!-- Column 3: Mortgage Resources -->
+                          <div class="dropdown-column">
+                            <li><span class="dropdown-header">Mortgage Resources</span></li>
+                            <div class="dropdown-grid">
+                              <li><a class="dropdown-item" href="#">Mortgage Guide</a></li>
+                              <li><a class="dropdown-item" href="#">Interest Rates</a></li>
+                              <li><a class="dropdown-item" href="#">Loan Application Tips</a></li>
+                              <li><a class="dropdown-item" href="#">Compare Lenders</a></li>
+                              <li><a class="dropdown-item" href="#">Mortgage Glossary</a></li>
+                            </div>
+                          </div>
+                        </ul>
+                    </li>
+        <!-- Dropdown5 -->
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAgents" role="button">
+                          Real Estate Agents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAgents">
+                 <!-- Column 3: Agent Resources -->
+                          <div class="dropdown-column">
+                            <li><span class="dropdown-header">Agent Resources</span></li>
+                            <div class="dropdown-grid">
+                              <li><a class="dropdown-item" href="#">Real Estate Agent Guide</a></li>
+                              <li><a class="dropdown-item" href="#">Market Trends & Insights</a></li>
+                              <li><a class="dropdown-item" href="#">Agent Training & Certification</a></li>
+                              <li><a class="dropdown-item" href="#">Referral Programs</a></li>
+                              <li><a class="dropdown-item" href="#">Success Stories</a></li>
+                            </div>
+                          </div>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Feed</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-secondary me-2">Login / SignUp</button>
+                        <div class="dropdown">
+                           </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+    <!--============================= Hero Section =========================== -->
+    <div class="biznet-hero-parent">
+    <div class="container-fluid hero-container">
+        <div class="row">
+            <div class="col-md-6">
+                <h2 class="text-light">
+            Find the right home
+at the right price
+                </h2>
+                
+
+               <!-- Navigation Tabs -->
+<ul class="nav real-estate-nav-tabs mb-3" id="realEstateTabs" role="tablist">
+    <li class="nav-item" role="presentation">
+        <button class="nav-link active tab-btn" id="buy-tab" data-bs-toggle="tab" data-bs-target="#buy" type="button" role="tab">Buy</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link tab-btn" id="rent-tab" data-bs-toggle="tab" data-bs-target="#rent" type="button" role="tab">Rent</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link tab-btn" id="sell-tab" data-bs-toggle="tab" data-bs-target="#sell" type="button" role="tab">Sell</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link tab-btn" id="mortgage-tab" data-bs-toggle="tab" data-bs-target="#mortgage" type="button" role="tab">Mortgage</button>
+    </li>
+    <li class="nav-item" role="presentation">
+        <button class="nav-link tab-btn" id="estimate-tab" data-bs-toggle="tab" data-bs-target="#estimate" type="button" role="tab">Home Estimate</button>
+    </li>
+</ul>
+
+<!-- Tab Content -->
+<div class="tab-content real-estate-tab-content" id="realEstateTabContent">
+    <!-- Buy Content -->
+    <div class="tab-pane fade show active" id="buy" role="tabpanel">
+        <div class="real-estate-search-bar">
+            <input type="text" class="form-control search-input" placeholder="City, Address, School, Agent, ZIP">
+            <button type="button" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Rent Content -->
+    <div class="tab-pane fade" id="rent" role="tabpanel">
+        <div class="real-estate-search-bar">
+            <input type="text" class="form-control search-input" placeholder="Enter location for renting">
+            <button type="button" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+
+    <!-- Sell Content -->
+    <div class="tab-pane fade" id="sell" role="tabpanel">
+        <div class="real-estate-search-bar">
+            <input type="text" class="form-control search-input" placeholder="Sell your property">
+            <button type="button" class="search-btn">
+                <span>Start</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mortgage Content -->
+    <div class="tab-pane fade" id="mortgage" role="tabpanel">
+        <div class="real-estate-search-bar">
+            <input type="text" class="form-control search-input" placeholder="Mortgage options">
+            <button type="button" class="search-btn">
+                <span>Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- Home Estimate Content -->
+    <div class="tab-pane fade" id="estimate" role="tabpanel">
+        <div class="real-estate-search-bar">
+            <input type="text" class="form-control search-input" placeholder="Get a home estimate">
+            <button type="button" class="search-btn">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+        </div>
+    </div>
+</div>
+
+                
+            </div>
+        </div>
+    </div>
+
+</div>
+
+    <!--============================= Biznet app Section =========================== -->
+    <div class="container biznet-app-parent mt-5">
+        <div class="row">
+            <div class="col-md-6"><img class="img-fluid biznet-app-img " src="/assets/images/biznet ap.jpg" alt=""></div>
+            <div class="col-md-6 biznet-app-description">
+                <h2>Get the Biznet app</h2>
+                <p>Download our top-rated real estate app for iOS or Android to get alerts the moment your dream home hits the market.</p>
+            </div>
+
+        </div>
+    </div>
+    <!--============================= Biznet Luxury Homes Section =========================== -->
+    <div class="container biznet-luxury-homes-parent mt-5">
+        <div class="row">
+            <div class="col-md-6 biznet-app-description">
+                <h2>Local Expertise In Luxury Home</h2>
+                <p>Redfin Premier agents have years of experience buying and selling high-end homes. Get the highest level of service from our best agents.</p>
+<a href="#" class="btn btn-danger btn-biznet-home-learn-more-btn">Learn More</a>
+            </div>
+            <div class="col-md-6"><img class="img-fluid biznet-app-img " src="/assets/images/premier.jpg" alt=""></div>
+
+           
+
+        </div>
+    </div>
+    <!--============================= Biznet saves Homes Section =========================== -->
+    <div class="container biznet-luxury-homes-parent mt-5">
+        <div class="row">
+            <div class="col-md-6"><img class="img-fluid biznet-app-img " src="/assets/images/biznet ap.jpg" alt=""></div>
+
+            <div class="col-md-6 biznet-app-description">
+                <h2 >Sell for top dollar and save thousands on fees</h2>
+                <p >Our agents have the experience to price, market, and sell your home for the best price possible. Plus, Redfin listings get seen by 70% more buyers. And you get it all for half the listing fee other brokerages often charge.
+                    Get started with a free consultation.</p>
+                    <div class="btn btn btn-search-below">
+                        <input type="text" class="form-control search-input" placeholder="City, Address, School, Agent, ZIP">
+                        <button type="button" class="search-btn-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+              
+            </div>
+            
+
+           
+
+        </div>
+    </div>
+    <!--============================= Biznet finds Homes Section =========================== -->
+    <div class="container biznet-luxury-homes-parent mt-5">
+        <div class="row">
+           
+
+            <div class="col-md-6 biznet-app-description">
+                <h2 >Sell for top dollar and save thousands on fees</h2>
+                <p >Our agents have the experience to price, market, and sell your home for the best price possible. Plus, Redfin listings get seen by 70% more buyers. And you get it all for half the listing fee other brokerages often charge.
+                    Get started with a free consultation.</p>
+                    <div class="btn btn btn-search-below">
+                        <input type="text" class="form-control search-input" placeholder="City, Address, School, Agent, ZIP">
+                        <button type="button" class="search-btn-icon">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+                    </div>
+                  
+                   
+              
+            </div>
+            <div class="col-md-6"><img class="img-fluid biznet-app-img " src="/assets/images/biznet-find.jpg" alt=""></div>
+            
+
+           
+
+        </div>
+    </div>
+        <!--============================= Biznet talk to agent Section =========================== -->
+        <div class="container-fluid biznet-luxury-homes-parent mt-5">
+            <div class="row biznet-agent-row">
+               
+    
+                <div class="col-md-6 biznet-app-description">
+                    <h2 >Talk to a Redfin agent</h2>
+                    <p >Our agents have the experience to price, market, and sell your home for the best price possible. Plus, Redfin listings get seen by 70% more buyers. And you get it all for half the listing fee other brokerages often charge.
+                        Get started with a free consultation.</p>
+                     
+                      
+                       
+                  
+                </div>
+                <div class="col-md-6 biznet-app-talk-agent"> 
+                  <p class="text-justify">Where are you searching for homes?</p>    <div class="btn btn btn-search-below">
+                    <input type="text" class="form-control search-input" placeholder="City, Address, School, Agent, ZIP">
+                    <button type="button" class="search-btn-icon">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                
+    
+               
+    
+            </div>
+        </div>
+    
+        <!--============================= Biznet saecrh tags Section =========================== -->
+        <div class="container py-4">
+            <div class="d-flex flex-column text-center p-5">
+                <h5>You've seen everything</h5>
+                <p>Check back soon for new homes</p>
+            </div>
+            <h3 class="h4 fw-semibold mb-3">Search for homes by city</h3>
+
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <!-- First half (Visible initially) -->
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Albuquerque real estate</a>
+                </div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Alexandria real estate</a>
+                </div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Anchorage real estate</a></div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Arlington real estate</a></div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Ashburn real estate</a></div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Atlanta real estate</a></div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Aurora real estate</a></div>
+                <div class="col my-1"><a href="#" class="text-dark text-decoration-none">Austin real estate</a></div>
+                <div class="col  my-1"><a href="#" class=" text-dark text-decoration-none">Buffalo real estate</a></div>
+                <div class="col  my-1"><a href="#" class=" text-dark text-decoration-none">Burlington real estate</a>
+                </div>
+
+
+                <!-- Second half (Initially hidden) -->
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Bakersfield real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Baltimore real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Baton Rouge real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Beaverton real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Bend real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Birmingham real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Boca Raton real
+                        estate</a></div>
+                <div class="col my-1 hidden-content"><a href="#" class="text-dark text-decoration-none">Boise real
+                        estate</a></div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Cape Coral
+                        real estate</a>
+                </div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Chandler real
+                        estate</a>
+                </div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Charleston
+                        real estate</a>
+                </div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Charlotte real
+                        estate</a>
+                </div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Chattanooga
+                        real estate</a>
+                </div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Chicago real
+                        estate</a></div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Cincinnati
+                        real estate</a>
+                </div>
+                <div class="col  my-1 hidden-content"><a href="#" class=" text-dark text-decoration-none">Colorado
+                        Springs real
+                        estate</a>
+                </div>
+            </div>
+
+            <button class="btn show_more_layoutSet mt-4" id="show-more-btn">Show more</button>
+            <hr class="my-5">
+
+            <h5> Search for apartments by city </h5>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <!-- First part visible initially -->
+                <div class="col"><a href="#" class="text-dark text-decoration-none">Albuquerque apartments for rent</a>
+                </div>
+                <div class="col"><a href="#" class="text-dark text-decoration-none">Alexandria apartments for rent</a>
+                </div>
+                <div class="col"><a href="#" class="text-dark text-decoration-none">Arlington apartments for rent</a>
+                </div>
+
+                <!-- Second part hidden initially -->
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Bakersfield
+                        apartments for rent</a></div>
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Baltimore
+                        apartments
+                        for rent</a></div>
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Barnegat apartments
+                        for rent</a></div>
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Baton Rouge
+                        apartments for rent</a></div>
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Atlanta apartments
+                        for rent</a>
+                </div>
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Augusta apartments
+                        for rent</a>
+                </div>
+                <div class="col hidden-content_1"><a href="#" class="text-dark text-decoration-none">Austin apartments
+                        for rent</a></div>
+
+                <!-- Add more hidden cities as needed -->
+            </div>
+            <button class="btn show_more_layoutSet mt-3" id="show-more-apartments">Show more</button>
+
+            <hr class="my-5">
+
+            <!-- Houses Section -->
+            <h5>Search for houses for rent by city </h5>
+            <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-3">
+                <!-- First part visible initially -->
+                <div class="col"><a href="#" class="text-dark text-decoration-none">Abilene houses for rent</a></div>
+                <div class="col"><a href="#" class="text-dark text-decoration-none">Albany houses for rent</a></div>
+                <div class="col"><a href="#" class="text-dark text-decoration-none">Amarillo houses for rent</a></div>
+
+
+                <!-- Second part hidden initially -->
+                <div class="col hidden-content_2"><a href="#" class="text-dark text-decoration-none">Austin houses for
+                        rent</a></div>
+                <div class="col hidden-content_2"><a href="#" class="text-dark text-decoration-none">Bakersfield houses
+                        for rent</a></div>
+                <div class="col hidden-content_2"><a href="#" class="text-dark text-decoration-none">Birmingham houses
+                        for
+                        rent</a></div>
+                <div class="col hidden-content_2"><a href="#" class="text-dark text-decoration-none">Charlotte houses
+                        for
+                        rent</a></div>
+                <div class="col hidden-content_2  "><a href="#" class="text-dark text-decoration-none">Arlington houses
+                        for rent</a></div>
+                <div class="col hidden-content_2"><a href="#" class="text-dark text-decoration-none">Atlanta houses for
+                        rent</a></div>
+                <div class="col hidden-content_2"><a href="#" class="text-dark text-decoration-none">Augusta houses for
+                        rent</a></div>
+                <!-- Add more hidden cities as needed -->
+            </div>
+            <button class="btn show_more_layoutSet mt-3" id="show-more-houses">Show more</button>
+            <style>
+
+            </style>
+
+        </div>
+
+</body>
+</html>

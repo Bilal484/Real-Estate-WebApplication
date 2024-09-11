@@ -1,0 +1,347 @@
+.biznet-hero-parent{
+
+
+.hero-container{
+    height: 400px;
+    /* width: 100%; */
+    display: flex;
+    /* align-items: center; */
+    justify-content: flex-start;
+    background:url(../images/hero-section.jpg);
+    background-size: cover;
+    background-position: center;
+    
+}
+.hero-container h2{
+    color: white;
+    font-weight: 700;
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+/* Navigation Tabs */
+.real-estate-nav-tabs {
+    display: flex;
+    justify-content: space-between; /* Spread links across the width */
+    width: 600px; /* Adjust width as necessary */
+    margin: 0 auto;
+    padding: 10px 0;
+    border-bottom: none;
+    background-color: transparent;
+}
+
+.real-estate-nav-tabs .nav-link {
+    color: white; /* White text */
+    font-weight: 700; /* Bold text */
+    border: none;
+    border-bottom: 2px solid transparent; /* Border for active */
+    border-radius: 0; /* Remove border radius */
+    margin: 0 10px; /* Space between nav items */
+    transition: border-bottom 0.3s ease-in-out, color 0.3s;
+}
+
+.real-estate-nav-tabs .nav-link.active {
+    border-bottom: 3px solid white; /* Active tab underline */
+}
+
+.real-estate-nav-tabs .nav-link:hover {
+    color: #f2f2f2; /* Lighter text on hover */
+}
+
+/* Search Bar Styling */
+.real-estate-search-bar {
+    display: flex;
+    width: 600px; /* Full-width search bar */
+    margin: 20px auto; /* Center horizontally */
+    border-radius: 4px; /* Slight border radius */
+}
+
+.real-estate-search-bar .form-control {
+    flex-grow: 1; /* Input takes the full space */
+    border: 1px solid #ccc;
+    border-right: none; /* Remove right border on input */
+    padding: 12px 20px; /* Padding for input */
+    border-radius: 4px 0 0 4px; /* Rounded left side */
+}
+
+.real-estate-search-bar .search-btn {
+    background-color: #e62e2e; /* Red search button */
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0; /* Rounded right side */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.real-estate-search-bar .search-btn:hover {
+    background-color: #c62828; /* Darken on hover */
+}
+
+.search-btn i {
+    font-size: 16px;
+}
+
+/* Mobile Responsiveness */
+/* Base Styling for Large Screens (desktops, laptops) */
+.hero-container {
+    height: 400px;
+    display: flex;
+    justify-content: flex-start;
+    background: url(../images/hero-section.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-container h2 {
+    color: white;
+    font-weight: 700;
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+/* Navigation Tabs */
+.real-estate-nav-tabs {
+    display: flex;
+    justify-content: flex-start;
+    width: 440px;
+    margin: 0 ;
+    padding: 10px 0;
+    background-color: transparent;
+}
+
+.real-estate-nav-tabs .nav-link {
+    color: white;
+    font-weight: 700;
+    border: none;
+    border-bottom: 2px solid transparent;
+    margin: 0 0px;
+    transition: border-bottom 0.3s ease-in-out, color 0.3s;
+    
+}
+
+.real-estate-nav-tabs .nav-link.active {
+    border-bottom: 3px solid white;
+}
+
+.real-estate-nav-tabs .nav-link:hover {
+    color: #f2f2f2;
+}
+
+/* Search Bar */
+.real-estate-search-bar {
+    display: flex;
+    width: 440px;
+    margin: 20px auto;
+    border-radius: 4px;
+}
+
+.real-estate-search-bar .form-control {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-right: none;
+    padding: 12px 20px;
+    border-radius: 4px 0 0 4px;
+}
+
+.real-estate-search-bar .search-btn {
+    background-color: #e62e2e;
+    padding: 12px 20px;
+    color: white;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.real-estate-search-bar .search-btn:hover {
+    background-color: #c62828;
+}
+
+
+/* Responsive Styling */
+
+
+/* Large Devices (Desktops, 992px - 1200px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hero-container {
+        height: 450px; /* Slightly smaller height */
+    }
+
+    .real-estate-nav-tabs {
+        width: 650px;
+    }
+
+    .real-estate-search-bar {
+        width: 650px;
+    }
+}
+
+/* Medium Devices (Tablets, 768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+    .hero-container {
+        height: 400px; /* Medium height for tablets */
+    }
+
+    .real-estate-nav-tabs {
+        width: 90%; /* Use percentage width for responsiveness */
+    }
+
+    .real-estate-search-bar {
+        width: 90%; /* Full width on tablets */
+    }
+}
+
+/* Small Devices (Tablets and Small Desktops, 576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+    .hero-container {
+        height: auto; /* Auto height for better stacking */
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .hero-container h2 {
+        font-size: 28px; /* Reduce font size */
+        width: 100%;
+        text-align: center; /* Center text on smaller devices */
+    }
+
+    .real-estate-nav-tabs {
+        flex-direction: column; /* Stack tabs vertically */
+        align-items: center;
+        width: 100%;
+    }
+
+    .real-estate-nav-tabs .nav-link {
+        font-size: 14px; /* Reduce font size */
+        margin-bottom: 10px; /* Add margin between links */
+    }
+
+    .real-estate-search-bar {
+        width: 100%; /* Full width on small devices */
+        flex-direction: column;
+    }
+
+    .real-estate-search-bar .form-control {
+        margin-bottom: 10px;
+    }
+}
+
+/* Extra Small Devices (Mobile Phones, <576px) */
+@media (max-width: 575px) {
+    .hero-container {
+        height: auto; /* Auto height */
+        flex-direction: column;
+        padding: 15px;
+    }
+
+    .hero-container h2 {
+        font-size: 22px; /* Smaller font size */
+        width: 100%;
+        text-align: center; /* Center text */
+    }
+
+    .real-estate-nav-tabs {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .real-estate-nav-tabs .nav-link {
+        font-size: 12px; /* Smaller font size for mobile */
+        margin-bottom: 8px;
+    }
+
+    .real-estate-search-bar {
+        width: 100%; /* Full width on mobile */
+        flex-direction: column; /* Stack vertically */
+    }
+
+    .real-estate-search-bar .form-control {
+        margin-bottom: 10px;
+    }
+
+    .real-estate-search-bar .search-btn {
+        width: 100%; /* Full width button */
+    }
+}
+
+}
+
+.biznet-luxury-homes-parent,
+.biznet-app-parent{
+    .biznet-app-img{
+        width: 100%;
+    }
+    .biznet-app-description {
+        display: flex;
+        flex-direction: column; 
+        justify-content: center; 
+        padding: 20px; 
+        text-align: center; 
+
+        
+    }
+    .biznet-app-description h2{
+        font-weight: bold;
+        text-align: justify;
+        width: 400px;
+
+
+    }
+    .biznet-app-description p{
+        font-weight: 500;
+        text-align: justify;
+        font-size: large;
+        width: 400px;
+
+    }
+    .biznet-app-description .btn-biznet-home-learn-more-btn{
+        width: 150px;
+        font-weight: bold;
+        border-radius: 0;
+    }
+    
+   .btn-search-below{
+    width: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 40px;
+    padding: 10px ;
+    outline: none;
+
+
+   }
+   .btn-search-below input{
+    outline: none;
+   }
+   
+   .search-btn-icon{
+    margin-left: 5px;
+    height: 40px;
+    background-color: #c62828;
+    border: none;
+    outline: none;
+    padding: 10px ;
+    color: white;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .biznet-app-talk-agent-img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   }
+   .biznet-agent-row{
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+   }
+}
+
