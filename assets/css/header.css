@@ -1,5 +1,6 @@
 .header-parent {
     /* Custom dropdown menu styling */
+   
     .dropdown-menu {
         display: none;                 /* Hidden initially */
         opacity: 0;
