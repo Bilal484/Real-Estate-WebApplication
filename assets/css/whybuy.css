@@ -1,0 +1,57 @@
+.nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+.btn-Biznet {
+    background-color: #d32f2f;
+    color: white;
+}
+
+.why-buy{
+    background: var(--color-gray);
+    padding-bottom: 4rem;
+    .card{
+        height: 370px;
+        border: none;
+        
+    }
+    .card-body{
+        padding: 30px;
+        img{
+            margin-bottom: 20px;
+        }
+    }
+}
+
+.get-home-loan{
+    background: var(--color-gray);
+}
+.best-home-search{
+    background: var(--color-gray);
+}
+.best-home-search{
+    .apps-img1{
+        height: 50px;
+    }
+    .apps-img2{
+        height: 50px;
+        width: 100%;
+    
+    }
+}
+
+
+@media (min-width:320px) and (max-width:720px){
+    .best-home-search{
+        .apps-img1{
+            height: 30px;
+        }
+        .apps-img2{
+            height: 30px;
+            width: 100%;
+        
+        }
+    
+    }
+
+}
