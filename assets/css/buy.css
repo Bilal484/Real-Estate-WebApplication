@@ -1,0 +1,49 @@
+main{
+    font-family: var(--font_family);
+}
+
+.buy-portion{
+    .home_cards {
+        .card {
+            transition: 1s all ease;
+
+            &:hover {
+                box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+            }
+        }
+
+
+    }
+    .los-angeles a{
+        color: var(--color);
+        font-size: 18px;
+        text-decoration: none;
+
+    }
+    .los-angeles a:hover{
+        color: #1d898d;
+        font-size: 18px;
+        text-decoration: none;
+
+    }
+    .links-section{
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+   
+}
+
+@media (min-width:320px) and (max-width:720px){
+    .buy-portion{
+        .links-section{
+            display: flex;
+            justify-content: start;
+            align-items: center;
+            flex-direction: column;
+        }
+
+    }
+
+}

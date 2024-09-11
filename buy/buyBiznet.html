@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Navbar</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="why-Biznet.html" id="whyBiznetLink">Why Biznet?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="our-agents.html" id="ourAgentsLink">Our Agents</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="buy-with-Biznet.html" id="buyWithBiznetLink">Buy with
+                            Biznet</a> <!-- Active by default -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="sell-with-Biznet.html" id="sellWithBiznetLink">Sell with Biznet</a>
+                    </li>
+                </ul>
+                <button class="btn btn-Biznet ms-auto" id="meetAgentBtn">Meet a Biznet agent</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="container mt-5">
+            <div class="row">
+                <div class="col-lg-6 my-auto">
+                    <h3>Ready to sell your current home?</h3>
+                    <p>Our agents have the experience to price, market, and sell your home for the best price possible.
+                        Plus, Redfin listings get seen by 70% more buyers. And you get it all for half the listing fee
+                        other brokerages often charge.
+                        Learn more</p>
+                </div>
+                <div class="col-lg-6">
+                    <img src="/assets/images/whybuy01.jpg" alt="" height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+        <div class="why-buy">
+            <h2 class="text-center py-5">Why buy with Redfin?</h2>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4">
+                        <div class="card shadow mt-3">
+                            <div class="card-body">
+                                <img src="/assets/images/whybuyicon01.png" alt="" width="auto" height="80px">
+                                <h4 class="card-title">Find homes first, tour homes fast</h4>
+                                <p class="card-text">Stay ahead of other buyers with our top-rated real estate app. See
+                                    updated listings every two minutes and book tours same-day with a Redfin agent.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card shadow mt-3">
+                            <div class="card-body">
+                                <img src="/assets/images/whybuyicon02.png" alt="" width="auto" height="80px">
+                                <h4 class="card-title">Work with the best agents</h4>
+                                <p class="card-text">Redfin agents are among the most experienced in the industry. We're
+                                    local experts who know how to help you win the right home at the right price.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="card shadow mt-3">
+                            <div class="card-body">
+                                <img src="/assets/images/whybuyicon03.png" alt="" width="auto" height="80px">
+                                <h4 class="card-title">Sign early. Save more.</h4>
+                                <p class="card-text">When you sign with a Redfin agent before your second tour, you'll
+                                    qualify for a 0.25% savings on our buyer's agent fee when you buy your next home.
+                                    And that's on top of the thousands customers save with our 1% listing fee when they
+                                    buy and sell.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="see-how">
+            <div class="container my-5">
+                <div class="row align-items-center">
+                    <!-- Text Section -->
+                    <div class="col-lg-6 col-md-12 mb-4">
+                        <h2>See how your savings add up</h2>
+                        <p>
+                            Customers who buy and sell with us save an average of $6,000.
+                            <span class="text-muted">*</span> And when you sign with a Redfin agent before your second
+                            tour,
+                            you'll qualify for a 0.25% savings on our buyer's agent fee when you buy your next home—an
+                            average
+                            of $1,500. <span class="text-muted">*</span> It all adds up to an average of $7,500 in
+                            savings.
+                            Take the first step by chatting with a local agent.
+                        </p>
+                        <!-- Search Input -->
+                        <div class="input-group mt-3">
+                            <input type="text" class="form-control" placeholder="Find an agent in your area"
+                                aria-label="Find an agent in your area">
+                            <button class="btn btn-danger" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="col-lg-6 col-md-12">
+                        <img src="/assets/images/whybuy02.jpg" alt="Redfin Savings" class="img-fluid rounded"
+                            height="100%" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Get a home loan -->
+        <div class="get-home-loan">
+            <div class="container text-center p-5">
+                <h2>Get a home loan with Redfin’s lender and save even more</h2>
+                <p>Save up to 0.25% on the standard interest rate when you finance with Bay Equity, our full-service
+                    mortgage company.</p>
+                <div class="btn btn-danger">Apply Now</div>
+            </div>
+        </div>
+
+        <!-- search for perfect -->
+        <div class="search-perfect">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="/assets/images/whybuy03.jpg" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-lg-6 my-auto">
+                        <h3>Searching for the perfect luxury property?</h3>
+                        <p>Redfin Premier agents are local experts with years of experience in high-end real estate, so
+                            we can help buyers like you succeed in today’s market.</p>
+                        <div class="btn btn-danger">
+                            Learn More
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="ready-to-sell">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-6 my-auto">
+                        <h3>Ready to sell your current home?</h3>
+                        <p>Our agents have the experience to price, market, and sell your home for the best price
+                            possible.
+                            Plus, Redfin listings get seen by 70% more buyers. And you get it all for half the listing
+                            fee
+                            other brokerages often charge.</p>
+                        <div class="btn btn-danger">Learn More</div>
+                    </div>
+
+                    <div class="col-lg-6">
+                        <img src="/assets/images/whybuy04.jpg" alt="" height="100%" width="100%">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- best home search -->
+        <div class="best-home-search">
+            <div class="container p-4">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <img src="/assets/images/whybuy05.png" alt="" height="100%" width="100%">
+                    </div>
+                    <div class="col-lg-6 my-auto">
+                        <h2>The best home search starts with the Redfin app</h2>
+                        <p>With 3D walkthroughs, 40+ filters to narrow down your search, and monthly payment
+                            calculators—our app makes it easy to find the right home from anywhere.</p>
+                        <div class="row">
+                            <div class="col-lg-6 d-flex justify-content-around">
+                                <img class="apps-img1" src="/assets/images/google-play-badge.png" alt=""  >
+                                <img class="apps-img2" src="/assets/images/apple-play-badge.svg" alt="" >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light text-dark py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold">Join us</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Become an Agent</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Get
+                                referrals</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold">About us</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Why
+                                BIZNET?</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Community Impact</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Diversity & Inclusion</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Life
+                                at BIZNET</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Press</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Investors</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Blog</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Real
+                                Estate News</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold">Find us</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Help
+                                Center</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Advertise</a></li>
+                    </ul>
+                    <div class="d-flex my-3">
+                        <a href="javascript:void(0)" class="text-muted me-2"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:void(0)" class="text-muted me-2"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="text-muted"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <h6 class="fw-semibold">Subsidiaries</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Rent.</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">ApartmentGuide</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Bay
+                                Equity Home Loans</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Title Forward</a></li>
+                    </ul>
+                    <h6 class="fw-semibold">Countries</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li class="d-flex align-items-center"><span>🇺🇸 United States</span></li>
+                        <li class="d-flex align-items-center"><span>🇨🇦 Canada</span></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6">
+                    <div class="bg-light p-4 text-muted">
+                        <p class="mb-2 ">Copyright: © 2024 BIZNET. All rights reserved.</p>
+                        <p class="mb-2 ">Updated January 2023: By searching, you agree to the <a
+                                href="javascript:void(0)" class="text-decoration-none ">Terms of Use</a>, and <a
+                                href="javascript:void(0)" class="text-decoration-none ">Privacy
+                                Policy</a>.</p>
+                        <p class="mb-2 "><a href="javascript:void(0)" class="text-decoration-none ">Do not sell
+                                or share my
+                                personal
+                                information.</a></p>
+                        <p class="mb-2 ">REDFIN and all BIZNET variants, TITLE FORWARD, WALK SCORE, and the R
+                            logos, are trademarks of BIZNET Corporation, registered or pending in the USPTO.</p>
+                        <p class="mb-2 ">California DRE javascript:void(0)01521930</p>
+                        <p class="mb-2 ">Redfin is licensed to do business in New York as BIZNET Real Estate.
+                            <a href="javascript:void(0)" class="text-decoration-none ">NY Standard Operating
+                                Procedures</a>
+                        </p>
+                        <p class="mb-2 ">New Mexico Real Estate Licenses</p>
+                        <p class="mb-2 "><a href="javascript:void(0)" class="text-decoration-none ">TREC: Info
+                                About Brokerage
+                                Services, Consumer Protection Notice</a></p>
+                        <p class="mt-4 ">
+                            If you are using a screen reader, or having trouble reading this website, please
+                            call
+                            BIZNET Customer Support for help at <a href="tel:1-844-759-7732"
+                                class="text-decoration-none ">1-844-759-7732</a>.
+                        </p>
+                        <p class="mt-4  font-weight-bold">
+                            🏠 BIZNET IS COMMITTED TO AND ABIDES BY THE FAIR HOUSING ACT AND EQUAL OPPORTUNITY
+                            ACT.
+                            <a href="javascript:void(0)" class="text-decoration-none ">READ BIZNET'S FAIR
+                                HOUSING POLICY</a> AND THE
+                            <a href="javascript:void(0)" class="text-decoration-none ">NEW YORK STATE FAIR
+                                HOUSING NOTICE</a>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+
+    <!-- Include Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // Optional: Handling the button click
+        document.getElementById('meetAgentBtn').addEventListener('click', () => {
+            alert('Meet a Biznet agent clicked!');
+        });
+    </script>
+
+</body>
+
+</html>

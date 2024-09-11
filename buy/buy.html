@@ -1,0 +1,779 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Buy</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <!-- Bootstrap CSS v5.2.1 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <header>
+        <!-- place navbar here -->
+    </header>
+    <main>
+        <div class="container my-4">
+            <div class="row">
+                <div class="col-lg-4">
+                    <h3>Houses for sale near me</h3>
+                    <p>Find houses for sale near you. View photos, open house information, and property details for
+                        nearby real estate.</p>
+                </div>
+                <div class="col-lg-8">
+                    <img src="/assets/images/buyimg.png" alt="" height="100%" width="100%">
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-5">
+            <form class="row g-2 align-items-center">
+                <div class="col-md-4">
+                    <label for="location" class="form-label">Location</label>
+                    <input type="text" class="form-control" id="location" placeholder="Los Angeles">
+                </div>
+                <div class="col-md-4">
+                    <label for="priceRange" class="form-label">Price range</label>
+                    <div class="d-flex">
+                        <select class="form-select me-2" id="priceMin">
+                            <option selected>No min</option>
+                            <option value="1">$100</option>
+                            <option value="2">$200</option>
+                            <option value="3">$300</option>
+                        </select>
+                        <select class="form-select" id="priceMax">
+                            <option selected>No max</option>
+                            <option value="1">$500</option>
+                            <option value="2">$1000</option>
+                            <option value="3">$2000</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <button type="submit" class="btn btn-danger w-100 mt-4">Search</button>
+                </div>
+            </form>
+        </div>
+        <div class="buy-portion">
+            <div class="cards-sections my-4">
+                <!-- Los Angeles houses for sale -->
+                <div class="container los-angeles mb-5">
+                    <h3>Los Angeles houses for sale</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _1.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _11.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _12.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _13.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _14.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _15.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _16.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)">See all 8440 Los Angeles houses for sale</a>
+                </div>
+                <hr>
+                <!-- Glendale houses for sale -->
+                 <div class="container my-5 los-angeles glendale-houses">
+                    <h3>Glendale houses for sale</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _1.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _11.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _12.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _13.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _14.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _15.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _16.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)">See all 213 Glendale houses for sale</a>
+                 </div>
+                 <hr>
+                 <!-- Torrance houses for sale -->
+                 <div class="container my-5 los-angeles Torrance-houses">
+                    <h3>Torrance houses for sale</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _1.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _11.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _12.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _13.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _14.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _15.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _16.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)">See all 214 Torrance houses for sale</a>
+                 </div>
+                 <!-- Whittier houses for sale -->
+                 <div class="container my-5 los-angeles Torrance-houses">
+                    <h3>Whittier houses for sale</h3>
+                    <div class="row mt-4">
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _1.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty2" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _11.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _12.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _13.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty2" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6 home_cards col-lg-4 mb-4">
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty3" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="/assets/images/real estate _14.jpg" alt="Property 1"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _15.jpg"
+                                                alt="Property 1 - Second Image" class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="/assets/images/real estate _16.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
+                                    </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty3" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                                <!-- End of Carousel -->
+
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
+                                        </div>
+                                    </div>
+                                    <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)">See all 149 Whittier houses for sale</a>
+                 </div>
+                 <hr>
+                 <!-- Popular Searches Near Me -->
+                  <div class="container mt-5">
+                    <h3>Popular Searches Near Me</h3>
+                    <div class="los-angeles links-section  my-5">
+                        <a href="#">Condos for sale near me</a>
+                        <a href="#">Land for sale near me</a>
+                        <a href="#">Open Houses near me</a>
+                        <hr>
+                    </div>
+                  </div>
+            </div>
+        </div>
+    </main>
+    <footer class="bg-light text-dark py-4">
+        <div class="container">
+            <div class="row g-4">
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold">Join us</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Become an Agent</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Get
+                                referrals</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Careers</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold">About us</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Why
+                                BIZNET?</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Community Impact</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Diversity & Inclusion</a>
+                        </li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Life
+                                at BIZNET</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Press</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Investors</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Blog</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Real
+                                Estate News</a></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-2">
+                    <h6 class="fw-semibold">Find us</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Help
+                                Center</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Advertise</a></li>
+                    </ul>
+                    <div class="d-flex my-3">
+                        <a href="javascript:void(0)" class="text-muted me-2"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:void(0)" class="text-muted me-2"><i
+                                class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="text-muted"><i
+                                class="fa-brands fa-instagram"></i></a>
+                    </div>
+                    <h6 class="fw-semibold">Subsidiaries</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Rent.</a></li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">ApartmentGuide</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Bay
+                                Equity Home Loans</a>
+                        </li>
+                        <li><a href="javascript:void(0)"
+                                class="text-muted text-decoration-none hover-link">Title Forward</a></li>
+                    </ul>
+                    <h6 class="fw-semibold">Countries</h6>
+                    <ul class="list-unstyled mt-2">
+                        <li class="d-flex align-items-center"><span>🇺🇸 United States</span></li>
+                        <li class="d-flex align-items-center"><span>🇨🇦 Canada</span></li>
+                    </ul>
+                </div>
+                <div class="col-6 col-md-6">
+                    <div class="bg-light p-4 text-muted">
+                        <p class="mb-2 ">Copyright: © 2024 BIZNET. All rights reserved.</p>
+                        <p class="mb-2 ">Updated January 2023: By searching, you agree to the <a
+                                href="javascript:void(0)" class="text-decoration-none ">Terms of Use</a>, and <a
+                                href="javascript:void(0)" class="text-decoration-none ">Privacy
+                                Policy</a>.</p>
+                        <p class="mb-2 "><a href="javascript:void(0)" class="text-decoration-none ">Do not sell
+                                or share my
+                                personal
+                                information.</a></p>
+                        <p class="mb-2 ">REDFIN and all BIZNET variants, TITLE FORWARD, WALK SCORE, and the R
+                            logos, are trademarks of BIZNET Corporation, registered or pending in the USPTO.</p>
+                        <p class="mb-2 ">California DRE javascript:void(0)01521930</p>
+                        <p class="mb-2 ">Redfin is licensed to do business in New York as BIZNET Real Estate.
+                            <a href="javascript:void(0)" class="text-decoration-none ">NY Standard Operating
+                                Procedures</a>
+                        </p>
+                        <p class="mb-2 ">New Mexico Real Estate Licenses</p>
+                        <p class="mb-2 "><a href="javascript:void(0)" class="text-decoration-none ">TREC: Info
+                                About Brokerage
+                                Services, Consumer Protection Notice</a></p>
+                        <p class="mt-4 ">
+                            If you are using a screen reader, or having trouble reading this website, please
+                            call
+                            BIZNET Customer Support for help at <a href="tel:1-844-759-7732"
+                                class="text-decoration-none ">1-844-759-7732</a>.
+                        </p>
+                        <p class="mt-4  font-weight-bold">
+                            🏠 BIZNET IS COMMITTED TO AND ABIDES BY THE FAIR HOUSING ACT AND EQUAL OPPORTUNITY
+                            ACT.
+                            <a href="javascript:void(0)" class="text-decoration-none ">READ BIZNET'S FAIR
+                                HOUSING POLICY</a> AND THE
+                            <a href="javascript:void(0)" class="text-decoration-none ">NEW YORK STATE FAIR
+                                HOUSING NOTICE</a>.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </footer>
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
