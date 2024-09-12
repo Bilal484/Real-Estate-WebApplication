@@ -1,0 +1,864 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Affordabolity Calculator</title>
+    <!-- Bootstrap 5.3.2 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap 5.3.2 JavaScript Bundle -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <script src="/assets/js/header.js"></script>
+</head>
+
+<div class="header-parent">
+    <header>
+        
+        <nav class="navbar navbar-expand-lg bg-light p-3">
+            <div class="container-fluid">
+                <a class="navbar-brand text-danger fw-bold h1" href="#"><img src="/assets/images/PNG Logo Files/Grayscale Transparent.png" width="50" alt=""></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <!-- Dropdown Menu 1 -->
+        <!-- Dropdown Menu 1 -->
+        <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button">
+              Buy
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+              <!-- Column 1: Popular Searches -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Popular Searches</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Homes for sale</a></li>
+                  <li><a class="dropdown-item" href="#">Condos for sale</a></li>
+                  <li><a class="dropdown-item" href="#">Land for sale</a></li>
+                  <li><a class="dropdown-item" href="#">Open houses</a></li>
+                </div>
+              </div>
+              
+              <!-- Column 2: Buying Options -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Buying Options</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Buy with Redfin</a></li>
+                  <li><a class="dropdown-item" href="#">Redfin Premier</a></li>
+                </div>
+              </div>
+              
+              <!-- Column 3: Buying Resources -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Buying Resources</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Affordability Calculator</a></li>
+                  <li><a class="dropdown-item" href="#">Home Buying Guide</a></li>
+                  <li><a class="dropdown-item" href="#">Find Lenders & Inspectors</a></li>
+                  <li><a class="dropdown-item" href="#">Free Home Buying Classes</a></li>
+                  <li><a class="dropdown-item" href="#">US Housing Market</a></li>
+                </div>
+              </div>
+            </ul>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownRent" role="button">
+              Rent
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdownRent">
+              <!-- Column 1: Popular Searches -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Popular Searches</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Apartments for rent</a></li>
+                  <li><a class="dropdown-item" href="#">Houses for rent</a></li>
+                  <li><a class="dropdown-item" href="#">Condos for rent</a></li>
+                  <li><a class="dropdown-item" href="#">Townhomes for rent</a></li>
+                </div>
+              </div>
+              
+              <!-- Column 2: Rental Options -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Rental Options</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Find a Rental</a></li>
+                  <li><a class="dropdown-item" href="#">Rent with Redfin</a></li>
+                </div>
+              </div>
+              
+              <!-- Column 3: Rental Resources -->
+              <div class="dropdown-column">
+                <li><span class="dropdown-header">Rental Resources</span></li>
+                <div class="dropdown-grid">
+                  <li><a class="dropdown-item" href="#">Renting Guide</a></li>
+                  <li><a class="dropdown-item" href="#">Rental Market Trends</a></li>
+                  <li><a class="dropdown-item" href="#">Rent Affordability Calculator</a></li>
+                  <li><a class="dropdown-item" href="#">Tenant Rights & Responsibilities</a></li>
+                  <li><a class="dropdown-item" href="#">Find Local Property Managers</a></li>
+                </div>
+              </div>
+            </ul>
+        </li>
+        
+  
+  
+  <!-- Dropdown3 -->
+  <li class="nav-item dropdown">
+    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownSell" role="button">
+      Sell
+    </a>
+    <ul class="dropdown-menu" aria-labelledby="navbarDropdownSell">
+      <!-- Column 1: Popular Searches -->
+      <div class="dropdown-column">
+        <li><span class="dropdown-header">Popular Searches</span></li>
+        <div class="dropdown-grid">
+          <li><a class="dropdown-item" href="#">Sell My Home</a></li>
+          <li><a class="dropdown-item" href="#">Home Valuation</a></li>
+          <li><a class="dropdown-item" href="#">List with Redfin</a></li>
+          <li><a class="dropdown-item" href="#">Selling Tips</a></li>
+        </div>
+      </div>
+      
+      <!-- Column 2: Selling Options -->
+      <div class="dropdown-column">
+        <li><span class="dropdown-header">Selling Options</span></li>
+        <div class="dropdown-grid">
+          <li><a class="dropdown-item" href="#">Sell with Redfin</a></li>
+          <li><a class="dropdown-item" href="#">Instant Offers</a></li>
+          <li><a class="dropdown-item" href="#">Sell for Top Dollar</a></li>
+        </div>
+      </div>
+      
+      <!-- Column 3: Selling Resources -->
+      <div class="dropdown-column">
+        <li><span class="dropdown-header">Selling Resources</span></li>
+        <div class="dropdown-grid">
+          <li><a class="dropdown-item" href="#">Home Selling Guide</a></li>
+          <li><a class="dropdown-item" href="#">Market Analysis</a></li>
+          <li><a class="dropdown-item" href="#">Find a Local Agent</a></li>
+          <li><a class="dropdown-item" href="#">Staging Tips</a></li>
+          <li><a class="dropdown-item" href="#">Closing Costs Calculator</a></li>
+        </div>
+      </div>
+    </ul>
+</li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Biznet Premier</a>
+                        </li>
+                       <!-- Dropdown4 -->
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMortgage" role="button">
+                          Mortgage
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMortgage">
+                        
+                          
+                          <!-- Column 3: Mortgage Resources -->
+                          <div class="dropdown-column">
+                            <li><span class="dropdown-header">Mortgage Resources</span></li>
+                            <div class="dropdown-grid">
+                              <li><a class="dropdown-item" href="#">Mortgage Guide</a></li>
+                              <li><a class="dropdown-item" href="#">Interest Rates</a></li>
+                              <li><a class="dropdown-item" href="#">Loan Application Tips</a></li>
+                              <li><a class="dropdown-item" href="#">Compare Lenders</a></li>
+                              <li><a class="dropdown-item" href="#">Mortgage Glossary</a></li>
+                            </div>
+                          </div>
+                        </ul>
+                    </li>
+                    
+                       <!-- Dropdown5 -->
+                       <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownAgents" role="button">
+                          Real Estate Agents
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownAgents">
+                        
+                          
+                         
+                          
+                          <!-- Column 3: Agent Resources -->
+                          <div class="dropdown-column">
+                            <li><span class="dropdown-header">Agent Resources</span></li>
+                            <div class="dropdown-grid">
+                              <li><a class="dropdown-item" href="#">Real Estate Agent Guide</a></li>
+                              <li><a class="dropdown-item" href="#">Market Trends & Insights</a></li>
+                              <li><a class="dropdown-item" href="#">Agent Training & Certification</a></li>
+                              <li><a class="dropdown-item" href="#">Referral Programs</a></li>
+                              <li><a class="dropdown-item" href="#">Success Stories</a></li>
+                            </div>
+                          </div>
+                        </ul>
+                    </li>
+                    
+                        <li class="nav-item">
+                            <a class="nav-link text-muted" href="#">Feed</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center">
+                        <button class="btn btn-outline-secondary me-2">Login / SignUp</button>
+                        <div class="dropdown">
+                           
+                           
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+</div>
+
+<body>
+    <div class="parent-affordablity-calculator">
+        <div class="container  mx-auto p-4 rounded ">
+            <div class="row affordibility-calculatot-row">
+                <div class="col-md-6 custom-card shadow-custom p-4 bg-white rounded">
+                    <!-- Net Income -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h2 class="h6 fw-bold mb-0">Net income</h2>
+                      <p class="text-dark fw-bold mb-0">$69,000</p>
+                    </div>
+                  
+                    <!-- Annual Household Income -->
+                    <div class="mb-4">
+                      <label class="form-label text-muted fw-normal">Annual household income *</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="$75,000" />
+                        <span class="input-group-text">/ year</span>
+                      </div>
+                      <small class="form-text text-muted">Before taxes. Include any co-buyer's income.</small>
+                    </div>
+                  
+                    <!-- Monthly Debts -->
+                    <div class="mb-4">
+                      <label class="form-label text-muted fw-normal">Monthly debts *</label>
+                      <div class="input-group">
+                        <input type="text" class="form-control" placeholder="$500" />
+                        <span class="input-group-text">/ month</span>
+                      </div>
+                      <small class="form-text text-muted">Obligations like loan and debt payments or alimony, but not costs like groceries or utilities.</small>
+                    </div>
+                  
+                    <!-- Down Payment -->
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                      <h2 class="h6 fw-bold mb-0">Down payment</h2>
+                      <p class="text-dark fw-bold mb-0">25.3%</p>
+                    </div>
+                  
+                    <div class="mb-4">
+                      <label class="form-label text-muted fw-normal">Cash *</label>
+                      <input type="text" class="form-control" placeholder="$50,000" />
+                      <small class="form-text text-muted">Cash you can pay when you close.</small>
+                    </div>
+                  
+                    <!-- Home to Sell -->
+                    <div class="mb-4">
+                      <label class="form-label text-muted fw-normal">Do you have a home to sell?</label>
+                      <button class="btn btn-light w-100 text-start">Add my home equity</button>
+                    </div>
+                  
+                    <!-- Veteran -->
+                    <div class="mb-4">
+                      <label class="form-label text-muted fw-normal">Are you a veteran?</label>
+                      <div class="d-inline-flex align-items-center">
+                        <div class="form-check form-switch">
+                          <input class="form-check-input" type="checkbox" id="switchButton">
+                          <label class="form-check-label px-3 text-dark" for="switchButton">YES</label>
+                        </div>
+                      </div>
+                      <small class="form-text text-muted">Active U.S. military, veterans, and spouses are eligible for a $0 down VA loan with no private mortgage insurance.</small>
+                    </div>
+                  
+                    <!-- Location -->
+                    <div class="mb-4">
+                      <h2 class="h6 fw-bold mb-0">Location</h2>
+                      <label class="form-label text-muted fw-normal">Where are you buying?</label>
+                      <input type="text" class="form-control" placeholder="City, neighborhood, or zip" />
+                      <small class="form-text text-muted">To calculate local taxes and costs.</small>
+                    </div>
+                  
+                    <!-- Advanced Options -->
+                    <button class="btn btn-light w-100 text-start">Advanced options</button>
+                  </div>
+                  
+
+                <div class="col-md-6 shadow-custom">
+                    <div class="bg-white p-4 rounded shadow-sm" style="max-width: 500px;">
+                        <!-- Display Price -->
+                        <div class="d-flex align-items-center mb-3">
+                            <h1 class="fs-1 fw-bold text-dark">$198,019</h1>
+                        </div>
+
+                        <!-- Monthly Payment -->
+                        <div class="mb-3 d-flex justify-content-between align-items-center Monthly-Payment">
+                            <label class="form-label text-muted">Monthly payment</label>
+                            <span class="d-block text-muted">$990 <i class="bi bi-info-circle"></i></span>
+                        </div>
+
+                        <!-- Down Payment -->
+                        <div class="mb-3 d-flex justify-content-between align-items-center Monthly-Payment">
+                            <label class="form-label text-muted">Down payment</label>
+                            <span class="d-block text-muted">25.3%</span>
+                        </div>
+
+                        <!-- Debt-to-Income Ratio -->
+                        <div class="mb-3">
+                            <label class="form-label form-label-ratio text-muted">Debt-to-income ratio:</label>
+                            <div class="d-flex align-items-center">
+                                <span class="text-dark fw-bold">20%</span>
+                                <span class="mx-2 text-muted">|</span>
+                                <span class="text-muted">Comfortable</span>
+                            </div>
+                            <input type="range" class="form-range mt-2 debt-income-slider" min="0" max="100" value="20">
+                        </div>
+
+                        <!-- Button -->
+                        <button class="btn btn btn-get-qoute-a py-2 ">Veterans: get a quote</button>
+
+                        <!-- Additional Information -->
+                        <div class="d-flex justify-content-center mt-3">
+                            <p class="text-muted">Add a location to see homes that fit your budget</p>
+                            <i class="bi bi-geo-alt ms-2"></i>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+    <!-- second container -->
+    <div class="container container-second-des mx-auto p-4  text-dark">
+        <h1 class="h2 fw-bold mb-4">How we calculate how much house you can afford</h1>
+        <p class="mb-4">
+            Our home affordability calculator estimates how much home you can afford by considering where you live, what
+            your annual income is, how much you have saved for a down payment, and what your
+            monthly debts or spending looks like. This estimate will give you a brief overview of what you can afford
+            when considering buying a house.
+        </p>
+        <p class="mb-4">
+            Go one step further by applying some of the advanced filters for a more precise picture of what you can
+            afford for a future residence by including the costs associated with homeownership. The
+            advanced options include things like monthly homeowners insurance, property interest rate, private mortgage
+            insurance when applicable, loan type, and the property tax rate. The more variables you
+            enter into the home affordability calculator will result in a closer approximation of how much house you can
+            afford.
+        </p>
+        <h2 class="h4 fw-semibold mt-5 mb-2">How to calculate annual income for your household</h2>
+        <p class="mb-4">
+            In order to determine how much mortgage you can afford to pay each month, start by looking at how much you
+            earn each year before taxes. Consider all your earnings for the year, which could include
+            salary, wages, tips, commission, etc.
+        </p>
+        <p class="mb-4">
+            If you have a spouse or a partner that has an income which will also contribute to the monthly mortgage,
+            make sure to include that as well to yield your gross annual income for your household.
+            Then take your annual income and divide by 12 to determine your monthly income.
+        </p>
+        <h3 class="h5 fw-medium mt-4 mb-2">Follow the 28/36 debt-to-income rule</h3>
+        <p class="mb-4">
+            This rule states that you do not want to spend more than 28% of your monthly income on housing-related
+            expenses and not spend more than 36% of your income against all debts, including your new
+            mortgage. Keeping within these parameters will ensure you can still comfortably cover your living expenses
+            and save for retirement.
+        </p>
+        <p class="mb-4">Example: Let’s say you and your spouse have a combined monthly income of $5,000. Applying the
+            28/36 rule, you wouldn’t want to spend more than:</p>
+        <ul class="list-unstyled ms-4 mb-4">
+            <li>• $1,400 on housing-related expenses ($5,000 x 28%)</li>
+            <li>• $1,800 on total debt ($5,000 x 36%)</li>
+        </ul>
+        <h2 class="h4 fw-semibold mt-5 mb-2">How much of a down payment do you need for a house?</h2>
+        <p class="mb-4">
+            A 20% down payment is standard if you can afford it. Though some mortgage loans may only require as little
+            as 3.5 percent down, or even a lower amount, a larger down payment will have a greater
+            impact on your monthly mortgage payment.
+        </p>
+        <p class="mb-4">
+            Your down payment effectively reduces the total amount of your home loan, which increases your home
+            affordability estimate, and at the same time, decreases your mortgage payment each month. For
+            example, below is a chart showing how a certain level of down payments, based on a percentage of the sale
+            price, directly impacts your monthly mortgage payment based on a 30-year mortgage at a
+            fixed rate of 4.241% APR:
+        </p>
+    </div>
+    <!-- third container -->
+    <div class="d-flex p-5  justify-content-center align-items-center ">
+        <div class="card  p-3 rounded-lg">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table text-dark">
+                        <th class="p-2">Percentage</th>
+                        <th class="p-2">Down Payment</th>
+                        <th class="p-2">Home Price</th>
+                        <th class="p-2">Monthly Mortgage Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-hover">
+                        <td class="p-2">20%</td>
+                        <td class="p-2">$60,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,179.39</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">15%</td>
+                        <td class="p-2">$45,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,253.10</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">10%</td>
+                        <td class="p-2">$30,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,326.82</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">5%</td>
+                        <td class="p-2">$15,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,400.53</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">0%</td>
+                        <td class="p-2">$0</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,474.24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 4th container -->
+    <div class="container max-w-2xl p-4">
+        <h2 class="text-center h2 fw-bold mb-4">Create your list of monthly expenses</h2>
+        <p class="text-secondary mb-4">
+            Lenders calculate how much they will lend you to buy a home based on your monthly income minus any fixed,
+            recurring expenses you’re obligated to pay. Once you have your monthly expenses written
+            down into a list, you can more accurately determine how much money you have left to spend on a monthly
+            mortgage.
+        </p>
+        <p class="text-secondary mb-4">You should include expenses such as the following:</p>
+        <ul class="mb-4 ps-4">
+            <li>Student loans</li>
+            <li>Car loans</li>
+            <li>Credit card debt payments</li>
+            <li>Alimony</li>
+            <li>Child support</li>
+        </ul>
+        <p class="text-secondary mb-4">Lenders don't include living expenses as part of this calculation. When adding up
+            your monthly debts, you should not include costs such as:</p>
+        <ul class="mb-4 ps-4">
+            <li>Utilities</li>
+            <li>Transportation costs</li>
+            <li>Gas</li>
+            <li>Electricity</li>
+            <li>Groceries</li>
+            <li>Child care</li>
+            <li>Car insurance</li>
+            <li>Life insurance</li>
+            <li>Health insurance</li>
+            <li>Cable bills</li>
+            <li>Telephone bills</li>
+        </ul>
+        <p class="text-secondary mb-4">List out your expenses and then add them together to get your total monthly
+            spending.</p>
+    </div>
+    <!-- 5th -->
+    <div class="container max-w-3xl p-4">
+        <h1 class="h1 text-center fw-bold mb-4">What are the different types of home loans?</h1>
+        <p>
+            There are several types of home loans, but which one is right for you will depend entirely on what you
+            qualify for and what ultimately makes the most sense for your financial situation. Below are
+            the five most common home loans you will encounter.
+        </p>
+
+        <h2 class="h2 text-center fw-semibold mt-6">Fixed-Rate Loan</h2>
+        <p>
+            Fixed-rate loans have the same interest rate for the entire duration of the loan. That means your monthly
+            home payment will be the same, even for long-term loans, such as 30-year fixed-rate
+            mortgages. Two benefits to this mortgage loan type are stability and being able to calculate your total
+            interest on your home upfront.
+        </p>
+
+        <h2 class="h2 text-center fw-semibold mt-6">Adjustable-Rate Loan</h2>
+        <p>
+            Adjustable-rate mortgages (ARMs) have interest rates that can change over time. Typically, they start out at
+            a lower interest rate than a fixed-rate loan and hold that rate for a set number of
+            years before changing interest rates from year to year. For example, if you have a 5/1 ARM, you will have
+            the same interest rate for the first 5 years, and then your mortgage interest rate will
+            change from year to year. The main benefit of an adjustable-rate loan is starting off with a lower interest
+            rate to improve affordability.
+        </p>
+
+        <h2 class="h2 text-center fw-semibold mt-6">FHA Loan</h2>
+        <p>
+            Most home loans require a 20% down payment, but Federal Housing Administration (FHA) loans only require a
+            minimum of 3.5%. This type of loan opens the door for many potential homeowners that do
+            not have the savings for a substantial down payment. However, this loan typically requires private mortgage
+            insurance (PMI) which should be added into your monthly expenditures. PMI is usually
+            .05-1% of the cost of the home loan but may vary depending on credit score.
+        </p>
+
+        <h2 class="h2 text-center fw-semibold mt-6">USDA Loan</h2>
+        <p>
+            This loan type is specifically designed for families looking to buy homes in rural areas. Similar to the FHA
+            loan, this home loan lets lower-income families become homeowners. The loan does not
+            require a down payment, but you will have to get private mortgage insurance.
+        </p>
+
+        <h2 class="h2 text-center fw-semibold mt-6">VA Loan</h2>
+        <p>
+            This loan is a great option for anyone who is a veteran or currently serving in the United States military.
+            The loan does not require any down payment, and unlike other loans, it also does not
+            require private mortgage insurance.
+        </p>
+
+        <h1 class="h1 text-center fw-bold mt-8">How loan term and interest rates impact your mortgage</h1>
+        <p>
+            The monthly amount of your mortgage payment depends on loan term (duration) and interest rate. Generally, a
+            longer-term loan will have lower monthly payments, but at a higher interest rate, so
+            you’ll end up paying more money over the life of the loan. You can build up your credit or save for a larger
+            down payment to help qualify for a lower interest rate. A lender can also help
+            determine your mortgage affordability, and present the best loan term and interest rate for your home.
+        </p>
+
+        <p>
+            The table below demonstrates the difference between a 15 and a 30-year loan and how it would impact your
+            monthly mortgage payment if all other variables, including interest rates, remained equal.
+            Using a home loan of $300,000, this would be the result (based on a fixed rate of 4.241% APR):
+        </p>
+    </div>
+    <!-- 6ht  -->
+    <div class="d-flex p-5  justify-content-center align-items-center ">
+        <div class="card  p-3 rounded-lg">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table text-dark">
+                        <th class="p-2">Percentage</th>
+                        <th class="p-2">Down Payment</th>
+                        <th class="p-2">Home Price</th>
+                        <th class="p-2">Monthly Mortgage Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-hover">
+                        <td class="p-2">20%</td>
+                        <td class="p-2">$60,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,179.39</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">15%</td>
+                        <td class="p-2">$45,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,253.10</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">10%</td>
+                        <td class="p-2">$30,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,326.82</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">5%</td>
+                        <td class="p-2">$15,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,400.53</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">0%</td>
+                        <td class="p-2">$0</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,474.24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <p class="mt-5 container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates quod eum
+        quis corporis obcaecati dicta mollitia sequi nemo nisi rerum numquam ea corrupti earum ullam, animi ipsam neque
+        soluta laboriosam. Est vel quas labore architecto culpa itaque quae laboriosam.</p>
+    <div class="d-flex p-5 mt-5  justify-content-center align-items-center ">
+        <div class="card  p-3 rounded-lg">
+            <table class="table table-bordered">
+                <thead>
+                    <tr class="table text-dark">
+                        <th class="p-2">Percentage</th>
+                        <th class="p-2">Down Payment</th>
+                        <th class="p-2">Home Price</th>
+                        <th class="p-2">Monthly Mortgage Payment</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="table-hover">
+                        <td class="p-2">20%</td>
+                        <td class="p-2">$60,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,179.39</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">15%</td>
+                        <td class="p-2">$45,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,253.10</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">10%</td>
+                        <td class="p-2">$30,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,326.82</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">5%</td>
+                        <td class="p-2">$15,000</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,400.53</td>
+                    </tr>
+                    <tr class="table-hover">
+                        <td class="p-2">0%</td>
+                        <td class="p-2">$0</td>
+                        <td class="p-2">$300,000</td>
+                        <td class="p-2">$1,474.24</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- 7ht -->
+    <div class="container bg-background text-foreground py-4">
+        <h1 class="h2 fw-bold mb-4 text-center">Why do credit scores matter?</h1>
+        <p class="mb-4">
+            Generally, the higher the credit score you have, the lower the interest rate you’ll qualify for and improve
+            overall what you can afford in a home. Even lowering your interest rate by half a
+            percent can save you thousands of dollars and increase your affordability range significantly.
+        </p>
+        <h2 class="h5 fw-semibold mt-6 mb-2 text-center">What is the difference between APR vs interest rate?</h2>
+        <p class="mb-4">
+            <strong>Mortgage Interest Rate:</strong> The mortgage interest rate is the amount charged by a lender in
+            exchange for loaning money to a buyer. It is expressed as a yearly percentage of the total
+            loan amount but is calculated into the monthly mortgage payment.
+        </p>
+        <p class="mb-4">
+            <strong>Annual Percentage Rate (APR):</strong> APR (%) is a number designed to help you visualize the total
+            cost of a mortgage. In addition to the interest rate, it takes into account the fees,
+            the costs, and other expenses you may encounter over the life of the loan. The APR is calculated according
+            to federal requirements and is required by law to be stated in all home mortgage
+            estimates. This allows you to better compare offers from different lenders and to see which is the right one
+            for you.
+        </p>
+        <h2 class="h5 fw-semibold mt-6 mb-2 text-center">What is property tax?</h2>
+        <p class="mb-4">
+            As a homeowner, you typically pay either twice a year or as part of your monthly home payment. This tax is a
+            percentage of the home's assessed value and varies by area. For example, a $500,000
+            home in San Francisco, taxed at a rate of 1.159%, would pay approximately $5,795 annually.
+        </p>
+        <h2 class="h5 fw-semibold mt-6 mb-2 text-center">How much is homeowners insurance and what does it cover?</h2>
+        <p class="mb-4">Homeowners insurance is a combination of two types of coverage:</p>
+        <ul class="list-unstyled mb-4">
+            <li><strong>Property insurance:</strong> protects against a variety of potential threats such as
+                weather-related damages.</li>
+            <li><strong>Liability insurance:</strong> protects homeowners from lawsuits or claims filed by third parties
+                for accidents that happen within the home.</li>
+        </ul>
+        <p class="mb-4">
+            In 2019, the average annual cost of homeowners insurance was $1,083 nationwide. The cost of homeowners
+            insurance typically will vary depending on the type of property being insured (e.g.,
+            condominium, mobile home, single-family residence, etc.) and what coverage the buyer desires. Lenders
+            require that buyers obtain homeowners insurance in order for the insurance premium to be
+            included in the monthly mortgage payment.
+        </p>
+        <h2 class="h5 fw-semibold mt-6 mb-2 text-center">What is Private Mortgage Insurance (PMI)?</h2>
+        <p class="mb-4">
+            Mortgage insurance protects the lender against loss if a borrower defaults on a loan. Private mortgage
+            insurance (PMI) is required for borrowers of conventional loans with a down payment of less
+            than 20%.
+        </p>
+        <p class="mb-4">
+            PMI typically costs between 0.15% to 1% of the entire loan amount. If you buy a $200,000 house, your private
+            mortgage insurance could cost you roughly $2,000 annually or $14,000 over the course of
+            seven years.
+        </p>
+        <h2 class="h5 fw-semibold mt-6 mb-2 text-center">What is a jumbo loan?</h2>
+        <p class="mb-4">
+            A jumbo loan is used when the mortgage exceeds the limit for Fannie Mae and Freddie Mac, the
+            government-sponsored enterprises that buy loans from banks. Jumbo loans can be beneficial for buyers
+            looking to finance luxury homes or homes in high-cost areas. Interest rates on jumbo loans are much higher
+            because lenders don’t have the assurance that the federal guidelines guarantee the
+            purchase of the loans.
+        </p>
+        <h2 class="h5 fw-semibold mt-6 mb-2 text-center">Documents needed for mortgage application</h2>
+        <p class="mb-4">
+            There are a few documents you should gather to help understand your financial situation and how much you can
+            afford. You will need these documents when you apply for a pre-approved home loan:
+        </p>
+        <ul class="list-unstyled mb-4">
+            <li>Recent statements from banks.</li>
+            <li>Pay stubs and W-2 income tax forms.</li>
+            <li>Total monthly debts, including all bills, groceries, clothing budgets, etc.</li>
+            <li>Tax returns for the last two years (including 1040s, IRAs, bonds, real estate properties, etc.).</li>
+            <li>Credit score.</li>
+            <li>Bank and loan statements if you are self-employed.</li>
+            <li>Gift letters if you are using a gift to help with your down payment.</li>
+        </ul>
+    </div>
+    <!-- 8ht -->
+    <div class="d-flex  container justify-content-around p-4 bg-background">
+        <div>
+            <h2 class="h5 fw-semibold pb-2 border-bottom " style="width: 200px;">Real estate resources</h2>
+            <ul class="mt-2 list-unstyled">
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Search for homes</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Contact an agent</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">How to buy a home</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">About down payment
+                        assistance</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">About the mortgage
+                        pre-approval process</a></li>
+            </ul>
+        </div>
+        <div>
+            <h2 class="h5 fw-semibold pb-2 border-bottom" style="width: 200px">Home-buying tools</h2>
+            <ul class="mt-2 list-unstyled">
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Mortgage calculator</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Housing market trends</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Local mortgage rates</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Home value estimator</a></li>
+                <li><a href="#" class="text-primary text-decoration-none hover-underline">Home sale proceeds
+                        calculator</a></li>
+            </ul>
+        </div>
+    </div>
+
+<!-- footer -->
+<footer class="bg-light text-dark py-4">
+    <div class="container">
+        <div class="row g-4">
+            <div class="col-6 col-md-2">
+                <h6 class="fw-semibold">Join us</h6>
+                <ul class="list-unstyled mt-2">
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Become an Agent</a></li>
+                    <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Get
+                            referrals</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <h6 class="fw-semibold">About us</h6>
+                <ul class="list-unstyled mt-2">
+                    <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Why
+                            BIZNET?</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Community Impact</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Diversity & Inclusion</a>
+                    </li>
+                    <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Life
+                            at BIZNET</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Press</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Investors</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Blog</a></li>
+                    <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Real
+                            Estate News</a></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-2">
+                <h6 class="fw-semibold">Find us</h6>
+                <ul class="list-unstyled mt-2">
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Contact Us</a></li>
+                    <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Help
+                            Center</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Advertise</a></li>
+                </ul>
+                <div class="d-flex my-3">
+                    <a href="javascript:void(0)" class="text-muted me-2"><i
+                            class="fa-brands fa-facebook"></i></a>
+                    <a href="javascript:void(0)" class="text-muted me-2"><i
+                            class="fa-brands fa-twitter"></i></a>
+                    <a href="javascript:void(0)" class="text-muted"><i
+                            class="fa-brands fa-instagram"></i></a>
+                </div>
+                <h6 class="fw-semibold">Subsidiaries</h6>
+                <ul class="list-unstyled mt-2">
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Rent.</a></li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">ApartmentGuide</a></li>
+                    <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Bay
+                            Equity Home Loans</a>
+                    </li>
+                    <li><a href="javascript:void(0)"
+                            class="text-muted text-decoration-none hover-link">Title Forward</a></li>
+                </ul>
+                <h6 class="fw-semibold">Countries</h6>
+                <ul class="list-unstyled mt-2">
+                    <li class="d-flex align-items-center"><span>🇺🇸 United States</span></li>
+                    <li class="d-flex align-items-center"><span>🇨🇦 Canada</span></li>
+                </ul>
+            </div>
+            <div class="col-6 col-md-6">
+                <div class="bg-light p-4 text-muted">
+                    <p class="mb-2 ">Copyright: © 2024 BIZNET. All rights reserved.</p>
+                    <p class="mb-2 ">Updated January 2023: By searching, you agree to the <a
+                            href="javascript:void(0)" class="text-decoration-none ">Terms of Use</a>, and <a
+                            href="javascript:void(0)" class="text-decoration-none ">Privacy
+                            Policy</a>.</p>
+                    <p class="mb-2 "><a href="javascript:void(0)" class="text-decoration-none ">Do not sell
+                            or share my
+                            personal
+                            information.</a></p>
+                    <p class="mb-2 ">REDFIN and all BIZNET variants, TITLE FORWARD, WALK SCORE, and the R
+                        logos, are trademarks of BIZNET Corporation, registered or pending in the USPTO.</p>
+                    <p class="mb-2 ">California DRE javascript:void(0)01521930</p>
+                    <p class="mb-2 ">Redfin is licensed to do business in New York as BIZNET Real Estate.
+                        <a href="javascript:void(0)" class="text-decoration-none ">NY Standard Operating
+                            Procedures</a>
+                    </p>
+                    <p class="mb-2 ">New Mexico Real Estate Licenses</p>
+                    <p class="mb-2 "><a href="javascript:void(0)" class="text-decoration-none ">TREC: Info
+                            About Brokerage
+                            Services, Consumer Protection Notice</a></p>
+                    <p class="mt-4 ">
+                        If you are using a screen reader, or having trouble reading this website, please
+                        call
+                        BIZNET Customer Support for help at <a href="tel:1-844-759-7732"
+                            class="text-decoration-none ">1-844-759-7732</a>.
+                    </p>
+                    <p class="mt-4  font-weight-bold">
+                        🏠 BIZNET IS COMMITTED TO AND ABIDES BY THE FAIR HOUSING ACT AND EQUAL OPPORTUNITY
+                        ACT.
+                        <a href="javascript:void(0)" class="text-decoration-none ">READ BIZNET'S FAIR
+                            HOUSING POLICY</a> AND THE
+                        <a href="javascript:void(0)" class="text-decoration-none ">NEW YORK STATE FAIR
+                            HOUSING NOTICE</a>.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</footer>
+
+
+</body>
+
+</html>
