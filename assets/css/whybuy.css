@@ -40,6 +40,31 @@
     }
 }
 
+.why-biznet{
+    .second-section{
+        background: var( --color-gray);
+        padding: 25px;
+        /* overflow-x: hidden; */
+    }
+    .btn{
+        color: var(--color_white);
+        font-weight: 600;
+        background: var(--background_color);
+    }
+    .btn:hover{
+        color: var(--color_white);
+        background: var(--hover_bg_color);
+    }
+    .section-from{
+        background: var(--color-gray);
+        padding: 20px;
+
+    }
+    .section-from a{
+        color: var(--hover_bg_color);
+    }
+}
+
 
 @media (min-width:320px) and (max-width:720px){
     .best-home-search{
