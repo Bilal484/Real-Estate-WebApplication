@@ -39,4 +39,23 @@ document.getElementById('show-more-houses').addEventListener('click', function (
 
 
 
+// Get all tab links and contents
+const tabs = document.querySelectorAll('.nav-link');
+const contents = document.querySelectorAll('.tab-content');
 
+tabs.forEach(tab => {
+    tab.addEventListener('click', function (e) {
+        e.preventDefault();
+
+        // Remove active class from all tabs
+        tabs.forEach(link => link.classList.remove('active'));
+
+        // Hide all content sections
+        contents.forEach(content => content.classList.remove('active'));
+
+        // Add active class to the clicked tab and show the associated content
+        tab.classList.add('active');
+        const target = document.querySelector(tab.getAttribute('data-target'));
+        target.classList.add('active');
+    });
+});
