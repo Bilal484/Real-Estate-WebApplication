@@ -25,7 +25,7 @@ document.getElementById('show-more-apartments').addEventListener('click', functi
     hiddenContent.forEach(function (element) {
         element.style.display = 'block';
     });
-    this.style.display = 'none'; 
+    this.style.display = 'none';
 });
 
 
@@ -34,7 +34,12 @@ document.getElementById('show-more-houses').addEventListener('click', function (
     hiddenContent.forEach(function (element) {
         element.style.display = 'block';
     });
-    this.style.display = 'none'; 
+    this.style.display = 'none';
 });
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> a9624572c3de5a3be72495a1c82aaf5521606b2b
 
