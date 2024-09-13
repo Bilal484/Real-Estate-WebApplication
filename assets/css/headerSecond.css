@@ -19,10 +19,6 @@
         /* Ensure dropdown is above other content */
     }
 
-    .logo-nav{
-        margin-top: -82px;
-    }
-
     /* Adjust for menu container */
 
 
@@ -213,20 +209,4 @@
             color: #333;
         }
     }
-}
-
-
-.navbarDropdown1{
-    display: block;
-}
-
-#sec_manu{
-    width: 100%;
-    display: none;
-}
-#navbarDropdown1:hover{
-
-}
-#navbarDropdown1 #sec_manu:hover{
-    display: block;
 }
