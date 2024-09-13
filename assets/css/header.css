@@ -19,6 +19,10 @@
         /* Ensure dropdown is above other content */
     }
 
+    .logo-nav{
+        margin-top: -82px;
+    }
+
     /* Adjust for menu container */
 
 
