@@ -40,7 +40,7 @@
     }
 
     .logo {
-        /* background-color: #f3f3f3; */
+
         padding: 8px;
         border-radius: 8px;
     }
@@ -122,6 +122,12 @@
         background-color: var(--background_color);
         color: var(--color_white);
         transition: 1s all ease;
+        border: none;
+
+        a {
+            text-decoration: none;
+
+        }
 
         &:hover {
             background-color: var(--hover_bg_color);
@@ -132,7 +138,8 @@
     .multiple_cards_boxs {
         box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
         transition: 1s all ease;
-        &:hover{
+
+        &:hover {
             transform: scale(1.1);
         }
     }
@@ -141,4 +148,50 @@
 .set_scroll_point {
     overflow-y: auto;
     height: 500px;
+}
+
+.progress_setting {
+    .bar-container {
+        width: 4rem;
+        height: 6rem;
+        background-color: #e9ecef;
+        position: relative;
+        border-radius: 5px;
+    }
+
+    .bar-fill {
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        background-color: #007bff;
+        border-radius: 5px;
+    }
+
+    .bar-1 {
+        height: 5%;
+    }
+
+    .bar-5 {
+        height: 9%;
+    }
+
+    .bar-10 {
+        height: 18%;
+    }
+
+    .bar-15 {
+        height: 29%;
+    }
+
+    .bar-20 {
+        height: 39%;
+    }
+
+    .bar-25 {
+        height: 50%;
+    }
+
+    .bar-30 {
+        height: 59%;
+    }
 }

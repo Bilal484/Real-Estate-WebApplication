@@ -1,0 +1,27 @@
+.find_leader {
+    background-image: url(../images/mission_header.jpg);
+    width: 100%;
+    height: 400px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .find_leader_box {
+        width: 45%;
+        margin: 0 auto;
+        background-color: aliceblue;
+        opacity: .9;
+        padding: 20px;
+        text-align: center;
+
+    }
+}
+.reviews_section{
+    p{
+        margin-bottom: 0px;
+    }
+}
