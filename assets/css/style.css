@@ -9,6 +9,7 @@
 @import '/assets/css/affordability-calculator.css';
 @import '/assets/css/guide-step.css';
 @import '/assets/css/Auth.css';
+@import url(rent.css);
 * {
     margin: 0px;
     padding: 0px;
