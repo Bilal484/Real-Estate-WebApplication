@@ -37,6 +37,9 @@
     .dropdown-grid li{
         border-bottom: 1px solid black;
     }
+    header{
+        height: fit-content;
+    }
    
 
     /* Hover effect for large screens */
