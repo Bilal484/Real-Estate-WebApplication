@@ -326,5 +326,11 @@
         width: 200px;
 
       }
+      @media (min-width:320px) and (max-width:1024px){
+        .navbar-brand img{
+            margin-top: 0;
+    
+        }
+      }
    
 }

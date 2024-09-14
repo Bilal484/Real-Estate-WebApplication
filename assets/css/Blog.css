@@ -1,0 +1,15 @@
+.blog{
+    .featured img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .news-card img {
+        width: 100%;
+        height: auto;
+        object-fit: cover;
+      }
+      .news-card h6 {
+        font-size: 1rem;
+      }
+}
