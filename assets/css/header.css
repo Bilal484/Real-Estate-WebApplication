@@ -214,3 +214,19 @@
         }
     }
 }
+
+
+.navbarDropdown1{
+    display: block;
+}
+
+#sec_manu{
+    width: 100%;
+    display: none;
+}
+#navbarDropdown1:hover{
+
+}
+#navbarDropdown1 #sec_manu:hover{
+    display: block;
+}
