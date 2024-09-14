@@ -8,6 +8,7 @@
 @import '/assets/css/biznet-home.css';
 @import '/assets/css/affordability-calculator.css';
 @import '/assets/css/guide-step.css';
+@import '/assets/css/Sub2Deals.css';
 @import '/assets/css/Auth.css';
 @import url(rent.css);
 * {
@@ -29,6 +30,11 @@
         font-weight: 400;
         font-style: normal;
     }
+}
+
+::selection{
+    background: var(--color);
+    color: white;
 }
 
 .Main_portion {
