@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biznet | About Us</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --background_color: white;
+            --color: #09aab0;
+        }
+
+        body {
+            background-color: var(--background_color);
+            color: var(--color);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            color: var(--color);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .hero {
+            width: 100%;
+            height: 80vh;
+            background: linear-gradient(rgba(116, 134, 152, 0.8), rgba(45, 57, 69, 0.8)),
+                url(assets/images/real\ estate\ _12.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #09aab0;
+            /* Text color */
+        }
+
+
+        .hero h1 {
+            color: var(--color);
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .about-img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .card {
+            background-color: var(--background_color);
+            border: none;
+        }
+
+        .card-body {
+            text-align: center;
+        }
+
+        .team-img {
+            max-width: 100%;
+            border-radius: 50%;
+        }
+
+        /* Button styles */
+        .btn-primary {
+            background-color: var(--color);
+            border: none;
+        }
+
+        .btn-primary:hover {
+            background-color: #077d7e;
+        }
+
+        .fade-in {
+            opacity: 0;
+            transform: translateY(20px);
+            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+        }
+
+        .fade-in.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Hero Section -->
+    <section class="">
+        <div class="container-fluid hero d-flex justify-content-center align-items-center flex-column">
+            <h1 class="fade-in">Welcome to Biznet</h1>
+            <p class="fade-in">Leading the Real Estate Market with Integrity and Innovation.</p>
+            <a href="#about" class="btn btn-primary fade-in">Learn More About Us</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2 class="section-title fade-in">About Biznet</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 fade-in">
+                    <p>Biznet has been at the forefront of real estate, offering unparalleled services to clients. From
+                        residential to commercial, we have the expertise and commitment to help you find your perfect
+                        space.</p>
+                </div>
+                <div class="col-md-6 fade-in">
+                    <img src="assets/images/real estate _20.jpg" alt="About Biznet" class="about-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="py-5">
+        <div class="container">
+            <h2 class="section-title fade-in">Our Core Values</h2>
+            <div class="row ">
+                <div class="col-md-4 fade-in">
+                    <div class="card">
+                        <div class="card-body  ">
+                            <h5 class="card-title">Integrity</h5>
+                            <p class="card-text">We operate with complete transparency and honesty.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="card">
+                        <div class="card-body ">
+                            <h5 class="card-title">Innovation</h5>
+                            <p class="card-text">Constantly evolving with the latest trends in the real estate market.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 fade-in">
+                    <div class="card">
+                        <div class="card-body ">
+                            <h5 class="card-title">Excellence</h5>
+                            <p class="card-text">Striving for the best in every transaction and project.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- Footer Section -->
+    <footer class="text-center py-4" style="background-color: #07364e; color: white;">
+        <p>&copy; 2024 Biznet. All Rights Reserved.</p>
+    </footer>
+
+    <!-- Bootstrap JS and Animation Script -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        // JS for fade-in animation on scroll
+        const faders = document.querySelectorAll('.fade-in');
+
+        const appearOptions = {
+            threshold: 0.5,
+            rootMargin: "0px 0px -100px 0px"
+        };
+
+        const appearOnScroll = new IntersectionObserver(function (entries, appearOnScroll) {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                entry.target.classList.add('visible');
+                appearOnScroll.unobserve(entry.target);
+            });
+        }, appearOptions);
+
+        faders.forEach(fader => {
+            appearOnScroll.observe(fader);
+        });
+    </script>
+</body>
+
+</html>
