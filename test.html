@@ -1,1355 +1,295 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <title>Redfin Savings Layout</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-          rel="stylesheet" />
-    <link href="styles.css" rel="stylesheet" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>How It Works - Real Estate</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .section-title {
+      text-align: center;
+      margin-bottom: 40px;
+      font-size: 32px;
+      font-weight: bold;
+      color: #333;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .icon {
+      font-size: 50px;
+      color: #007bff;
+    }
+    .card {
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-10px);
+    }
+    .bg-light-grey {
+      background-color: #f9f9f9;
+    }
+    .card-body h3 {
+      font-size: 24px;
+      margin-top: 15px;
+    }
+    .card-body p {
+      font-size: 16px;
+      color: #555;
+    }
+  </style>
 </head>
 <body>
-    <div class="nav">
-        <div class="pfs__sc-1ve4drk-0 iotGxD znav-links">
-            <div class="pfs__sc-1vxjlvm-0 iUldcw">
-                <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 hfUBNo"
-                   data-display-my-zillow="true"
-                   data-za-action="Zillow logo click"
-                   data-za-category="!inherit"
-                   href="/"
-                   title="Zillow Real Estate">
-                    Homepage
-                </a>
-            </div>
-            <ul class="pfs__sc-1elvxkv-1 pfs__sc-1elvxkv-2 pfs__sc-1wickoz-0 iBSJmc kFkKUr cEPJeu"
-                data-zg-section="main">
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ noroute"
-                       data-active="false"
-                       data-za-action="Buy"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/homes/for_sale/">
-                        <span>
-                            Buy
-                            <!-- -->
-                        </span>
-                    </a>
-                    <button aria-label="Open Buy sub-menu"
-                            class="pfs__sc-1psx3f8-0 jfHmWR"
-                            type="button">
-                        <span class="VisuallyHidden-c11n-8-100-6__sc-t8tewe-0 iYHcPE">
-                            Open Buy sub-menu
-                        </span>
-                        <svg aria-hidden="true"
-                             class="Icon-c11n-8-100-6__sc-13llmml-0 jlRhlp"
-                             focusable="false"
-                             role="img"
-                             viewBox="0 0 32 32">
-                            <path d="M29.41 8.59a2 2 0 00-2.83 0L16 19.17 5.41 8.59a2 2 0 00-2.83 2.83l12 12a2 2 0 002.82 0l12-12a2 2 0 00.01-2.83z"
-                                  stroke="none" />
-                            
-                        </svg>
-                    </button>
-                    <div data-za-label="Buy">
-                        <div class="pfs__xukzw9-0 iLwwWm">
-                            <div class="pfs__xukzw9-1 gSaOWc"
-                                 data-zg-role="drop-down-content">
-                                <ul class="pfs__xukzw9-2 cswURT">
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Homes for sale
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Homes for sale"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_sale/"
-                                                           rel>
-                                                            <span>
-                                                                Homes
-                                                                for sale
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Foreclosures"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_sale/fore_lt/"
-                                                           rel>
-                                                            <span>
-                                                                Foreclosures
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="For sale by owner"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/fsbo/"
-                                                           rel>
-                                                            <span>
-                                                                For
-                                                                sale by owner
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Open houses"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_sale/1_open/"
-                                                           rel>
-                                                            <span>
-                                                                Open
-                                                                houses
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="New construction"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/new_homes/"
-                                                           rel>
-                                                            <span>
-                                                                New
-                                                                construction
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Coming soon"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/coming_soon/cmsn_lt/"
-                                                           rel>
-                                                            <span>
-                                                                Coming
-                                                                soon
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Recent home sales"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/recently_sold/"
-                                                           rel>
-                                                            <span>
-                                                                Recent
-                                                                home sales
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="All homes"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/browse/homes/"
-                                                           rel>
-                                                            <span>
-                                                                All
-                                                                homes
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Resources
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Home Buying Guide"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/learn/category/buying/"
-                                                           rel>
-                                                            <span>
-                                                                Home
-                                                                Buying Guide
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Foreclosure center"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/learn/tag/foreclosures/"
-                                                           rel>
-                                                            <span>
-                                                                Foreclosure
-                                                                center
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Real estate app"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/buy/app-download/"
-                                                           rel>
-                                                            <span>
-                                                                Real
-                                                                estate app
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Down payment assistance"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/down-payment-assistance/"
-                                                           rel>
-                                                            <span>
-                                                                Down
-                                                                payment assistance
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ noroute"
-                       data-active="false"
-                       data-za-action="Rent"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/homes/for_rent/">
-                        <span>
-                            Rent
-                            <!-- -->
-                        </span>
-                    </a>
-                    <button aria-label="Open Rent sub-menu"
-                            class="pfs__sc-1psx3f8-0 jfHmWR"
-                            type="button">
-                        <span class="VisuallyHidden-c11n-8-100-6__sc-t8tewe-0 iYHcPE">
-                            Open Rent sub-menu
-                        </span>
-                        <svg aria-hidden="true"
-                             class="Icon-c11n-8-100-6__sc-13llmml-0 jlRhlp"
-                             focusable="false"
-                             role="img"
-                             viewBox="0 0 32 32">
-                            <path d="M29.41 8.59a2 2 0 00-2.83 0L16 19.17 5.41 8.59a2 2 0 00-2.83 2.83l12 12a2 2 0 002.82 0l12-12a2 2 0 00.01-2.83z"
-                                  stroke="none" />
-                            
-                        </svg>
-                    </button>
-                    <div data-za-label="Rent">
-                        <div class="pfs__xukzw9-0 iLwwWm">
-                            <div class="pfs__xukzw9-1 gSaOWc"
-                                 data-zg-role="drop-down-content">
-                                <ul class="pfs__xukzw9-2 cswURT">
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Search for rentals
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Rental buildings"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_rent/apartment_duplex_type/"
-                                                           rel>
-                                                            <span>
-                                                                Rental
-                                                                buildings
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Apartments for rent"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_rent/condo,apartment_duplex_type/"
-                                                           rel>
-                                                            <span>
-                                                                Apartments
-                                                                for rent
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Houses for rent"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_rent/house_type/"
-                                                           rel>
-                                                            <span>
-                                                                Houses
-                                                                for rent
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="All rental listings"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homes/for_rent/"
-                                                           rel>
-                                                            <span>
-                                                                All
-                                                                rental listings
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="All rental buildings"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/browse/b/"
-                                                           rel>
-                                                            <span>
-                                                                All
-                                                                rental buildings
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Renter Hub
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Contacted rentals"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/renting/"
-                                                           rel>
-                                                            <span>
-                                                                Contacted
-                                                                rentals
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Your rental"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/renting/your-rental/"
-                                                           rel>
-                                                            <span>
-                                                                Your
-                                                                rental
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Messages"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/renter-hub/inbox/"
-                                                           rel>
-                                                            <span>
-                                                                Messages
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Resources
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Affordability calculator"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rent-affordability-calculator"
-                                                           rel>
-                                                            <span>
-                                                                Affordability
-                                                                calculator
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Rent Guide"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/learn/category/renting/"
-                                                           rel>
-                                                            <span>
-                                                                Rent
-                                                                Guide
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Sell"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/sell/">
-                        <span>
-                            Sell
-                            <!-- -->
-                        </span>
-                    </a>
-                    <button aria-label="Open Sell sub-menu"
-                            class="pfs__sc-1psx3f8-0 jfHmWR"
-                            type="button">
-                        <span class="VisuallyHidden-c11n-8-100-6__sc-t8tewe-0 iYHcPE">
-                            Open Sell sub-menu
-                        </span>
-                        <svg aria-hidden="true"
-                             class="Icon-c11n-8-100-6__sc-13llmml-0 jlRhlp"
-                             focusable="false"
-                             role="img"
-                             viewBox="0 0 32 32">
-                            <path d="M29.41 8.59a2 2 0 00-2.83 0L16 19.17 5.41 8.59a2 2 0 00-2.83 2.83l12 12a2 2 0 002.82 0l12-12a2 2 0 00.01-2.83z"
-                                  stroke="none" />
-                            
-                        </svg>
-                    </button>
-                    <div data-za-label="Sell">
-                        <div class="pfs__xukzw9-0 iLwwWm">
-                            <div class="pfs__xukzw9-1 gSaOWc"
-                                 data-zg-role="drop-down-content">
-                                <ul class="pfs__xukzw9-2 cswURT">
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Resources
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Explore your options"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/sell/"
-                                                           rel>
-                                                            <span>
-                                                                Explore
-                                                                your options
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="See your home's Zestimate"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/how-much-is-my-home-worth/"
-                                                           rel>
-                                                            <span>
-                                                                See
-                                                                your home's Zestimate
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Home values"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/home-values/102001/united-states/"
-                                                           rel>
-                                                            <span>
-                                                                Home
-                                                                values
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Sellers guide"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/learn/category/selling/"
-                                                           rel>
-                                                            <span>
-                                                                Sellers
-                                                                guide
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Selling options
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Find a seller's agent"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/real-estate-agent-reviews/?service=Selling"
-                                                           rel>
-                                                            <span>
-                                                                Find
-                                                                a seller's agent
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Post For Sale by Owner"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/for-sale-by-owner/"
-                                                           rel>
-                                                            <span>
-                                                                Post
-                                                                For Sale by Owner
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Home Loans"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/homeloans/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgagestopnav#source=Z_Mortgagestopnav">
-                        <span>
-                            Home Loans
-                            <!-- -->
-                        </span>
-                    </a>
-                    <button aria-label="Open Home Loans sub-menu"
-                            class="pfs__sc-1psx3f8-0 jfHmWR"
-                            type="button">
-                        <span class="VisuallyHidden-c11n-8-100-6__sc-t8tewe-0 iYHcPE">
-                            Open Home Loans sub-menu
-                        </span>
-                        <svg aria-hidden="true"
-                             class="Icon-c11n-8-100-6__sc-13llmml-0 jlRhlp"
-                             focusable="false"
-                             role="img"
-                             viewBox="0 0 32 32">
-                            <path d="M29.41 8.59a2 2 0 00-2.83 0L16 19.17 5.41 8.59a2 2 0 00-2.83 2.83l12 12a2 2 0 002.82 0l12-12a2 2 0 00.01-2.83z"
-                                  stroke="none" />
-                            
-                        </svg>
-                    </button>
-                    <div data-za-label="Home Loans">
-                        <div class="pfs__xukzw9-0 iLwwWm">
-                            <div class="pfs__xukzw9-1 gSaOWc"
-                                 data-zg-role="drop-down-content">
-                                <ul class="pfs__xukzw9-2 cswURT">
-                                    <li class="pfs__zfaq10-0 dmPdBK">
-                                        <div class="pfs__zfaq10-1 fiSqLF">
-                                            <div class="Spacer-c11n-8-100-6__sc-17suqs2-0 bPIJkI">
-                                                <svg aria-hidden="true"
-                                                     class="Icon-c11n-8-100-6__sc-13llmml-0 ldnLi"
-                                                     focusable="false"
-                                                     role="img"
-                                                     viewBox="0 0 32 32">
-                                                    <g stroke="none">
-                                                        <path d="M22 6h-2a2 2 0 00-2-2h-1.18a2.99 2.99 0 00-5.64 0H10a2 2 0 00-2 2H6a2 2 0 00-2 2v20a2 2 0 002 2h4v-2H6V8h2a2 2 0 002 2h8a2 2 0 002-2h2v2h2V8a2 2 0 00-2-2zm-4 2h-8V6h3V5a1 1 0 012 0v1h3z" />
-                                                        
-                                                        <path d="M26 12H14a2 2 0 00-2 2v14a2 2 0 002 2h12a2 2 0 002-2V14a2 2 0 00-2-2zm-3 10h-6a1 1 0 010-2h6a1 1 0 010 2zm0-4h-6a1 1 0 010-2h6a1 1 0 010 2z" />
-                                                        
-                                                    </g>
-                                                </svg>
-                                            </div>
-                                            <div>
-                                                <h6 class="Text-c11n-8-100-6__sc-aiai24-0 pfs__zfaq10-2 dufdbn ehmXDV">
-                                                    Started a loan application?
-                                                </h6>
-                                                <p class="Text-c11n-8-100-6__sc-aiai24-0 StyledParagraph-c11n-8-100-6__sc-e666if-0 dufdbn pfs__zfaq10-3 iiRcOI">
-                                                    Pick up where you left off on your Zillow Home Loans dashboard.
-                                                </p>
-                                                <a class="StyledTextButton-c11n-8-100-6__sc-1nwmfqo-0 hPCnGF"
-                                                   href="https://www.zillow.com/homeloans/mortgage/dashboard/login">
-                                                    Home
-                                                    Loans dashboard
-                                                    <span class="TextButtonIcon-c11n-8-100-6__sc-1penltx-0 dchIFS">
-                                                        <svg aria-hidden="true"
-                                                             class="Icon-c11n-8-100-6__sc-13llmml-0 QGuVC IconChevronRightOutline-c11n-8-100-6__sc-1yzayyv-0 kgyJus"
-                                                             focusable="false"
-                                                             role="img"
-                                                             viewBox="0 0 32 32">
-                                                            <path d="M29.7 8.8a1 1 0 00-1.4 0L16 21 3.7 8.8a1 1 0 00-1.4 0 1 1 0 000 1.4l13 13a1 1 0 001.4 0l13-13a1 1 0 000-1.4z"
-                                                                  stroke="none" />
-                                                            
-                                                        </svg>
-                                                    </span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Touring homes &amp; making offers
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Discover Zillow Home Loans"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homeloans/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                Discover
-                                                                Zillow Home Loans
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="See how much you qualify for"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homeloans/eligibility/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav&amp;zga_z_guid=cfdf8551-4c64-42de-a08a-8bb1523e3229"
-                                                           rel>
-                                                            <span>
-                                                                See
-                                                                how much you qualify for
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Estimate your monthly payment"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/mortgage-calculator/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                Estimate
-                                                                your monthly payment
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Just getting started
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Calculate your budget"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/mortgage-calculator/house-affordability/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                Calculate
-                                                                your budget
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Learn about the mortgage process"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/learn/category/financing/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                Learn
-                                                                about the mortgage process
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Explore more options
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="See today's rates"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/mortgage-rates/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                See
-                                                                today's rates
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Refinance your home"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/homeloans/refinance/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav&amp;zga_z_guid=cfdf8551-4c64-42de-a08a-8bb1523e3229"
-                                                           rel>
-                                                            <span>
-                                                                Refinance
-                                                                your home
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Calculate your refinance savings"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/mortgage-calculator/refinance-calculator/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                Calculate
-                                                                your refinance savings
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Browse lenders in your area"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/lender-directory/?utm_source=zillow&amp;utm_medium=referral&amp;utm_campaign=Z_Mortgageshovertopnav#source=Z_Mortgageshovertopnav"
-                                                           rel>
-                                                            <span>
-                                                                Browse
-                                                                lenders in your area
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Find an Agent"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/professionals/real-estate-agent-reviews/">
-                        <span>
-                            Find an
-                            Agent
-                            <!-- -->
-                        </span>
-                    </a>
-                    <button aria-label="Open Find an Agent sub-menu"
-                            class="pfs__sc-1psx3f8-0 jfHmWR"
-                            type="button">
-                        <span class="VisuallyHidden-c11n-8-100-6__sc-t8tewe-0 iYHcPE">
-                            Open Find an Agent
-                            sub-menu
-                        </span>
-                        <svg aria-hidden="true"
-                             class="Icon-c11n-8-100-6__sc-13llmml-0 jlRhlp"
-                             focusable="false"
-                             role="img"
-                             viewBox="0 0 32 32">
-                            <path d="M29.41 8.59a2 2 0 00-2.83 0L16 19.17 5.41 8.59a2 2 0 00-2.83 2.83l12 12a2 2 0 002.82 0l12-12a2 2 0 00.01-2.83z"
-                                  stroke="none" />
-                            
-                        </svg>
-                    </button>
-                    <div data-za-label="Find an Agent">
-                        <div class="pfs__xukzw9-0 iLwwWm">
-                            <div class="pfs__xukzw9-1 gSaOWc"
-                                 data-zg-role="drop-down-content">
-                                <ul class="pfs__xukzw9-2 cswURT">
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Looking for pros?
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Real estate agents"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/real-estate-agent-reviews/"
-                                                           rel>
-                                                            <span>
-                                                                Real
-                                                                estate agents
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Property managers"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/property-manager-reviews/"
-                                                           rel>
-                                                            <span>
-                                                                Property
-                                                                managers
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Home inspectors"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/home-inspector-reviews/"
-                                                           rel>
-                                                            <span>
-                                                                Home
-                                                                inspectors
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Other pros"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/real-estate-services-reviews/"
-                                                           rel>
-                                                            <span>
-                                                                Other
-                                                                pros
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Home improvement pros"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/home-improvement-reviews/"
-                                                           rel>
-                                                            <span>
-                                                                Home
-                                                                improvement pros
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Home builders"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/home-builders/"
-                                                           rel>
-                                                            <span>
-                                                                Home
-                                                                builders
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Real estate photographers"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/professionals/photographer-reviews/"
-                                                           rel>
-                                                            <span>
-                                                                Real
-                                                                estate photographers
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            I'm a pro
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Agent advertising"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="https://premieragent.zillow.com/products/advertising/?itc=paw_z_sitewide-agentfinder_subnav-advertising_pa-ads_a_null"
-                                                           rel>
-                                                            <span>
-                                                                Agent
-                                                                advertising
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Agent resource center"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/agent-resources/"
-                                                           rel>
-                                                            <span>
-                                                                Agent
-                                                                resource center
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Create a free agent account"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/premier-agent/agent-account/?itc=paw_z_sitewide-agentfinder_subnav-createagentaccount_pa-reg_a_null"
-                                                           rel>
-                                                            <span>
-                                                                Create
-                                                                a free agent account
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Real estate business plan"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/agent-resources/agent-toolkit/real-estate-business-plan-template/"
-                                                           rel>
-                                                            <span>
-                                                                Real
-                                                                estate business plan
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Real estate agent scripts"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/agent-resources/agent-toolkit/real-estate-follow-up-email-templates/"
-                                                           rel>
-                                                            <span>
-                                                                Real
-                                                                estate agent scripts
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Listing flyer templates"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/agent-resources/agent-toolkit/real-estate-listing-flyer-templates/"
-                                                           rel>
-                                                            <span>
-                                                                Listing
-                                                                flyer templates
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-            <ul class="pfs__sc-1elvxkv-1 pfs__sc-1elvxkv-2 pfs__thqlz5-0 iBSJmc kFkKUr hqcrtP"
-                data-display-agent="false"
-                data-display-my-zillow="true"
-                data-zg-section="marketing">
-                <li class="pfs__sc-585qe5-0 znav-manage-rentals"
-                    id="manage-rentals">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ noroute"
-                       data-active="false"
-                       data-za-action="Manage Rentals"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/rental-manager/?source=topnav&amp;itc=postbutton_sitenav">
-                        <span>
-                            Manage
-                            Rentals
-                            <!-- -->
-                        </span>
-                    </a>
-                    <button aria-label="Open Manage Rentals sub-menu"
-                            class="pfs__sc-1psx3f8-0 jfHmWR"
-                            type="button">
-                        <span class="VisuallyHidden-c11n-8-100-6__sc-t8tewe-0 iYHcPE">
-                            Open Manage Rentals
-                            sub-menu
-                        </span>
-                        <svg aria-hidden="true"
-                             class="Icon-c11n-8-100-6__sc-13llmml-0 jlRhlp"
-                             focusable="false"
-                             role="img"
-                             viewBox="0 0 32 32">
-                            <path d="M29.41 8.59a2 2 0 00-2.83 0L16 19.17 5.41 8.59a2 2 0 00-2.83 2.83l12 12a2 2 0 002.82 0l12-12a2 2 0 00.01-2.83z"
-                                  stroke="none" />
-                            
-                        </svg>
-                    </button>
-                    <div data-za-label="Manage Rentals">
-                        <div class="pfs__xukzw9-0 iLwwWm">
-                            <div class="pfs__xukzw9-1 gSaOWc"
-                                 data-zg-role="drop-down-content">
-                                <ul class="pfs__xukzw9-2 cswURT">
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Rental Management Tools
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="List a rental"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/post-a-listing/?itc=ltr_zw_ltr_zrm-home_tpnv_post-a-listing"
-                                                           id="list_a_rental"
-                                                           rel>
-                                                            <span>
-                                                                List
-                                                                a rental
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="My Listings"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/select-property?type=listings&amp;source=topnav&amp;itc=postbutton_topnav"
-                                                           id="my_listings"
-                                                           rel>
-                                                            <span>
-                                                                My
-                                                                Listings
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Messages"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/inbox/"
-                                                           id="messages"
-                                                           rel>
-                                                            <span>
-                                                                Messages
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Applications"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/select-property?type=applications&amp;source=topnav&amp;itc=postbutton_topnav"
-                                                           id="applications"
-                                                           rel>
-                                                            <span>
-                                                                Applications
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Leases"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/select-property?type=leases&amp;source=topnav&amp;itc=postbutton_topnav"
-                                                           id="leases"
-                                                           rel>
-                                                            <span>Leases</span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Payments"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/select-property?type=payments&amp;source=topnav&amp;itc=postbutton_topnav"
-                                                           id="payments"
-                                                           rel>
-                                                            <span>
-                                                                Payments
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <h6 class="pfs__sc-1449t2l-0 cgCgFd">
-                                            Learn More
-                                        </h6>
-                                        <ul class="pfs__c1z80u-0 kkneuv">
-                                            <li>
-                                                <ul class="pfs__ryrjop-0 MtKQu">
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Zillow Rental Manager"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/?source=topnav&amp;itc=list_zrm_topnav"
-                                                           id="zrm"
-                                                           rel>
-                                                            <span>
-                                                                Zillow
-                                                                Rental Manager
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Price My Rental"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/price-my-rental/?itc=ltr_zw_ltr_zrm-home_tpnv_price-my-rental"
-                                                           id="price_my_rental"
-                                                           rel>
-                                                            <span>
-                                                                Price
-                                                                My Rental
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Resource Center"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="/rental-manager/resources/"
-                                                           id="resource_center"
-                                                           rel>
-                                                            <span>
-                                                                Resource
-                                                                Center
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                    <li>
-                                                        <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__ulmj52-0 hfUBNo fisCfR"
-                                                           data-za-action="Help Center"
-                                                           data-za-category="!inherit"
-                                                           data-za-label="!inherit"
-                                                           href="https://help.zillowrentalmanager.com/hc/en-us/"
-                                                           id="help_center"
-                                                           rel>
-                                                            <span>
-                                                                Help
-                                                                Center
-                                                            </span>
-                                                        </a>
-                                                    </li>
-                                                </ul>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Advertise"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/z/partners/advertise/">
-                        <span>
-                            Advertise
-                            <!-- -->
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="pfs__sc-1elvxkv-1 pfs__sc-1elvxkv-2 pfs__sc-19pph06-0 iBSJmc kFkKUr bqzDIi"
-                data-display-my-zillow="true"
-                data-zg-section="help">
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Help"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="https://zillow.zendesk.com/hc/en-us/">
-                        <span>
-                            Help
-                            <!-- -->
-                        </span>
-                    </a>
-                </li>
-            </ul>
-            <ul class="pfs__sc-1elvxkv-1 pfs__sc-1elvxkv-2 pfs__sc-98mhij-0 iBSJmc kFkKUr klsLFn"
-                data-display-my-zillow="true"
-                data-zg-section="reg-login">
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Sign in"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/user/acct/login/?cid=pf">
-                        <div class="pfs__sc-1etb9mm-1 jBqzjp">Sign In</div>
-                    </a>
-                </li>
-                <li class="pfs__sc-585qe5-0">
-                    <a class="Anchor-c11n-8-100-6__sc-hn4bge-0 pfs__sc-1dpbk03-0 hfUBNo dGfGKQ"
-                       data-active="false"
-                       data-za-action="Join"
-                       data-za-category="!inherit"
-                       data-zg-role="section-title"
-                       href="/user/acct/register/?cid=pf">
-                        <span>
-                            Join
-                            <!-- -->
-                        </span>
-                    </a>
-                </li>
-            </ul>
-        </div>
-    </div>
-    <div class="container my-5">
-        <div class="row align-items-center">
-            <!-- Text Section -->
-            <div class="col-lg-6 col-md-12 mb-4">
-                <h2>See how your savings add up</h2>
-                <p>
-                    Customers who buy and sell with us save an average of $6,000.
-                    <span class="text-muted">
-                        *
-                    </span> And when you sign with a Redfin agent before your second tour,
-                    you'll qualify for a 0.25% savings on our buyer's agent fee when you buy your next home—an average
-                    of $1,500.
-                    <span class="text-muted">*</span> It all adds up to an average of $7,500 in savings.
-                    Take the first step by chatting with a local agent.
-                </p>
-                <!-- Search Input -->
-                <div class="input-group mt-3">
-                    <input aria-label="Find an agent in your area"
-                           class="form-control"
-                           placeholder="Find an agent in your area"
-                           type="text" />
-                    <button class="btn btn-danger" type="button">
-                        <i class="bi bi-search"></i>
-                    </button>
-                </div>
-            </div>
 
-            <!-- Image Section -->
-            <div class="col-lg-6 col-md-12">
-                <img alt="Redfin Savings"
-                     class="img-fluid rounded"
-                     src="image.png" />
-            </div>
-        </div>
-    </div>
+<!-- Header Section -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <h2 class="section-title">How It Works</h2>
+    <p class="text-center">We simplify the process of buying, selling, and renting properties. Here's how it works:</p>
+  </div>
+</section>
 
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js">
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js">
-    </script>
+<!-- Section 1: Sign Up -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-person-plus-fill"></i>
+            </div>
+            <h3>Create an Account</h3>
+            <p>Sign up easily and start exploring properties.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 2: Search Property -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-search"></i>
+            </div>
+            <h3>Search for Properties</h3>
+            <p>Use our filters to find the perfect property for your needs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 3: Get Matched -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-house-door-fill"></i>
+            </div>
+            <h3>Get Matched with Agents</h3>
+            <p>We match you with the best real estate agents in your area.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 4: Schedule Viewings -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-calendar2-week-fill"></i>
+            </div>
+            <h3>Schedule Viewings</h3>
+            <p>Book viewings at a time that suits you best.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 5: Compare Properties -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-columns-gap"></i>
+            </div>
+            <h3>Compare Properties</h3>
+            <p>Compare properties based on price, location, and features.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 6: Make an Offer -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-cash"></i>
+            </div>
+            <h3>Make an Offer</h3>
+            <p>Submit your offer directly through our platform.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 7: Get Financing -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-piggy-bank-fill"></i>
+            </div>
+            <h3>Secure Financing</h3>
+            <p>Our partners help you get the best financing options.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 8: Legal Assistance -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-file-earmark-text-fill"></i>
+            </div>
+            <h3>Legal Assistance</h3>
+            <p>We provide legal assistance for all real estate transactions.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 9: Final Walkthrough -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-box-arrow-in-right"></i>
+            </div>
+            <h3>Final Walkthrough</h3>
+            <p>Ensure everything is in order before closing the deal.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 10: Closing the Deal -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-check-circle-fill"></i>
+            </div>
+            <h3>Close the Deal</h3>
+            <p>Sign contracts and finalize your property purchase.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 11: Move-in Assistance -->
+<section class="section">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-truck"></i>
+            </div>
+            <h3>Move-in Assistance</h3>
+            <p>We offer moving services to help you settle in quickly.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Section 12: Property Management -->
+<section class="section bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-4">
+        <div class="card text-center">
+          <div class="card-body">
+            <div class="icon">
+              <i class="bi bi-tools"></i>
+            </div>
+            <h3>Property Management</h3>
+            <p>Our property management services keep your investment in top condition.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<section class="section">
+  <div class="container text-center">
+    <p>Ready to get started? Contact us today!</p>
+  </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
-
