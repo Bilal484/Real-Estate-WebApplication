@@ -23,6 +23,7 @@
 
 
     li {
+        
         display: inline-block;
         margin: 0px;
         margin-bottom: 1px solid black !important;
@@ -275,6 +276,7 @@
     
         /* Adjust navbar for smaller screens */
         .nav-item {
+            
           padding-left: 0;
           padding-right: 0;
          
@@ -305,4 +307,9 @@
       .navbar-toggler {
         z-index: 1;
       }
+      .dropdown-item{
+        width: 200px;
+
+      }
+   
 }
