@@ -1,0 +1,10 @@
+.set_card_hover {
+    .card {
+        transition: 1s all ease;
+
+        &:hover {
+
+            transform: scale(1.04);
+        }
+    }
+}
