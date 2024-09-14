@@ -12,6 +12,8 @@
 @import '/assets/css/Auth.css';
 @import '/assets/css/Blog.css';
 @import url(rent.css);
+@import url(Sub2Deals.css);
+@import '/assets/css/contact.css';
 * {
     margin: 0px;
     padding: 0px;
