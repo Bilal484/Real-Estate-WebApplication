@@ -6,170 +6,228 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Biznet | About Us</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <style>
-        :root {
-            --background_color: white;
-            --color: #09aab0;
-        }
+    <link rel="stylesheet" href="assets/css/style.css">
 
-        body {
-            background-color: var(--background_color);
-            color: var(--color);
-        }
-
-        .section-title {
-            font-size: 2.5rem;
-            color: var(--color);
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .hero {
-            width: 100%;
-            height: 80vh;
-            background: linear-gradient(rgba(116, 134, 152, 0.8), rgba(45, 57, 69, 0.8)),
-                url(assets/images/real\ estate\ _12.jpg);
-            background-position: center;
-            background-size: cover;
-            background-repeat: no-repeat;
-            text-align: center;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: #09aab0;
-            /* Text color */
-        }
-
-
-        .hero h1 {
-            color: var(--color);
-            font-size: 3rem;
-            margin-bottom: 20px;
-        }
-
-        .hero p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-        }
-
-        .about-img {
-            max-width: 100%;
-            border-radius: 10px;
-        }
-
-        .card {
-            background-color: var(--background_color);
-            border: none;
-        }
-
-        .card-body {
-            text-align: center;
-        }
-
-        .team-img {
-            max-width: 100%;
-            border-radius: 50%;
-        }
-
-        /* Button styles */
-        .btn-primary {
-            background-color: var(--color);
-            border: none;
-        }
-
-        .btn-primary:hover {
-            background-color: #077d7e;
-        }
-
-        .fade-in {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease-out, transform 0.8s ease-out;
-        }
-
-        .fade-in.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
-    </style>
 </head>
 
 <body>
-
-    <!-- Hero Section -->
-    <section class="">
-        <div class="container-fluid hero d-flex justify-content-center align-items-center flex-column">
-            <h1 class="fade-in">Welcome to Biznet</h1>
-            <p class="fade-in">Leading the Real Estate Market with Integrity and Innovation.</p>
-            <a href="#about" class="btn btn-primary fade-in">Learn More About Us</a>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="section-title fade-in">About Biznet</h2>
-            <div class="row align-items-center">
-                <div class="col-md-6 fade-in">
-                    <p>Biznet has been at the forefront of real estate, offering unparalleled services to clients. From
-                        residential to commercial, we have the expertise and commitment to help you find your perfect
-                        space.</p>
-                </div>
-                <div class="col-md-6 fade-in">
-                    <img src="assets/images/real estate _20.jpg" alt="About Biznet" class="about-img">
-                </div>
+    <main class="about">
+        <!-- Hero Section -->
+        <section class="">
+            <div class="container-fluid hero d-flex justify-content-center align-items-center flex-column">
+                <h1 class="fade-in">Welcome to Biznet</h1>
+                <p class="fade-in">Leading the Real Estate Market with Integrity and Innovation.</p>
+                <a href="#about" class="btn btn-primary fade-in">Learn More About Us</a>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- Core Values Section -->
-    <section class="py-5">
-        <div class="container">
-            <h2 class="section-title fade-in">Our Core Values</h2>
-            <div class="row ">
-                <div class="col-md-4 fade-in">
-                    <div class="card">
-                        <div class="card-body  ">
-                            <h5 class="card-title">Integrity</h5>
-                            <p class="card-text">We operate with complete transparency and honesty.</p>
-                        </div>
+        <!-- About Section -->
+        <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="section-title fade-in">About Biznet</h2>
+                <div class="row align-items-center">
+                    <div class="col-md-6 text-dark fade-in">
+                        <p>Biznet has been at the forefront of real estate, offering unparalleled services to clients.
+                            From
+                            residential to commercial, we have the expertise and commitment to help you find your
+                            perfect
+                            space.</p>
                     </div>
-                </div>
-                <div class="col-md-4 fade-in">
-                    <div class="card">
-                        <div class="card-body ">
-                            <h5 class="card-title">Innovation</h5>
-                            <p class="card-text">Constantly evolving with the latest trends in the real estate market.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 fade-in">
-                    <div class="card">
-                        <div class="card-body ">
-                            <h5 class="card-title">Excellence</h5>
-                            <p class="card-text">Striving for the best in every transaction and project.</p>
-                        </div>
+                    <div class="col-md-6 fade-in">
+                        <img src="assets/images/real estate _20.jpg" alt="About Biznet" class="about-img">
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title fade-in">Our Mission & Vision</h2>
+                <div class="row">
+                    <!-- Mission Card -->
+                    <div class="col-md-6 fade-in">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Our Mission</h3>
+                                <p class="card-text">Our mission is to provide our clients with exceptional real estate
+                                    services,
+                                    ensuring seamless transactions, valuable investments, and unmatched client
+                                    satisfaction.
+                                    We aim to build lasting relationships by delivering personalized solutions that meet
+                                    the unique
+                                    needs of each client, whether residential, commercial, or industrial. Our team is
+                                    committed to
+                                    operating with integrity, transparency, and innovation, making the buying, selling,
+                                    and investing
+                                    process as smooth .</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Vision Card -->
+                    <div class="col-md-6 fade-in">
+                        <div class="card shadow-sm">
+                            <div class="card-body">
+                                <h3 class="card-title">Our Vision</h3>
+                                <p class="card-text">Our vision is to be a global leader in the real estate industry by
+                                    consistently
+                                    driving innovation, embracing emerging technologies, and adapting to the evolving
+                                    needs of the
+                                    market. We aspire to shape the future of real estate by fostering a culture of
+                                    excellence,
+                                    sustainability, and social responsibility. Our goal is to create a positive impact
+                                    on the communities
+                                    we serve, while maintaining a commitment to ethical practices and delivering
+                                    unparalleled value to
+                                    our clients worldwide.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
 
 
 
+        <!-- Core Values Section -->
+        <section class="py-5">
+            <div class="container">
+                <h2 class="section-title fade-in">Our Core Values</h2>
+                <div class="row">
+                    <!-- Integrity Card -->
+                    <div class="col-md-4 fade-in">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Integrity</h5>
+                                <p class="card-text">We uphold transparency, honesty, and ethical practices in all our
+                                    transactions, ensuring that our clients' interests are always our top priority.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Innovation Card -->
+                    <div class="col-md-4 fade-in">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Innovation</h5>
+                                <p class="card-text">We continually embrace new trends and technologies to offer
+                                    creative, cutting-edge solutions that meet the evolving demands of the real estate
+                                    industry.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Excellence Card -->
+                    <div class="col-md-4 fade-in">
+                        <div class="card">
+                            <div class="card-body">
+                                <h5 class="card-title">Excellence</h5>
+                                <p class="card-text">We are committed to delivering outstanding results in every
+                                    project, consistently striving for the highest standards of quality and client
+                                    satisfaction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="py-5 bg-light">
+            <div class="container">
+                <h2 class="section-title fade-in text-center">What Our Clients Say</h2>
+                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <!-- Testimonial 1 -->
+                        <div class="carousel-item active">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 card p-3 ">
+                                    <p class="testimonial">"Biznet helped us find our dream home with exceptional
+                                        service. Their professionalism, attention to detail, and dedication were truly
+                                        outstanding. We couldn’t have asked for a better real estate partner. Their
+                                        professionalism, attention to detail, and dedication were truly
+                                        outstanding. We couldn’t have asked for a better real estate partner." – Sarah
+                                        L.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 2 -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 card p-3">
+                                    <p class="testimonial">"We sold our property in no time, thanks to the expertise of
+                                        Biznet’s team. Their market knowledge and proactive approach made the process
+                                        smooth and stress-free. Highly recommend!" Their professionalism, attention to
+                                        detail, and dedication were truly
+                                        outstanding. We couldn’t have asked for a better real estate partner.– Mark D.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Testimonial 3 (optional) -->
+                        <div class="carousel-item">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-6 card p-3">
+                                    <p class="testimonial">"Biznet exceeded our expectations in every aspect. From the
+                                        initial consultation to closing the deal, they were attentive, responsive, and
+                                        highly professional. Our investment process was seamless."Their professionalism,
+                                        attention to detail, and dedication were truly
+                                        outstanding. We couldn’t have asked for a better real estate partner. – Emily W.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Carousel controls -->
+                    <button class="carousel-control-prev " type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon " aria-hidden="true"></span>
+                        <span class="visually-hidden ">Previous</span>
+                    </button>
+                    <button class="carousel-control-next  " type="button" data-bs-target="#testimonialCarousel"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="py-2 bg-light">
+            <div class="container">
+                <h2 class="text-center mb-4">Get in Touch</h2>
+                <form>
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <input type="text" class="form-control" placeholder="Your Name" required>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="email" class="form-control" placeholder="Your Email" required>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <textarea class="form-control" placeholder="Your Message" rows="5" required></textarea>
+                        </div>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-outline-info">Send Message</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <hr>
     <footer class="bg-light text-dark py-4">
-        <div class="container">
+        <div class="container ">
             <div class="row g-4">
                 <div class="col-6 col-md-2">
                     <h6 class="fw-semibold">Join us</h6>
                     <ul class="list-unstyled mt-2">
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Become an Agent</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Become
+                                an
+                                Agent</a></li>
                         <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Get
                                 referrals</a></li>
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Careers</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Careers</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-6 col-md-2">
@@ -177,19 +235,18 @@
                     <ul class="list-unstyled mt-2">
                         <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Why
                                 BIZNET?</a></li>
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Community Impact</a></li>
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Diversity & Inclusion</a>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Community
+                                Impact</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Diversity &
+                                Inclusion</a>
                         </li>
                         <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Life
                                 at BIZNET</a></li>
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Press</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Press</a>
+                        </li>
                         <li><a href="javascript:void(0)"
                                 class="text-muted text-decoration-none hover-link">Investors</a></li>
-                        <li><a href="Blog.html"
-                                class="text-muted text-decoration-none hover-link">Blog</a></li>
+                        <li><a href="Blog.html" class="text-muted text-decoration-none hover-link">Blog</a></li>
                         <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Real
                                 Estate News</a></li>
                     </ul>
@@ -197,32 +254,29 @@
                 <div class="col-6 col-md-2">
                     <h6 class="fw-semibold">Find us</h6>
                     <ul class="list-unstyled mt-2">
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Contact Us</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Contact
+                                Us</a></li>
                         <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Help
                                 Center</a></li>
                         <li><a href="javascript:void(0)"
                                 class="text-muted text-decoration-none hover-link">Advertise</a></li>
                     </ul>
                     <div class="d-flex my-3">
-                        <a href="javascript:void(0)" class="text-muted me-2"><i
-                                class="fa-brands fa-facebook"></i></a>
-                        <a href="javascript:void(0)" class="text-muted me-2"><i
-                                class="fa-brands fa-twitter"></i></a>
-                        <a href="javascript:void(0)" class="text-muted"><i
-                                class="fa-brands fa-instagram"></i></a>
+                        <a href="javascript:void(0)" class="text-muted me-2"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="javascript:void(0)" class="text-muted me-2"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="javascript:void(0)" class="text-muted"><i class="fa-brands fa-instagram"></i></a>
                     </div>
                     <h6 class="fw-semibold">Subsidiaries</h6>
                     <ul class="list-unstyled mt-2">
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Rent.</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Rent.</a>
+                        </li>
                         <li><a href="javascript:void(0)"
                                 class="text-muted text-decoration-none hover-link">ApartmentGuide</a></li>
                         <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Bay
                                 Equity Home Loans</a>
                         </li>
-                        <li><a href="javascript:void(0)"
-                                class="text-muted text-decoration-none hover-link">Title Forward</a></li>
+                        <li><a href="javascript:void(0)" class="text-muted text-decoration-none hover-link">Title
+                                Forward</a></li>
                     </ul>
                     <h6 class="fw-semibold">Countries</h6>
                     <ul class="list-unstyled mt-2">
@@ -273,6 +327,7 @@
             </div>
 
         </div>
+
     </footer>
     <!-- Bootstrap JS and Animation Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>

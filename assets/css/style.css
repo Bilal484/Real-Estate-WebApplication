@@ -15,6 +15,9 @@
 @import url(Sub2Deals.css);
 @import '/assets/css/contact.css';
 @import '/assets/css/Investor.css';
+@import '/assets/css/realtor.css';
+@import '/assets/css/about.css';
+@import '/assets/css/flipper.css';
 * {
     margin: 0px;
     padding: 0px;
