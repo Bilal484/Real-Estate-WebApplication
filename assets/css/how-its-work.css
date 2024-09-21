@@ -1,13 +1,10 @@
 /* styles.css */
 
 /* Global Styling */
-body {
-    font-family: 'Rajdhani', sans-serif;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: white;
-}
+
+.parent-how-to-work{
+
+
 
 /* Hero Section */
 .hero-parent{
@@ -394,4 +391,5 @@ body {
     .section-title {
         font-size: 2rem;
     }
+}
 }
