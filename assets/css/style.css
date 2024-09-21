@@ -18,6 +18,8 @@
 @import '/assets/css/realtor.css';
 @import '/assets/css/about.css';
 @import '/assets/css/flipper.css';
+@import '/assets/css/transaction_cordinator.css';
+@import '/assets/css/contracter.css';
 * {
     margin: 0px;
     padding: 0px;
