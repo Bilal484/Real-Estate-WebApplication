@@ -20,6 +20,8 @@
 @import '/assets/css/flipper.css';
 @import '/assets/css/transaction_cordinator.css';
 @import '/assets/css/contracter.css';
+@import '/assets/css/how-its-work.css';
+
 * {
     margin: 0px;
     padding: 0px;
