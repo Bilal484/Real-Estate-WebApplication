@@ -1,16 +1,130 @@
-<!DOCTYPE html>
-<html lang="en">
+<html></html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonials</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap 5.3.2 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap 5.3.2 JavaScript Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <script src="/assets/js/header.js"></script>
 </head>
 
 <body>
+  <div class="header-parent">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light p-3">
+        <div class="container-fluid">
 
+               <!-- Logo in the center for larger screens -->
+               <div class="nav-item logo-nav">
+                <a class="navbar-brand text-danger fw-bold h1" href="index.html"><img
+                    src="/assets/images/PNG Logo Files/Transparent Logo.png" width="50" alt="Logo"></a>
+              </div>
+
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="logo-mobile">
+            <a class="navbar-brand text-danger fw-bold h1" href="#"><img
+                src="/assets/images/PNG Logo Files/Transparent Logo.png" width="80" alt="Logo"></a>
+          </div>
+          <!-- Centered Logo for larger screens -->
+          <div class="collapse navbar-collapse justify-content-md-end gap-3" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class=" text-muted" href="index.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <!-- <a class=" " href="about.html">About</a> -->
+                <a class="text-muted" href="about.html">About</a>
+              </li>
+
+              <!-- Dropdown Menu 1 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown1" role="button">
+                  Browse Properties
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                  <div class="dropdown-column">
+                    <div class="dropdown-grid">
+                      <li><a class="dropdown-item" href="buy/buy.html">Buy</a></li>
+                      <li><a class="dropdown-item" href="sell.html">Sell</a></li>
+                      <li><a class="dropdown-item" href="Rent.html">Rent</a></li>
+                      <li><a class="dropdown-item" href="Sub2Deals.html">Sub2 Deals</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              <!-- Dropdown Menu 2 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button">
+                  Services
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                  <div class="dropdown-column">
+                    <div class="dropdown-grid">
+                      <li><a class="dropdown-item" href="Investor.html">Investors</a></li>
+                      <li><a class="dropdown-item" href="realtor.html">Realtors</a></li>
+                      <li><a class="dropdown-item" href="Developer.html">Developers </a></li>
+                      <li><a class="dropdown-item" href="flipper.html">Flippers </a></li>
+                      <li><a class="dropdown-item" href="contracter.html">Contractors</a></li>
+                      <li><a class="dropdown-item" href="transaction_cordinator.html">Transaction Coordinators</a></li>
+                      <li><a class="dropdown-item" href="wholesaler.html">Wholesalers</a></li>
+                      <li><a class="dropdown-item" href="Lenders.html">Lenders</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class=" text-muted" href="how-its-work.html">How It Works</a>
+              </li>
+
+           
+              <!-- Dropdown Menu 3 -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button">
+                  Resources
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
+                  <div class="dropdown-column">
+                    <div class="dropdown-grid">
+                      <li><a class="dropdown-item" href="Blog.html">Blogs</a></li>
+                      <li><a class="dropdown-item" href="#">FAQs</a></li>
+                      <li><a class="dropdown-item" href="#">Guides</a></li>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class=" text-muted" href="#">Advertise</a>
+              </li>
+
+              <li class="nav-item">
+                <a class=" text-muted" href="contact.html">Contact</a>
+              </li>
+            </ul>
+
+            <!-- Right Side (Login/Signup) -->
+            <div class="d-flex Listing_Details align-items-center">
+              <a href="Auth/SignIn.html"><button class="btn me-2">Login / SignUp</button></a>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </header>
+  </div>
+</body>
+
+</html>
     <div class="container my-5">
         <div class="row">
             <div class="col-lg-5 col-md-12 mb-4">
