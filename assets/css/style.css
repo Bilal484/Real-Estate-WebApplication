@@ -50,7 +50,33 @@
     }
 }
 
-::selection{
+
+button {
+    background-color: var(--background_color) !important;
+    color: var(--color_white) !important;
+    transition: 1s all ease !important;
+
+    &:hover {
+        background-color: var(--hover_bg_color) !important;
+    }
+}
+
+.carousel-control-prev {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.carousel-control-next {
+    width: 50px;
+    height: 50px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+
+::selection {
     background: var(--color);
     color: white;
 }

@@ -6,7 +6,7 @@
         align-items: center;
         padding: 10px;
         background: #f8f9fa;
-        
+
     }
 
     .filter-group,
@@ -49,3 +49,46 @@
         flex-basis: 200px;
     }
 }
+
+
+
+    .tour-dates {
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+    }
+
+    .tour-date {
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+
+    .tour-date:hover {
+        background-color: #f0f0f0;
+    }
+
+    .tour-date.active {
+        background-color: #e0f7fa;
+        border-color: #007bff;
+    }
+
+    .form-control-date {
+        position: relative;
+    }
+
+    .form-control-date input {
+        width: 100%;
+    }
+
+    .form-control-date .input-group-text {
+        background-color: transparent;
+        border: none;
+        position: absolute;
+        right: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+    }
