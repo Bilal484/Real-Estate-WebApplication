@@ -11,12 +11,12 @@ body{
        background-image: url('/assets/images/building-4579244_1280.jpg'); /* Replace with your image path */
        background-size: cover;
        background-position: center;
-       min-height: 80vh; /* Set minimum height for the hero section */
+        height :100%;/* Set minimum height for the hero section */
        color: white; /* Default text color */
    }
    
    .bg-background {
-       background-color: rgba(12, 38, 64, 0.8); /* Dark overlay for text readability */
+       background-color: rgba(12, 38, 64, 0.668); /* Dark overlay for text readability */
    }
 
    .parent-advertise-about{
