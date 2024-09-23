@@ -41,10 +41,10 @@
     header{
         height: fit-content;
     }
-    .navbar-brand img{
+    /* .navbar-brand img{
         margin-top: -81px;
 
-    }
+    } */
     /* .dropdown-item{
         padding: 10px;
     } */
@@ -239,23 +239,23 @@
         transition: .5s all ease;
       }
     
-      .Listing_Details {
+      /* .Listing_Details {
         margin-top: 30px;
-      }
+      } */
     
       /* Center logo and navbar for larger screens */
       .navbar-nav {
-        margin-left: auto;
-        margin-right: auto;
+        /* margin-left: auto;
+        margin-right: auto; */
         display: flex;
         justify-content: flex-start;
         height: fit-content;
-        padding-top: 50px;
+        /* padding-top: 50px; */
       }
     
       .nav-item {
-        padding-left: 5px;
-        padding-right: 5px;
+        padding-left: 7px;
+        padding-right: 7px;
       }
     
       /* Logo for larger screens */
@@ -280,7 +280,7 @@
         .logo-mobile {
           display: block;
           /* margin-bottom: 10px; */
-          margin-top: 90px;
+          /* margin-top: 90px; */
           position: relative;
        
         }
@@ -310,9 +310,9 @@
           padding: 10px 0;
         }
     
-        .Listing_Details {
+        /* .Listing_Details {
           margin-top: 15px;
-        }
+        } */
         .logo-nav{
           position: absolute;
           left: 10%;
