@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Real Estate Filters</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
+
     <link rel="stylesheet" href="assets/css/style.css">
     <style>
 
@@ -13,7 +15,7 @@
 </head>
 
 <body>
-    <div class="position-sticky top-0 z-1">
+    <div class="position-sticky top-0 z-3">
         <div class="container-fluid product_main_detail">
             <div class="row ">
                 <div class="search-bar">
@@ -67,109 +69,113 @@
         <div id="List" class="container-fluid">
             <div class="row mt-4">
                 <div class="col-sm-6 home_cards col-lg-4 mb-4">
-                    <a class="text-decoration-none" href="detail_page.html">
-                        <div class="card ">
-                            <!-- Start of Carousel -->
-                            <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="assets/images/real estate _1.jpg" alt="Property 1"
-                                            class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
-                                            class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
-                                            class="d-block w-100">
-                                    </div>
+
+                    <div class="card ">
+                        <!-- Start of Carousel -->
+                        <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/real estate _1.jpg" alt="Property 1" class="d-block w-100">
                                 </div>
-                                <!-- Carousel controls -->
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty1"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty1"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item">
+                                    <img src="assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                        class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                        class="d-block w-100">
+                                </div>
                             </div>
+                            <!-- Carousel controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty1"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty1"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
 
-                            <!-- End of Carousel -->
+                        <!-- End of Carousel -->
 
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between flex-row">
-                                    <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
-                                    <div class="">
-                                        <i class="fa-solid fa-share"></i>
-                                        <i class="fa-regular fa-heart  ms-2"></i>
-                                    </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between flex-row">
+                                <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
+                                <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    <i class="fa-regular fa-heart  ms-2"></i>
                                 </div>
-                                <p class="mb-1 small text-decoration-none">4 beds | 4.5 baths | 2,378 sq ft</p>
-                                <p class="small text-decoration-none">36 Beach Side Dr Unit 36AP, Ocean City, MD 218
-                                </p>
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn ">Request</button>
-                                    <button class="btn ">(244) 278-7009</button>
-                                </div>
+                            </div>
+                            <p class="mb-1 small text-decoration-none">4 beds | 4.5 baths | 2,378 sq ft</p>
+                            <p class="small text-decoration-none">36 Beach Side Dr Unit 36AP, Ocean City, MD 218
+                            </p>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn " data-bs-toggle="modal"
+                                    data-bs-target="#requestTourModal">
+                                    Request a Tour
+                                </button>
+                                <button class="btn ">(244) 278-7009</button>
                             </div>
                         </div>
+                    </div>
                     </a>
                 </div>
 
                 <div class="col-sm-6 home_cards col-lg-4 mb-4">
-                    <a class="text-decoration-none" href="detail_page.html">
-                        <div class="card ">
-                            <!-- Start of Carousel -->
-                            <div id="carouselProperty2" class="carousel slide" data-bs-ride="carousel">
-                                <div class="carousel-inner">
-                                    <div class="carousel-item active">
-                                        <img src="assets/images/real estate _11.jpg" alt="Property 1"
-                                            class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/images/real estate _12.jpg" alt="Property 1 - Second Image"
-                                            class="d-block w-100">
-                                    </div>
-                                    <div class="carousel-item">
-                                        <img src="assets/images/real estate _13.jpg" alt="Property 1 - Third Image"
-                                            class="d-block w-100">
-                                    </div>
+
+                    <div class="card ">
+                        <!-- Start of Carousel -->
+                        <div id="carouselProperty2" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="assets/images/real estate _11.jpg" alt="Property 1" class="d-block w-100">
                                 </div>
-                                <!-- Carousel controls -->
-                                <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty2"
-                                    data-bs-slide="prev">
-                                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Previous</span>
-                                </button>
-                                <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty2"
-                                    data-bs-slide="next">
-                                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                    <span class="visually-hidden">Next</span>
-                                </button>
+                                <div class="carousel-item">
+                                    <img src="assets/images/real estate _12.jpg" alt="Property 1 - Second Image"
+                                        class="d-block w-100">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="assets/images/real estate _13.jpg" alt="Property 1 - Third Image"
+                                        class="d-block w-100">
+                                </div>
                             </div>
-                            <!-- End of Carousel -->
+                            <!-- Carousel controls -->
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProperty2"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselProperty2"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <!-- End of Carousel -->
 
-                            <div class="card-body">
-                                <div class="d-flex justify-content-between flex-row">
-                                    <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
-                                    <div class="">
-                                        <i class="fa-solid fa-share"></i>
-                                        <i class="fa-regular fa-heart  ms-2"></i>
-                                    </div>
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between flex-row">
+                                <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
+                                <div class="">
+                                    <i class="fa-solid fa-share"></i>
+                                    <i class="fa-regular fa-heart  ms-2"></i>
                                 </div>
-                                <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
-                                <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                            </div>
+                            <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
+                            <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
 
-                                <div class="d-flex justify-content-between">
-                                    <button class="btn ">Request</button>
-                                    <button class="btn ">(244) 278-7009</button>
-                                </div>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn " data-bs-toggle="modal"
+                                    data-bs-target="#requestTourModal">
+                                    Request a Tour
+                                </button>
+                                <button class="btn ">(244) 278-7009</button>
                             </div>
                         </div>
+                    </div>
                     </a>
                 </div>
                 <div class="col-sm-6 home_cards col-lg-4 mb-4">
@@ -213,6 +219,13 @@
                             </div>
                             <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                             <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn " data-bs-toggle="modal"
+                                    data-bs-target="#requestTourModal">
+                                    Request a Tour
+                                </button>
+                                <button class="btn ">(244) 278-7009</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -259,6 +272,13 @@
                             </div>
                             <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                             <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn " data-bs-toggle="modal"
+                                    data-bs-target="#requestTourModal">
+                                    Request a Tour
+                                </button>
+                                <button class="btn ">(244) 278-7009</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -303,6 +323,14 @@
                             </div>
                             <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                             <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn " data-bs-toggle="modal"
+                                    data-bs-target="#requestTourModal">
+                                    Request a Tour
+                                </button>
+                                <button class="btn ">(244) 278-7009</button>
+                            </div>
+
                         </div>
                     </div>
                 </div>
@@ -347,6 +375,13 @@
                             </div>
                             <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                             <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn " data-bs-toggle="modal"
+                                    data-bs-target="#requestTourModal">
+                                    Request a Tour
+                                </button>
+                                <button class="btn ">(244) 278-7009</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -360,53 +395,57 @@
 
                     <div class="row mt-4">
                         <div class="col-sm-6 home_cards col-lg-6 mb-4">
-                            <a class="text-decoration-none" href="detail_page.html">
-                                <div class="card ">
-                                    <!-- Start of Carousel -->
-                                    <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="assets/images/real estate _1.jpg" alt="Property 1"
-                                                    class="d-block w-100">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/images/real estate _2.jpg"
-                                                    alt="Property 1 - Second Image" class="d-block w-100">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/images/real estate _4.jpg"
-                                                    alt="Property 1 - Third Image" class="d-block w-100">
-                                            </div>
+
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/images/real estate _1.jpg" alt="Property 1"
+                                                class="d-block w-100">
                                         </div>
-                                        <!-- Carousel controls -->
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselProperty1" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselProperty1" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                                        <div class="carousel-item">
+                                            <img src="assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
                                     </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
 
-                                    <!-- End of Carousel -->
+                                <!-- End of Carousel -->
 
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between flex-row">
-                                            <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
-                                            <div class="">
-                                                <i class="fa-solid fa-share"></i>
-                                                <i class="fa-regular fa-heart  ms-2"></i>
-                                            </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
                                         </div>
-                                        <p class="mb-1 small text-decoration-none">4 beds | 4.5 baths | 2,378 sq ft</p>
-                                        <p class="small text-decoration-none">36 Beach Side Dr Unit 36AP, Ocean City, MD
-                                            218
-                                        </p>
+                                    </div>
+                                    <p class="mb-1 small text-decoration-none">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small text-decoration-none">36 Beach Side Dr Unit 36AP, Ocean City, MD
+                                        218
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn ">Request</button>
+                                        <button class="btn ">(244) 278-7009</button>
                                     </div>
                                 </div>
+                            </div>
                             </a>
                         </div>
 
@@ -453,6 +492,10 @@
                                     </div>
                                     <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                                     <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn ">Request</button>
+                                        <button class="btn ">(244) 278-7009</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -501,6 +544,10 @@
                                     </div>
                                     <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                                     <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn ">Request</button>
+                                        <button class="btn ">(244) 278-7009</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -546,59 +593,70 @@
                                     </div>
                                     <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                                     <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn ">Request</button>
+                                        <button class="btn ">(244) 278-7009</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                     <div class="row mt-4">
                         <div class="col-sm-6 home_cards col-lg-6 mb-4">
-                            <a class="text-decoration-none" href="detail_page.html">
-                                <div class="card ">
-                                    <!-- Start of Carousel -->
-                                    <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
-                                        <div class="carousel-inner">
-                                            <div class="carousel-item active">
-                                                <img src="assets/images/real estate _1.jpg" alt="Property 1"
-                                                    class="d-block w-100">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/images/real estate _2.jpg"
-                                                    alt="Property 1 - Second Image" class="d-block w-100">
-                                            </div>
-                                            <div class="carousel-item">
-                                                <img src="assets/images/real estate _4.jpg"
-                                                    alt="Property 1 - Third Image" class="d-block w-100">
-                                            </div>
+
+                            <div class="card ">
+                                <!-- Start of Carousel -->
+                                <div id="carouselProperty1" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <img src="assets/images/real estate _1.jpg" alt="Property 1"
+                                                class="d-block w-100">
                                         </div>
-                                        <!-- Carousel controls -->
-                                        <button class="carousel-control-prev" type="button"
-                                            data-bs-target="#carouselProperty1" data-bs-slide="prev">
-                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Previous</span>
-                                        </button>
-                                        <button class="carousel-control-next" type="button"
-                                            data-bs-target="#carouselProperty1" data-bs-slide="next">
-                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                            <span class="visually-hidden">Next</span>
-                                        </button>
+                                        <div class="carousel-item">
+                                            <img src="assets/images/real estate _2.jpg" alt="Property 1 - Second Image"
+                                                class="d-block w-100">
+                                        </div>
+                                        <div class="carousel-item">
+                                            <img src="assets/images/real estate _4.jpg" alt="Property 1 - Third Image"
+                                                class="d-block w-100">
+                                        </div>
                                     </div>
+                                    <!-- Carousel controls -->
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselProperty1" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
 
-                                    <!-- End of Carousel -->
+                                <!-- End of Carousel -->
 
-                                    <div class="card-body">
-                                        <div class="d-flex justify-content-between flex-row">
-                                            <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
-                                            <div class="">
-                                                <i class="fa-solid fa-share"></i>
-                                                <i class="fa-regular fa-heart  ms-2"></i>
-                                            </div>
+                                <div class="card-body">
+                                    <div class="d-flex justify-content-between flex-row">
+                                        <h3 class="h5 fw-bold text-decoration-none">$850,000</h3>
+                                        <div class="">
+                                            <i class="fa-solid fa-share"></i>
+                                            <i class="fa-regular fa-heart  ms-2"></i>
                                         </div>
-                                        <p class="mb-1 small text-decoration-none">4 beds | 4.5 baths | 2,378 sq ft</p>
-                                        <p class="small text-decoration-none">36 Beach Side Dr Unit 36AP, Ocean City, MD
-                                            218
-                                        </p>
+                                    </div>
+                                    <p class="mb-1 small text-decoration-none">4 beds | 4.5 baths | 2,378 sq ft</p>
+                                    <p class="small text-decoration-none">36 Beach Side Dr Unit 36AP, Ocean City, MD
+                                        218
+                                    </p>
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn " data-bs-toggle="modal"
+                                            data-bs-target="#requestTourModal">
+                                            Request a Tour
+                                        </button>
+                                        <button class="btn ">(244) 278-7009</button>
                                     </div>
                                 </div>
+                            </div>
                             </a>
                         </div>
 
@@ -645,6 +703,13 @@
                                     </div>
                                     <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                                     <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn " data-bs-toggle="modal"
+                                            data-bs-target="#requestTourModal">
+                                            Request a Tour
+                                        </button>
+                                        <button class="btn ">(244) 278-7009</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -693,6 +758,13 @@
                                     </div>
                                     <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                                     <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button type="button" class="btn " data-bs-toggle="modal"
+                                            data-bs-target="#requestTourModal">
+                                            Request a Tour
+                                        </button>
+                                        <button class="btn ">(244) 278-7009</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -738,6 +810,10 @@
                                     </div>
                                     <p class="mb-1 small">4 beds | 4.5 baths | 2,378 sq ft</p>
                                     <p class="small">36 Beach Side Dr Unit 36AP, Ocean City, MD 218</p>
+                                    <div class="d-flex justify-content-between">
+                                        <button class="btn ">Request a tour</button>
+                                        <button class="btn ">(244) 278-7009</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -762,6 +838,94 @@
 
         </div>
     </div>
+
+
+    <!-- ===================== request Modal ================= -->
+    <div class="modal fade" id="requestTourModal" tabindex="-1" aria-labelledby="requestTourModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="requestTourModalLabel">Request a Tour</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Pick up to three available dates that work for you.</p>
+                    <div class="tour-dates">
+                        <div class="tour-date">TUESDAY<br><strong>24</strong><br>SEP</div>
+                        <div class="tour-date">WEDNESDAY<br><strong>25</strong><br>SEP</div>
+                        <div class="tour-date">THURSDAY<br><strong>26</strong><br>SEP</div>
+                        <div class="tour-date">FRIDAY<br><strong>27</strong><br>SEP</div>
+                        <div class="tour-date">SATURDAY<br><strong>28</strong><br>SEP</div>
+                    </div>
+                    <div class="mt-4">
+                        <label for="preferredMoveInDate" class="form-label">Preferred Move In Date (Optional)</label>
+                        <div class="input-group form-control-date">
+                            <input type="text" class="form-control" id="preferredMoveInDate" placeholder="MM/DD/YYYY">
+                            <span class="input-group-text">
+                                <i class="bi bi-calendar"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="mt-4">
+                        <label for="message" class="form-label">Write a message</label>
+                        <textarea class="form-control" id="message"
+                            rows="3">I'm interested in requesting a tour for City Hyde Park. Please send me current availability and additional details.</textarea>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-danger" id="submitRequest">Submit</button> -->
+                    <button type="button" class="btn " data-bs-toggle="modal" data-bs-target="#reachOutModal">
+                        Submit
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Second Modal (after submit) -->
+    <div class="modal fade" id="reachOutModal" tabindex="-1" aria-labelledby="reachOutModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="reachOutModalLabel">Reach out to more properties</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="container px-5">
+                        <p>With just one click we'll relay your information to additional property managers</p>
+
+                        <div class="property-card mb-4">
+                            <img src="assets/images/blog 12.jpg" alt="Property">
+                            <div class="p-3 text-start">
+                                <h5>$1,750+ /mo</h5>
+                                <p>2 beds | 1 bath | 995 sq ft</p>
+                                <p>5128 S Cornell Ave, Chicago, IL 60615</p>
+                            </div>
+                        </div>
+
+                        <div class="actions d-flex justify-content-between">
+                            <div class="action-button">
+                                <i class="fa-solid fa-xmark-circle fs-1"></i>
+                                <span>Not interested</span>
+                            </div>
+                            <div class="action-button">
+                                <i class="fa-solid fa-envelope-circle-check fs-1" style="color: #28a745;"></i>
+                                <span>Contact property</span>
+                            </div>
+                        </div>
+
+                        <a href="product_main_page.html"> <button type="button"
+                                class="btn btn-outline-secondary  mt-4">Return to search
+                                results</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
 
 

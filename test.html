@@ -1,66 +1,92 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Real Estate Filters</title>
+    <title>Request a Tour Modal</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/style.css">
     <style>
-      
+        .tour-dates {
+            display: flex;
+            justify-content: space-between;
+            gap: 10px;
+        }
+        .tour-date {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .tour-date:hover {
+            background-color: #f0f0f0;
+        }
+        .tour-date.active {
+            background-color: #e0f7fa;
+            border-color: #007bff;
+        }
+        .form-control-date {
+            position: relative;
+        }
+        .form-control-date input {
+            width: 100%;
+        }
+        .form-control-date .input-group-text {
+            background-color: transparent;
+            border: none;
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+        }
     </style>
 </head>
-
 <body>
-    <div class="container-fluid product_main_detail">
 
-        <div class="row">
-            <div class="search-bar">
-                <div class="filter-group col-lg-8">
-                    <select class="form-select">
-                        <option selected>For sale</option>
-                        <option value="1">For rent</option>
-                    </select>
-                    <select class="form-select">
-                        <option selected>Price</option>
-                        <option value="1">$200k-$400k</option>
-                        <option value="2">$400k-$600k</option>
-                    </select>
-                    <select class="form-select">
-                        <option selected>Beds/baths</option>
-                        <option value="1">1 Bed</option>
-                        <option value="2">2 Beds</option>
-                    </select>
-                    <select class="form-select">
-                        <option selected>Home type</option>
-                        <option value="1">House</option>
-                        <option value="2">Apartment</option>
-                    </select>
-                    <button class="btn btn-outline-info w-100">All filters</button>
-                    <button class="btn btn-outline-danger w-100">Save search</button>
+<!-- Button trigger modal -->
+<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#requestTourModal">
+    Request a Tour
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="requestTourModal" tabindex="-1" aria-labelledby="requestTourModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="requestTourModalLabel">Request a Tour</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Pick up to three available dates that work for you.</p>
+                <div class="tour-dates">
+                    <div class="tour-date">TUESDAY<br><strong>24</strong><br>SEP</div>
+                    <div class="tour-date">WEDNESDAY<br><strong>25</strong><br>SEP</div>
+                    <div class="tour-date">THURSDAY<br><strong>26</strong><br>SEP</div>
+                    <div class="tour-date">FRIDAY<br><strong>27</strong><br>SEP</div>
+                    <div class="tour-date">SATURDAY<br><strong>28</strong><br>SEP</div>
                 </div>
-                <div class="view-group col-lg-4">
-                    <button class="btn btn-outline-info">List</button>
-                    <button class="btn btn-outline-dark">Split</button>
-                    <button class="btn btn-outline-dark">Map</button>
+                <div class="mt-4">
+                    <label for="preferredMoveInDate" class="form-label">Preferred Move In Date (Optional)</label>
+                    <div class="input-group form-control-date">
+                        <input type="text" class="form-control" id="preferredMoveInDate" placeholder="MM/DD/YYYY">
+                        <span class="input-group-text">
+                            <i class="bi bi-calendar"></i>
+                        </span>
+                    </div>
                 </div>
+                <div class="mt-4">
+                    <label for="message" class="form-label">Write a message</label>
+                    <textarea class="form-control" id="message" rows="3">I'm interested in requesting a tour for City Hyde Park. Please send me current availability and additional details.</textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-danger">Submit</button>
             </div>
         </div>
-        <div class="row align-items-center">
-            <div class="col-md-6">
-                <h5>Chicago, IL apartments for rent</h5>
-            </div>
-            <div class="col-md-6 text-md-end">
-                <span>350 of 14,301 rentals</span>
-                <span class="mx-3">Sort: <a href="#" class="text-dark">Recommended</a></span>
-                <span>View: <a href="#" class="text-dark">Photos</a></span>
-            </div>
-        </div>
-
     </div>
+</div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
