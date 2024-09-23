@@ -1,192 +1,66 @@
-<html></html>
+<!DOCTYPE html>
+<html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- Bootstrap 5.3.2 CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <!-- Bootstrap 5.3.2 JavaScript Bundle -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link rel="stylesheet" href="assets/css/style.css">
-  <script src="/assets/js/header.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Real Estate Filters</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+      
+    </style>
 </head>
 
 <body>
-  <div class="header-parent">
-    <header>
-      <nav class="navbar navbar-expand-lg bg-light p-3">
-        <div class="container-fluid">
+    <div class="container-fluid product_main_detail">
 
-               <!-- Logo in the center for larger screens -->
-               <div class="nav-item logo-nav">
-                <a class="navbar-brand text-danger fw-bold h1" href="index.html"><img
-                    src="/assets/images/PNG Logo Files/Transparent Logo.png" width="50" alt="Logo"></a>
-              </div>
-
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-
-          <div class="logo-mobile">
-            <a class="navbar-brand text-danger fw-bold h1" href="#"><img
-                src="/assets/images/PNG Logo Files/Transparent Logo.png" width="80" alt="Logo"></a>
-          </div>
-          <!-- Centered Logo for larger screens -->
-          <div class="collapse navbar-collapse justify-content-md-end gap-3" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class=" text-muted" href="index.html">Home</a>
-              </li>
-
-              <li class="nav-item">
-                <!-- <a class=" " href="about.html">About</a> -->
-                <a class="text-muted" href="about.html">About</a>
-              </li>
-
-              <!-- Dropdown Menu 1 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="javascript:void(0)" id="navbarDropdown1" role="button">
-                  Browse Properties
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
-                  <div class="dropdown-column">
-                    <div class="dropdown-grid">
-                      <li><a class="dropdown-item" href="buy/buy.html">Buy</a></li>
-                      <li><a class="dropdown-item" href="sell.html">Sell</a></li>
-                      <li><a class="dropdown-item" href="Rent.html">Rent</a></li>
-                      <li><a class="dropdown-item" href="Sub2Deals.html">Sub2 Deals</a></li>
-                    </div>
-                  </div>
-                </ul>
-              </li>
-
-              <!-- Dropdown Menu 2 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button">
-                  Services
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
-                  <div class="dropdown-column">
-                    <div class="dropdown-grid">
-                      <li><a class="dropdown-item" href="Investor.html">Investors</a></li>
-                      <li><a class="dropdown-item" href="realtor.html">Realtors</a></li>
-                      <li><a class="dropdown-item" href="Developer.html">Developers </a></li>
-                      <li><a class="dropdown-item" href="flipper.html">Flippers </a></li>
-                      <li><a class="dropdown-item" href="contracter.html">Contractors</a></li>
-                      <li><a class="dropdown-item" href="transaction_cordinator.html">Transaction Coordinators</a></li>
-                      <li><a class="dropdown-item" href="wholesaler.html">Wholesalers</a></li>
-                      <li><a class="dropdown-item" href="Lenders.html">Lenders</a></li>
-                    </div>
-                  </div>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class=" text-muted" href="how-its-work.html">How It Works</a>
-              </li>
-
-           
-              <!-- Dropdown Menu 3 -->
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown3" role="button">
-                  Resources
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown3">
-                  <div class="dropdown-column">
-                    <div class="dropdown-grid">
-                      <li><a class="dropdown-item" href="Blog.html">Blogs</a></li>
-                      <li><a class="dropdown-item" href="#">FAQs</a></li>
-                      <li><a class="dropdown-item" href="#">Guides</a></li>
-                    </div>
-                  </div>
-                </ul>
-              </li>
-
-              <li class="nav-item">
-                <a class=" text-muted" href="#">Advertise</a>
-              </li>
-
-              <li class="nav-item">
-                <a class=" text-muted" href="contact.html">Contact</a>
-              </li>
-            </ul>
-
-            <!-- Right Side (Login/Signup) -->
-            <div class="d-flex Listing_Details align-items-center">
-              <a href="Auth/SignIn.html"><button class="btn me-2">Login / SignUp</button></a>
-            </div>
-          </div>
-        </div>
-      </nav>
-    </header>
-  </div>
-</body>
-
-</html>
-    <div class="container my-5">
         <div class="row">
-            <div class="col-lg-5 col-md-12 mb-4">
-                <h2>What's clients say about us</h2>
-                <p>We help clients buy and sell homes, yes, but it's about far more than closing deals for us.</p>
-                <a href="#" class="btn btn-outline-primary">Explore all →</a>
-            </div>
-
-            <div class="col-lg-7 col-md-12">
-                <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <div class="card p-4">
-                                <p>Amazing customer support so far, working well with a theme that's so easily customizable and great to use. Thanks and 5 stars!</p>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Maggie Strickland" class="rounded-circle me-3" style="width: 50px;">
-                                    <div>
-                                        <strong>Maggie Strickland</strong>
-                                        <p class="mb-0 text-muted">Manchester</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card p-4">
-                                <p>Working with @GrandHome is like having a family member who can fix everything. They know what you need, exactly when you need it.</p>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://randomuser.me/api/portraits/women/66.jpg" alt="Maggie Strickland" class="rounded-circle me-3" style="width: 50px;">
-                                    <div>
-                                        <strong>Maggie Strickland</strong>
-                                        <p class="mb-0 text-muted">San Diego</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="carousel-item">
-                            <div class="card p-4">
-                                <p>Very good and fast support. Solved all my problems within a week. Excited to see more themes they make!</p>
-                                <div class="d-flex align-items-center">
-                                    <img src="https://randomuser.me/api/portraits/men/65.jpg" alt="Dollie Horton" class="rounded-circle me-3" style="width: 50px;">
-                                    <div>
-                                        <strong>Dollie Horton</strong>
-                                        <p class="mb-0 text-muted">San Diego</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button>
-                    <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
-                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Next</span>
-                    </button>
+            <div class="search-bar">
+                <div class="filter-group col-lg-8">
+                    <select class="form-select">
+                        <option selected>For sale</option>
+                        <option value="1">For rent</option>
+                    </select>
+                    <select class="form-select">
+                        <option selected>Price</option>
+                        <option value="1">$200k-$400k</option>
+                        <option value="2">$400k-$600k</option>
+                    </select>
+                    <select class="form-select">
+                        <option selected>Beds/baths</option>
+                        <option value="1">1 Bed</option>
+                        <option value="2">2 Beds</option>
+                    </select>
+                    <select class="form-select">
+                        <option selected>Home type</option>
+                        <option value="1">House</option>
+                        <option value="2">Apartment</option>
+                    </select>
+                    <button class="btn btn-outline-info w-100">All filters</button>
+                    <button class="btn btn-outline-danger w-100">Save search</button>
+                </div>
+                <div class="view-group col-lg-4">
+                    <button class="btn btn-outline-info">List</button>
+                    <button class="btn btn-outline-dark">Split</button>
+                    <button class="btn btn-outline-dark">Map</button>
                 </div>
             </div>
         </div>
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <h5>Chicago, IL apartments for rent</h5>
+            </div>
+            <div class="col-md-6 text-md-end">
+                <span>350 of 14,301 rentals</span>
+                <span class="mx-3">Sort: <a href="#" class="text-dark">Recommended</a></span>
+                <span>View: <a href="#" class="text-dark">Photos</a></span>
+            </div>
+        </div>
+
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
