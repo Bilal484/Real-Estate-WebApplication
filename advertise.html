@@ -1,0 +1,788 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Biznat</title>
+        <!-- Bootstrap 5.3.2 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Bootstrap 5.3.2 JavaScript Bundle -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+            integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="assets/css/advertise.css">
+        <script src="/assets/js/header.js"></script>
+    </head>
+    <style>
+        body{
+         font-family:"Libre Franklin", sans-serif ;   
+        }
+        .hero-parent{
+            display: flex;
+            flex-wrap:wrap;
+        }
+        .hero-section {
+            background-image: url('path-to-your-background-image.jpg'); /* Replace with your image path */
+            background-size: cover;
+            background-position: center;
+            min-height: 80vh; /* Set minimum height for the hero section */
+            color: white; /* Default text color */
+        }
+        
+        .bg-background {
+            background-color: rgba(12, 38, 64, 0.8); /* Dark overlay for text readability */
+        }
+        
+        .about-section {
+            background-color: var(--background_color);
+            color: var(--color_white); /* Default text color */
+        }
+        
+        .service-card {
+            background: var(--color_white); /* White background for cards */
+            transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transitions */
+            height: 250px;
+        }
+        
+        .service-card:hover {
+            transform: translateY(-5px); /* Lift effect on hover */
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2); /* Shadow effect on hover */
+        }
+        
+        /* Optional styles for headings and text */
+        h2 {
+            color: var(--color); /* Primary color for headings */
+        }
+       .img-advertise{
+margin-right: 10px;
+       }
+       
+        
+       /* Custom CSS for cards */
+       .custom-card {
+        border-radius: 15px;
+        box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        transition: transform 0.3s ease;
+        text-align: center;
+        border: none;
+        width: 200px;
+        height: 250px;
+        margin: 0px;
+    }
+    .custom-card:hover {
+        transform: translateY(-5px);
+    }
+    .custom-card-body {
+        padding: 0px;
+    }
+    .custom-card-icon {
+        width: 50px;
+        height: 50px;
+        margin-bottom: 10px;
+    }
+    .custom-card-title {
+        font-size: 15px;
+        margin-bottom: 10px;
+        font-weight: 500;
+    }
+    .custom-card-text {
+        font-size: 0.9rem;
+        color: #6c757d;
+    }
+    .custom-price {
+        font-size: 20px;
+        font-weight: 700;
+        margin: 10px 0;
+    }
+    .custom-btn {
+        font-size: 1rem;
+        padding: 10px 20px;
+        border-radius: 25px;
+    }
+    .card-plan {
+        transition: transform 0.3s ease-in-out;
+        height: 500px;
+        border-radius: 10px;
+        border: 1px solid black;
+      }
+      .card-plan:hover {
+        transform: translateY(-10px);
+      }
+      
+      .popular-plan-card {
+        border: 1px solid green;
+        background-color: #e6f7ff;
+      }
+      
+      .most-popular-badge {
+        background-color: #09aab0 !important;
+        border-radius: 8px;
+
+      }
+      
+      .plan-header .plan-icon {
+        width: 24px;
+        height: 24px;
+      }
+      
+      .plan-title {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      
+      .plan-subtitle {
+        font-size: 10px;
+      }
+      
+      .plan-price {
+        font-size: 15px;
+        font-weight: bold;
+      }
+      
+      .plan-billing {
+        font-size: 12px;
+      }
+      
+      .plan-features-title {
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      .plan-features li {
+        font-size: 10px;
+        margin-bottom: 2px;
+    
+      }
+      .plan-features li i{
+        color: #09aab0;
+      }
+      
+      .btn-inquire {
+        background-color: #09aab0;
+        color: white;
+        border: none;
+      }
+      
+      .btn-inquire:hover {
+        background-color: #d1e9f9;
+      }
+      
+      .custom-btn-card  {
+        background-color:#09aab0;
+        color: white;
+      }
+      
+      .plan-details-link {
+        font-size: 14px;
+        text-decoration: none;
+      }
+      
+      .plan-details-link:hover {
+        text-decoration: underline;
+      }
+      
+      .container {
+        max-width: 1200px;
+      }
+      .card-plan {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
+    }
+    
+    .plan-features {
+        min-height: 200px; /* You can adjust this value based on how much space you need */
+    }
+    
+    .btn-inquire {
+        margin-top: auto;
+    }
+
+    /* testimonial*/
+    .slideshow-container {
+        position: relative;
+        background: #f1f1f1f1;
+      }
+      
+      /* Slides */
+      .mySlides {
+        display: none;
+        padding: 80px;
+        text-align: center;
+      }
+      
+      /* Next & previous buttons */
+      .prev, .next {
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        width: auto;
+        margin-top: -30px;
+        padding: 16px;
+        color: #888;
+        font-weight: bold;
+        font-size: 20px;
+        border-radius: 0 3px 3px 0;
+        user-select: none;
+      }
+      
+      /* Position the "next button" to the right */
+      .next {
+        position: absolute;
+        right: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      
+      /* On hover, add a black background color with a little bit see-through */
+      .prev:hover, .next:hover {
+        background-color: rgb(218, 165, 32);
+        color: white;
+      }
+      
+      /* The dot/bullet/indicator container */
+      .dot-container {
+          text-align: center;
+          padding: 20px;
+          background: #ddd;
+      }
+      
+      /* The dots/bullets/indicators */
+      .dot {
+        cursor: pointer;
+        height: 15px;
+        width: 15px;
+        margin: 0 2px;
+        background-color: #bbb;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+      }
+      
+      /* Add a background color to the active dot/circle */
+      .active, .dot:hover {
+        background-color: #717171;
+      }
+      
+      /* Add an italic font style to all quotes */
+      q {font-style: italic;}
+      
+      /* Add a blue color to the author */
+      .author {color: cornflowerblue;}
+      #font{
+        color: rgb(218, 165, 32);
+      }
+    
+      /* General Styles for mobile/tablet */
+@media (max-width: 768px) {
+    .hero-section {
+      text-align: center;
+      padding: 20px;
+      background-position: center;
+      background-size: cover;
+      min-height: 60vh;
+    }
+    
+    /* Adjust hero text for smaller screens */
+    .hero-section h1 {
+      font-size: 2rem;
+    }
+    
+    .hero-section p {
+      font-size: 1rem;
+    }
+    
+    .hero-section .div-btn-advertise {
+      flex-direction: column;
+      gap: 10px;
+    }
+    
+    .hero-section .div-btn-advertise button {
+      width: 100%;
+      justify-content: center;
+    }
+  
+    /* Adjust service cards for small screens */
+    .service-card {
+      height: auto;
+      margin-bottom: 20px;
+    }
+    
+    /* Custom card section adjustments */
+    .custom-card {
+      width: 100%;
+      margin: 0 auto 20px auto;
+    }
+    
+    /* Make the plans section responsive */
+    .card-plan {
+      margin-bottom: 20px;
+    }
+    
+    .plan-features li {
+      font-size: 12px;
+    }
+    
+    .plan-header img {
+      width: 20px;
+      height: 20px;
+    }
+  }
+  
+  /* Further adjustments for very small screens */
+  @media (max-width: 576px) {
+    .hero-section h1 {
+      font-size: 1.5rem;
+    }
+  
+    .hero-section p {
+      font-size: 0.9rem;
+    }
+    
+    .custom-card-title {
+      font-size: 1rem;
+    }
+  
+    .plan-price {
+      font-size: 1.5rem;
+    }
+  }
+  
+        
+    </style>
+<body>
+    <div class="hero-parent">
+
+   
+    <section class="hero-section d-flex align-items-center justify-content-center">
+        <div class="bg-background p-5 rounded-lg shadow-lg text-center">
+            <h1 class="display-4 font-weight-bold mb-4">Let <span class="text-accent">Zameen</span> Build Your Business</h1>
+            <p class="lead mb-6">
+                Excel in the challenging real estate market in Pakistan with our dependable platform, expert services, and access to a broad audience of prospective property seekers.
+            </p>
+            <div class="d-flex justify-content-center div-btn-advertise gap-3 " >
+                <button class="btn btn-light  p-3 rounded-lg d-flex align-items-center">
+                    <img class="img-advertise" aria-hidden="true" alt="individual-icon" src="https://openui.fly.dev/openui/24x24.svg?text=👤" class="mr-2" />
+                    For Individual
+                </button>
+                <button class="btn btn-light p-3 rounded-lg d-flex align-items-center">
+                    <img class="img-advertise"  aria-hidden="true" alt="agency-icon" src="https://openui.fly.dev/openui/24x24.svg?text=📣" class="mr-2" />
+                    For Agency
+                </button>
+                <button class="btn btn-light  p-3 rounded-lg d-flex align-items-center">
+                    <img class="img-advertise"  aria-hidden="true" alt="developer-icon" src="https://openui.fly.dev/openui/24x24.svg?text=💼" class="mr-2" />
+                    For Developer
+                </button>
+            </div>
+        </div>
+    </section>
+</div>
+    
+    <section class="about-section py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Our Advertising Services</h2>
+            <p class="text-center mb-5">
+                At Biznet, we provide innovative advertising solutions tailored to your property’s needs. Our strategies enhance visibility and maximize engagement, ensuring your listings reach the right audience effectively.
+            </p>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-bullseye fa-3x mb-3" style="color: var(--color);"></i>
+                        <h5 class="fw-bold">Targeted Online Campaigns</h5>
+                        <p>Maximize your reach with our focused online advertising strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-home fa-3x mb-3" style="color: var(--color);"></i>
+                        <h5 class="fw-bold">Premium Property Listings</h5>
+                        <p>Showcase your properties with premium visibility and features.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-share-alt fa-3x mb-3" style="color: var(--color);"></i>
+                        <h5 class="fw-bold">Social Media Promotions</h5>
+                        <p>Engage with potential buyers through strategic social media campaigns.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-video fa-3x mb-3" style="color: var(--color);"></i>
+                        <h5 class="fw-bold">Custom Video Tours</h5>
+                        <p>Bring your properties to life with captivating video presentations.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-search fa-3x mb-3" style="color: var(--color);"></i>
+                        <h5 class="fw-bold">Search Engine Optimization</h5>
+                        <p>Improve your listings’ visibility with our SEO strategies.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="service-card text-center p-4 rounded shadow">
+                        <i class="fas fa-chart-line fa-3x mb-3" style="color: var(--color);"></i>
+                        <h5 class="fw-bold">Performance Analytics</h5>
+                        <p>Analyze campaign performance to optimize advertising strategies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- section dvertise for individual -->
+    <div class="container-fluid p-5 my-5">
+        <h2 class="text-center mb-4">For Individuals</h2>
+        <div class="row g-4 justify-content-center">
+            <!-- Listing Slot Card -->
+             
+            <div class="col-md-3 col-sm-6">
+                <div class="custom-card">
+                    <div class="custom-card-body">
+                        <img src="/assets/images/listing.webp" alt="Listing Slot Icon" class="custom-card-icon">
+                        <h5 class="custom-card-title">Listing Slot</h5>
+                        <p class="custom-card-text">Get an ad slot for 30 days to publish</p>
+                        <div class="custom-price">PKR 3000/month</div>
+                        <a href="#" class="btn custom-btn-card btn-success w-50">Buy Now</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Hot Listing Card -->
+            <div class="col-md-3 col-sm-6">
+                <div class="custom-card">
+                    <div class="custom-card-body">
+                        <img src="https://via.placeholder.com/50" alt="Hot Listing Icon" class="custom-card-icon">
+                        <h5 class="custom-card-title">Hot Listing</h5>
+                        <p class="custom-card-text">Property ranks above basic listings with 15x exposure</p>
+                        <div class="custom-price">PKR 7800/month</div>
+                        <a href="#" class="btn custom-btn-card btn-success w-50">Buy Now</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Super Hot Listing Card -->
+            <div class="col-md-3 col-sm-6">
+                <div class="custom-card">
+                    <div class="custom-card-body">
+                        <img src="https://via.placeholder.com/50" alt="Super Hot Listing Icon" class="custom-card-icon">
+                        <h5 class="custom-card-title">Super Hot Listing</h5>
+                        <p class="custom-card-text">Property ranks at the top with 25x exposure</p>
+                        <div class="custom-price">PKR 21000/month</div>
+                        <a href="#" class="btn custom-btn-card btn-success w-50">Buy Now</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Refresh Credits Card -->
+            <div class="col-md-3 col-sm-6">
+                <div class="custom-card">
+                    <div class="custom-card-body">
+                        <img src="https://via.placeholder.com/50" alt="Refresh Credits Icon" class="custom-card-icon">
+                        <h5 class="custom-card-title">Refresh Credits</h5>
+                        <p class="custom-card-text">Refresh the time of your posted listings and bring them</p>
+                        <div class="custom-price">PKR 240/credits</div>
+                                               <a href="#" class="btn custom-btn-card btn-success w-50">Buy Now</a>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Story Ads Credits Card -->
+           
+        </div>
+    </div>
+    
+<!-- new section -->
+<div class="container my-5">
+    <h2 class="text-center mb-4">For Agencies</h2>
+
+    <div class="row justify-content-center">
+      <div class="col-lg-3 h-100 col-md-4 col-sm-6 mb-4">
+        <div class="card-plan bg-white   rounded-lg p-4">
+          <div class="plan-header d-flex align-items-center mb-3">
+            <img aria-hidden="true" alt="starter-package-icon" src="https://openui.fly.dev/openui/24x24.svg?text=🚀" class="plan-icon me-2" />
+            <h2 class="h5 plan-title mb-0">Starter Package</h2>
+          </div>
+          <p class="plan-subtitle text-muted">Starting From</p>
+          <p class="plan-price h4 font-weight-bold">PKR 14,000</p>
+          <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+          <h3 class="plan-features-title mt-3">What's included</h3>
+          <ul class="plan-features list-unstyled h-50">
+             <li><i class="fa-solid fa-circle-check" ></i> Upto 50 Listings</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 10 Super Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 80 Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 800 Refresh Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 24/7 Normal Support</li>
+          </ul>
+          <button class="btn btn btn-inquire w-100 mt-3">Inquire now</button>
+          <button class="btn btn btn-inquire w-100 mt-3"> View More Details</button>
+
+        </div>
+      </div>
+  
+      <div class="col-lg-3 h-100 col-md-4  col-sm-6 mb-4">
+        <div class="card-plan bg-white  rounded-lg p-4">
+          <div class="plan-header d-flex align-items-center mb-3">
+            <img aria-hidden="true" alt="business-package-icon" src="https://openui.fly.dev/openui/24x24.svg?text=📦" class="plan-icon me-2" />
+            <h2 class="h5 plan-title mb-0">Business Package</h2>
+          </div>
+          <p class="plan-subtitle text-muted">Starting From</p>
+          <p class="plan-price h4 font-weight-bold">PKR 55,000</p>
+          <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+          <h3 class="plan-features-title mt-3">What's included</h3>
+          <ul class="plan-features list-unstyled">
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 150 Listings</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 60 Super Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 360 Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Upto 6000 Refresh Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 1 Type of Agency Banner</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 24/7 Normal Support</li>
+          </ul>
+          <button class="btn btn btn-inquire w-100 mt-3">Inquire now</button>
+          <button class="btn btn btn-inquire w-100 mt-3"> View More Details</button>
+
+        </div>
+      </div>
+  
+      <div class="col-lg-3 h-100 col-md-4 col-sm-6 mb-4">
+        <div class="card-plan bg-light  rounded-lg p-4 position-relative popular-plan-card">
+          <div class="most-popular-badge position-absolute top-0 end-0 bg-warning text-white small fw-bold px-2 py-1 rounded-start">
+            Most Popular
+          </div>
+          <div class="plan-header d-flex align-items-center mb-3">
+            <img aria-hidden="true" alt="titanium-plus-icon" src="https://openui.fly.dev/openui/24x24.svg?text=💎" class="plan-icon me-2" />
+            <h2 class="h5 plan-title mb-0">Titanium Plus</h2>
+          </div>
+          <p class="plan-subtitle text-muted">Starting From</p>
+          <p class="plan-price h4 font-weight-bold">PKR 333,000</p>
+          <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+          <h3 class="plan-features-title mt-3">What's included</h3>
+          <ul class="plan-features list-unstyled">
+            <li><i class="fa-solid fa-circle-check" ></i> 300 Listings</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 84 Super Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 600 Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 10800 Refresh Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Titanium Plus Badge</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Priority Listing Approval</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 5 Types of Agency Banners</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Exclusive Agency Profile</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Video Interview</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 24/7 Priority Support</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Featured Agency</li>
+          </ul>
+          <button class="btn btn-success btn-inquire w-100 mt-3">Inquire now</button>
+          <button class="btn btn btn-inquire w-100 mt-3"> View More Details</button>
+
+        </div>
+      </div>
+  
+      <div class="col-lg-3  col-md-4 col-sm-6 mb-4">
+        <div class="card-plan h-100 borderd bg-white  rounded-lg p-4">
+          <div class="plan-header d-flex align-items-center mb-3">
+            <img aria-hidden="true" alt="titanium-icon" src="https://openui.fly.dev/openui/24x24.svg?text=💼" class="plan-icon me-2" />
+            <h2 class="h5 plan-title mb-0">Titanium</h2>
+          </div>
+          <p class="plan-subtitle text-muted">Starting From</p>
+          <p class="plan-price h4 font-weight-bold">PKR 200,000</p>
+          <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+          <h3 class="plan-features-title mt-3">What's included</h3>
+          <ul class="plan-features list-unstyled">
+            <li><i class="fa-solid fa-circle-check" ></i> 200 Listings</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 60 Super Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 360 Hot Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 7200 Refresh Credits</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Titanium Badge</li>
+            <li><i class="fa-solid fa-circle-check" ></i> Priority Listing Approval</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 3 Types of Agency Banners</li>
+            <li><i class="fa-solid fa-circle-check" ></i> 24/7 Normal Support</li>
+          </ul>
+          <button class="btn btn btn-inquire w-100 mt-3">Inquire now</button>
+                    <button class="btn btn btn-inquire w-100 mt-3"> View More Details</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- For Developers -->
+  <div class="container my-5">
+    <h2 class="text-center mb-4">For Developers</h2>
+
+    <div class="row justify-content-center">
+        <div class="col-lg-3 h-100 col-md-4 col-sm-6 mb-4">
+            <div class="card-plan bg-white rounded-lg p-4">
+                <div class="plan-header d-flex align-items-center mb-3">
+                    <img aria-hidden="true" alt="starter-package-icon" src="https://openui.fly.dev/openui/24x24.svg?text=🚀" class="plan-icon me-2" />
+                    <h2 class="h5 plan-title mb-0">Starter Package</h2>
+                </div>
+                <p class="plan-subtitle text-muted">Starting From</p>
+                <p class="plan-price h4 font-weight-bold">PKR 14,000</p>
+                <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+                <h3 class="plan-features-title mt-3">What's included</h3>
+                <ul class="plan-features list-unstyled h-50">
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 50 Listings</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 10 Super Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 80 Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 800 Refresh Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 24/7 Normal Support</li>
+                </ul>
+                <button class="btn btn-inquire w-100 mt-3">Inquire now</button>
+                <button class="btn btn-inquire w-100 mt-3">View More Details</button>
+            </div>
+        </div>
+
+        <div class="col-lg-3 h-100 col-md-4 col-sm-6 mb-4">
+            <div class="card-plan bg-white rounded-lg p-4">
+                <div class="plan-header d-flex align-items-center mb-3">
+                    <img aria-hidden="true" alt="business-package-icon" src="https://openui.fly.dev/openui/24x24.svg?text=📦" class="plan-icon me-2" />
+                    <h2 class="h5 plan-title mb-0">Business Package</h2>
+                </div>
+                <p class="plan-subtitle text-muted">Starting From</p>
+                <p class="plan-price h4 font-weight-bold">PKR 55,000</p>
+                <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+                <h3 class="plan-features-title mt-3">What's included</h3>
+                <ul class="plan-features list-unstyled">
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 150 Listings</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 60 Super Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 360 Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Upto 6000 Refresh Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 1 Type of Agency Banner</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 24/7 Normal Support</li>
+                </ul>
+                <button class="btn btn-inquire w-100 mt-3">Inquire now</button>
+                <button class="btn btn-inquire w-100 mt-3">View More Details</button>
+            </div>
+        </div>
+
+        <div class="col-lg-3 h-100 col-md-4 col-sm-6 mb-4">
+            <div class="card-plan bg-light rounded-lg p-4 position-relative popular-plan-card">
+                <div class="most-popular-badge position-absolute top-0 end-0 bg-warning text-white small fw-bold px-2 py-1 rounded-start">
+                    Most Popular
+                </div>
+                <div class="plan-header d-flex align-items-center mb-3">
+                    <img aria-hidden="true" alt="titanium-plus-icon" src="https://openui.fly.dev/openui/24x24.svg?text=💎" class="plan-icon me-2" />
+                    <h2 class="h5 plan-title mb-0">Titanium Plus</h2>
+                </div>
+                <p class="plan-subtitle text-muted">Starting From</p>
+                <p class="plan-price h4 font-weight-bold">PKR 333,000</p>
+                <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+                <h3 class="plan-features-title mt-3">What's included</h3>
+                <ul class="plan-features list-unstyled">
+                    <li><i class="fa-solid fa-circle-check"></i> 300 Listings</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 84 Super Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 600 Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 10800 Refresh Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Titanium Plus Badge</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Priority Listing Approval</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 5 Types of Agency Banners</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Exclusive Agency Profile</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Video Interview</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 24/7 Priority Support</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Featured Agency</li>
+                </ul>
+                <button class="btn btn-success btn-inquire w-100 mt-3">Inquire now</button>
+                <button class="btn btn-inquire w-100 mt-3">View More Details</button>
+            </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 mb-4">
+            <div class="card-plan h-100 border bg-white rounded-lg p-4">
+                <div class="plan-header d-flex align-items-center mb-3">
+                    <img aria-hidden="true" alt="titanium-icon" src="https://openui.fly.dev/openui/24x24.svg?text=💼" class="plan-icon me-2" />
+                    <h2 class="h5 plan-title mb-0">Titanium</h2>
+                </div>
+                <p class="plan-subtitle text-muted">Starting From</p>
+                <p class="plan-price h4 font-weight-bold">PKR 200,000</p>
+                <p class="plan-billing text-muted">Per Month (Billed Annually)</p>
+                <h3 class="plan-features-title mt-3">What's included</h3>
+                <ul class="plan-features list-unstyled">
+                    <li><i class="fa-solid fa-circle-check"></i> 200 Listings</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 60 Super Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 360 Hot Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 7200 Refresh Credits</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Titanium Badge</li>
+                    <li><i class="fa-solid fa-circle-check"></i> Priority Listing Approval</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 3 Types of Agency Banners</li>
+                    <li><i class="fa-solid fa-circle-check"></i> 24/7 Normal Support</li>
+                </ul>
+                <button class="btn btn-inquire w-100 mt-3">Inquire now</button>
+                <button class="btn btn-inquire w-100 mt-3">View More Details</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- testimonial -->
+<div class="slideshow-container container" style="overflow:hidden;" id="client-reveal">
+
+    <div class="mySlides">
+      <img class="rounded-circle img-fluid" src="/assets/images/team 1.jpg" alt="" style="width: 100px;height:100px">
+      <h1 style="color:rgb(218, 165, 32);font-weight:bold">Mehvish Hayyat</h1>
+      <i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-solid fa-star fa-beat" id="font"></i><i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-regular fa-star fa-beat" style="color:rgb(218, 165, 32) ;"></i><br>
+      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat molestiae hic sint esse pe.</q>
+      
+    </div>
+    
+    <div class="mySlides">
+      <img class="rounded-circle img-fluid" src="/assets/images/team 2.jpg" alt="" style="width: 100px;height:100px">
+      <h1 style="color:rgb(218, 165, 32);font-weight:bold">Alexender</h1>
+      <i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-solid fa-star fa-beat" id="font"></i><i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-regular fa-star fa-beat" style="color:rgb(218, 165, 32) ;"></i><br>
+      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat molestiae hic sint essepe.</q>
+    </div>
+    
+    <div class="mySlides">
+      <img class="rounded-circle img-fluid" src="testimonial-4.jpg" alt="" style="width: 100px;height:100px">
+      <h1 style="color:rgb(218, 165, 32);font-weight:bold">Salman Aaga</h1>
+      <i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-solid fa-star fa-beat" id="font"></i><i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-solid fa-star fa-beat" id="font"></i>
+      <i class="fa-regular fa-star fa-beat" style="color:rgb(218, 165, 32) ;"></i><br>
+      <q>I love you the more in that I believe you had liked me for my own sake and for nothing else Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus quaerat molestiae hic sint esse pers.</q>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">❮</a>
+    <a class="next" onclick="plusSlides(1)">❯</a>
+    
+    </div>
+  
+  
+  
+    <script>var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }</script>
+        <script>
+          ScrollReveal({
+           reset: true ,
+           distance:'60px',
+           duration:'2500',
+           delay:400
+           });</script>
+    
+</body>
+</html>
