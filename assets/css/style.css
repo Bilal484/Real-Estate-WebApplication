@@ -18,7 +18,15 @@
 @import '/assets/css/realtor.css';
 @import '/assets/css/about.css';
 @import '/assets/css/flipper.css';
+@import '/assets/css/transaction_cordinator.css';
+@import '/assets/css/contracter.css';
 @import '/assets/css/how-its-work.css';
+@import '/assets/css/Developer.css';
+@import '/assets/css/lenders.css';
+@import '/assets/css/nav_date.css';
+@import './Faqs.css';
+@import './Guides.css';
+
 
 * {
     margin: 0px;
