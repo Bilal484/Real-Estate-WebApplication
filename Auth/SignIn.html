@@ -16,8 +16,7 @@
 </head>
 
 <body>
-        <div id="global-header"></div>
-
+       
     <main class="background_color_fixed">
         <div class="  d-flex align-items-center   justify-content-center min-vh-100 ">
             <div class="card body_color shadow-lg p-4" style="max-width: 26rem; width: 100%;">
@@ -67,7 +66,7 @@
         </div>
 
     </main>
-        <div id="global-footer"></div>
+    
 
     <!-- Bootstrap JavaScript Libraries -->
     <!-- Bootstrap JavaScript Libraries -->
@@ -79,27 +78,7 @@
    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
    crossorigin="anonymous"></script>
    <!-- <script src="/assets/js/script.js"></script> -->
-   <script>
-    document.addEventListener('DOMContentLoaded', function () {
-        fetch('header.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('global-header').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading header:', error));
-    });
-
-
-
-    document.addEventListener('DOMContentLoaded', function () {
-        fetch('footer.html')
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById('global-footer').innerHTML = data;
-            })
-            .catch(error => console.error('Error loading footer:', error));
-    });
-</script>
+  
 </body>
 
 </html>
