@@ -240,6 +240,7 @@ a{
 
 .plan-features li {
  font-size: 12px;
+ font-weight: bold !important;
 }
 
 .plan-header img {
