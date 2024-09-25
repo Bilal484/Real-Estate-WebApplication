@@ -28,6 +28,8 @@
 @import './product_main_detail.css';
 @import './Guides.css';
 @import '/assets/css/advertise.css';
+@import'/assets/css/user-pannel-css/appoinment.css';
+@import'/assets/css/user-pannel-css/offer.css';
 
 
 * {
